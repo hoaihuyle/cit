@@ -1,0 +1,6 @@
+[14-Mar-2019 00:27:15 America/Chicago] PHP Warning:  require_once(admin/inc/myconnect.php): failed to open stream: No such file or directory in /home/cit/public_html/user/userData.php on line 5
+[14-Mar-2019 00:27:15 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'admin/inc/myconnect.php' (include_path='.:/opt/php54/lib/php') in /home/cit/public_html/user/userData.php on line 5
+[03-Jul-2019 08:17:24 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home/cit/public_html/user/SaveInfoU.php on line 7
+[03-Jul-2019 08:17:48 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home/cit/public_html/user/SaveInfoU.php on line 7
+[03-Jul-2019 08:20:38 America/Chicago] PHP Parse error:  syntax error, unexpected '{' in /home/cit/public_html/user/SaveInfoU.php on line 7
+[03-Jul-2019 20:39:27 Asia/Saigon] PHP Fatal error:  Call to a member function query() on a non-object in /home/cit/public_html/user/SaveInfoU.php on line 13

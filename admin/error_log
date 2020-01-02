@@ -1,0 +1,132 @@
+[14-Mar-2019 12:08:59 Asia/Saigon] PHP Warning:  unlink(../upload/): Is a directory in /home/cit/public_html/admin/delete_news.php on line 11
+[14-Mar-2019 12:08:59 Asia/Saigon] PHP Warning:  unlink(../upload/images/): Is a directory in /home/cit/public_html/admin/delete_news.php on line 12
+[14-Mar-2019 12:08:59 Asia/Saigon] PHP Warning:  unlink(../upload/thumb/): Is a directory in /home/cit/public_html/admin/delete_news.php on line 13
+[14-Mar-2019 12:08:59 Asia/Saigon] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/cit/public_html/admin/delete_news.php:11) in /home/cit/public_html/admin/delete_news.php on line 17
+[14-Mar-2019 18:20:45 Asia/Saigon] PHP Warning:  unlink(../upload/images/2019031331844.jpg): No such file or directory in /home/cit/public_html/admin/delete_news.php on line 12
+[14-Mar-2019 18:20:45 Asia/Saigon] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/cit/public_html/admin/delete_news.php:12) in /home/cit/public_html/admin/delete_news.php on line 17
+[14-Mar-2019 18:20:56 Asia/Saigon] PHP Warning:  unlink(../upload/images/2019031331416.jpg): No such file or directory in /home/cit/public_html/admin/delete_news.php on line 12
+[14-Mar-2019 18:20:56 Asia/Saigon] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/cit/public_html/admin/delete_news.php:12) in /home/cit/public_html/admin/delete_news.php on line 17
+[16-Mar-2019 13:06:04 Asia/Saigon] PHP Warning:  unlink(../upload/images/2019031610319.jpg): No such file or directory in /home/cit/public_html/admin/delete_news.php on line 12
+[16-Mar-2019 13:06:04 Asia/Saigon] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/cit/public_html/admin/delete_news.php:12) in /home/cit/public_html/admin/delete_news.php on line 17
+[20-Mar-2019 07:19:22 Asia/Saigon] PHP Warning:  unlink(../upload/images/2019031953210.jpg): No such file or directory in /home/cit/public_html/admin/delete_news.php on line 12
+[20-Mar-2019 07:19:22 Asia/Saigon] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/cit/public_html/admin/delete_news.php:12) in /home/cit/public_html/admin/delete_news.php on line 17
+[02-Apr-2019 13:34:23 Asia/Saigon] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 362
+[02-Apr-2019 13:34:31 Asia/Saigon] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 362
+[02-Apr-2019 13:34:34 Asia/Saigon] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 362
+[02-Apr-2019 13:35:25 Asia/Saigon] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 362
+[03-Apr-2019 08:22:41 Asia/Saigon] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/list_img.php on line 33
+[24-Jun-2019 17:31:27 Asia/Saigon] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 328
+[24-Jun-2019 17:31:37 Asia/Saigon] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/list_img.php on line 33
+[30-Jun-2019 00:12:25 Asia/Saigon] PHP Fatal error:  Call to undefined method mysqli_stmt::get_result() in /home/cit/public_html/admin/list_news.php on line 98
+[30-Jun-2019 00:12:40 Asia/Saigon] PHP Fatal error:  Call to undefined method mysqli_stmt::get_result() in /home/cit/public_html/admin/list_news.php on line 98
+[30-Jun-2019 00:32:59 Asia/Saigon] PHP Fatal error:  Call to undefined method mysqli_stmt::get_result() in /home/cit/public_html/admin/list_news.php on line 98
+[30-Jun-2019 06:57:59 Asia/Saigon] PHP Fatal error:  Call to undefined method mysqli_stmt::get_result() in /home/cit/public_html/admin/list_news.php on line 98
+[30-Jun-2019 06:58:13 Asia/Saigon] PHP Fatal error:  Call to undefined method mysqli_stmt::get_result() in /home/cit/public_html/admin/list_news.php on line 98
+[30-Jun-2019 07:00:11 Asia/Saigon] PHP Fatal error:  Call to undefined method mysqli_stmt::get_result() in /home/cit/public_html/admin/list_news.php on line 98
+[30-Jun-2019 07:00:41 Asia/Saigon] PHP Fatal error:  Call to undefined method mysqli_stmt::get_result() in /home/cit/public_html/admin/list_news.php on line 98
+[30-Jun-2019 07:00:50 Asia/Saigon] PHP Fatal error:  Call to undefined method mysqli_stmt::get_result() in /home/cit/public_html/admin/list_news.php on line 98
+[30-Jun-2019 07:01:41 Asia/Saigon] PHP Fatal error:  Call to undefined method mysqli_stmt::get_result() in /home/cit/public_html/admin/list_news.php on line 98
+[30-Jun-2019 07:03:55 Asia/Saigon] PHP Fatal error:  Call to undefined method mysqli_stmt::get_result() in /home/cit/public_html/admin/list_news.php on line 98
+[30-Jun-2019 07:07:02 Asia/Saigon] PHP Fatal error:  Call to undefined method mysqli_stmt::get_result() in /home/cit/public_html/admin/list_news.php on line 97
+[30-Jun-2019 07:09:44 Asia/Saigon] PHP Fatal error:  Call to undefined method mysqli_stmt::get_result() in /home/cit/public_html/admin/list_news.php on line 98
+[30-Jun-2019 07:12:43 Asia/Saigon] PHP Fatal error:  Call to undefined method mysqli_stmt::get_result() in /home/cit/public_html/admin/list_news.php on line 98
+[30-Jun-2019 07:14:24 Asia/Saigon] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 52
+[30-Jun-2019 07:14:24 Asia/Saigon] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 131
+[30-Jun-2019 07:14:24 Asia/Saigon] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 148
+[30-Jun-2019 07:14:24 Asia/Saigon] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 115
+[30-Jun-2019 07:14:24 Asia/Saigon] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 182
+[30-Jun-2019 07:14:24 Asia/Saigon] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/cit/public_html/admin/list_news.php on line 95
+[30-Jun-2019 07:15:54 Asia/Saigon] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 52
+[30-Jun-2019 07:15:54 Asia/Saigon] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 131
+[30-Jun-2019 07:15:54 Asia/Saigon] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 148
+[30-Jun-2019 07:15:54 Asia/Saigon] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 115
+[30-Jun-2019 07:15:54 Asia/Saigon] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 182
+[30-Jun-2019 07:15:54 Asia/Saigon] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/cit/public_html/admin/list_news.php on line 95
+[30-Jun-2019 07:15:59 Asia/Saigon] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 52
+[30-Jun-2019 07:15:59 Asia/Saigon] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 131
+[30-Jun-2019 07:15:59 Asia/Saigon] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 148
+[30-Jun-2019 07:15:59 Asia/Saigon] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 115
+[30-Jun-2019 07:15:59 Asia/Saigon] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 182
+[30-Jun-2019 07:15:59 Asia/Saigon] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/cit/public_html/admin/list_news.php on line 95
+[30-Jun-2019 07:16:54 Asia/Saigon] PHP Fatal error:  Call to undefined method mysqli_stmt::get_result() in /home/cit/public_html/admin/list_news.php on line 98
+[30-Jun-2019 07:20:03 Asia/Saigon] PHP Fatal error:  Call to undefined method mysqli_stmt::get_result() in /home/cit/public_html/admin/list_news.php on line 98
+[29-Jun-2019 19:24:09 America/Chicago] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'cit'@'localhost' (using password: YES) in /home/cit/public_html/admin/inc/myconnect.php on line 7
+[30-Jun-2019 07:24:09 Asia/Saigon] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/cit/public_html/admin/list_news.php on line 60
+[30-Jun-2019 07:24:09 Asia/Saigon] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/cit/public_html/admin/list_news.php on line 61
+[30-Jun-2019 07:25:20 Asia/Saigon] PHP Fatal error:  Call to undefined method mysqli_stmt::get_result() in /home/cit/public_html/admin/list_news.php on line 98
+[30-Jun-2019 07:25:40 Asia/Saigon] PHP Fatal error:  Call to undefined method mysqli_stmt::get_result() in /home/cit/public_html/admin/list_news.php on line 98
+[30-Jun-2019 07:25:45 Asia/Saigon] PHP Fatal error:  Call to undefined method mysqli_stmt::get_result() in /home/cit/public_html/admin/list_news.php on line 98
+[30-Jun-2019 07:26:05 Asia/Saigon] PHP Fatal error:  Call to undefined method mysqli_stmt::get_result() in /home/cit/public_html/admin/list_news.php on line 98
+[30-Jun-2019 07:26:08 Asia/Saigon] PHP Fatal error:  Call to undefined method mysqli_stmt::get_result() in /home/cit/public_html/admin/list_news.php on line 98
+[30-Jun-2019 07:26:26 Asia/Saigon] PHP Fatal error:  Call to undefined method mysqli_stmt::get_result() in /home/cit/public_html/admin/list_news.php on line 98
+[30-Jun-2019 07:27:08 Asia/Saigon] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 52
+[30-Jun-2019 07:27:08 Asia/Saigon] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 131
+[30-Jun-2019 07:27:08 Asia/Saigon] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 148
+[30-Jun-2019 07:27:08 Asia/Saigon] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 115
+[30-Jun-2019 07:27:08 Asia/Saigon] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 182
+[30-Jun-2019 07:27:08 Asia/Saigon] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/cit/public_html/admin/list_news.php on line 95
+[30-Jun-2019 07:28:27 Asia/Saigon] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 52
+[30-Jun-2019 07:28:27 Asia/Saigon] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 131
+[30-Jun-2019 07:28:27 Asia/Saigon] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 148
+[30-Jun-2019 07:28:27 Asia/Saigon] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 115
+[30-Jun-2019 07:28:27 Asia/Saigon] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 182
+[30-Jun-2019 07:28:27 Asia/Saigon] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/cit/public_html/admin/list_news.php on line 95
+[30-Jun-2019 07:28:31 Asia/Saigon] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 52
+[30-Jun-2019 07:28:31 Asia/Saigon] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 131
+[30-Jun-2019 07:28:31 Asia/Saigon] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 148
+[30-Jun-2019 07:28:31 Asia/Saigon] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 115
+[30-Jun-2019 07:28:31 Asia/Saigon] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 182
+[30-Jun-2019 07:28:31 Asia/Saigon] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/cit/public_html/admin/list_news.php on line 95
+[30-Jun-2019 07:28:33 Asia/Saigon] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 52
+[30-Jun-2019 07:28:33 Asia/Saigon] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 131
+[30-Jun-2019 07:28:33 Asia/Saigon] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 148
+[30-Jun-2019 07:28:33 Asia/Saigon] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 115
+[30-Jun-2019 07:28:33 Asia/Saigon] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 182
+[30-Jun-2019 07:28:33 Asia/Saigon] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/cit/public_html/admin/list_news.php on line 95
+[30-Jun-2019 07:28:37 Asia/Saigon] PHP Fatal error:  Call to undefined method mysqli_stmt::get_result() in /home/cit/public_html/admin/list_news.php on line 98
+[30-Jun-2019 07:30:11 Asia/Saigon] PHP Fatal error:  Call to undefined method mysqli_stmt::get_result() in /home/cit/public_html/admin/list_news.php on line 98
+[30-Jun-2019 07:30:34 Asia/Saigon] PHP Fatal error:  Call to undefined method mysqli_stmt::get_result() in /home/cit/public_html/admin/list_news.php on line 98
+[29-Jun-2019 19:32:49 America/Chicago] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/cit/public_html/admin/list_news.php on line 99
+[30-Jun-2019 07:34:38 Asia/Saigon] PHP Fatal error:  Call to undefined method mysqli_stmt::get_result() in /home/cit/public_html/admin/edit_news.php on line 28
+[30-Jun-2019 07:39:10 Asia/Saigon] PHP Fatal error:  Call to undefined method mysqli_stmt::get_result() in /home/cit/public_html/admin/edit_news.php on line 28
+[30-Jun-2019 07:49:04 Asia/Saigon] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/cit/public_html/admin/edit_subcategory.php on line 99
+[30-Jun-2019 07:49:04 Asia/Saigon] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/cit/public_html/admin/edit_subcategory.php on line 99
+[30-Jun-2019 07:49:04 Asia/Saigon] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/cit/public_html/admin/edit_subcategory.php on line 99
+[30-Jun-2019 07:49:26 Asia/Saigon] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 375
+[30-Jun-2019 07:49:44 Asia/Saigon] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 375
+[30-Jun-2019 07:49:49 Asia/Saigon] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 375
+[30-Jun-2019 07:49:53 Asia/Saigon] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/cit/public_html/admin/edit_subcategory.php on line 99
+[30-Jun-2019 07:49:53 Asia/Saigon] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/cit/public_html/admin/edit_subcategory.php on line 99
+[30-Jun-2019 07:49:53 Asia/Saigon] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/cit/public_html/admin/edit_subcategory.php on line 99
+[30-Jun-2019 07:50:33 Asia/Saigon] PHP Fatal error:  Call to undefined method mysqli_stmt::get_result() in /home/cit/public_html/admin/edit_news.php on line 28
+[30-Jun-2019 07:54:05 Asia/Saigon] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/cit/public_html/admin/edit_news.php on line 33
+[30-Jun-2019 08:01:26 Asia/Saigon] PHP Warning:  unlink(../upload/images/2019063075910.jpg): No such file or directory in /home/cit/public_html/admin/delete_news.php on line 12
+[30-Jun-2019 08:01:26 Asia/Saigon] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/cit/public_html/admin/delete_news.php:12) in /home/cit/public_html/admin/delete_news.php on line 22
+[30-Jun-2019 08:03:48 Asia/Saigon] PHP Warning:  unlink(../upload/images/2019063080339.jpg): No such file or directory in /home/cit/public_html/admin/delete_news.php on line 12
+[30-Jun-2019 08:03:48 Asia/Saigon] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/cit/public_html/admin/delete_news.php:12) in /home/cit/public_html/admin/delete_news.php on line 22
+[30-Jun-2019 08:04:38 Asia/Saigon] PHP Warning:  unlink(../upload/): Is a directory in /home/cit/public_html/admin/delete_news.php on line 11
+[30-Jun-2019 08:04:38 Asia/Saigon] PHP Warning:  unlink(../upload/images/): Is a directory in /home/cit/public_html/admin/delete_news.php on line 12
+[30-Jun-2019 08:04:38 Asia/Saigon] PHP Warning:  unlink(../upload/thumb/): Is a directory in /home/cit/public_html/admin/delete_news.php on line 13
+[30-Jun-2019 08:04:38 Asia/Saigon] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/cit/public_html/admin/delete_news.php:11) in /home/cit/public_html/admin/delete_news.php on line 22
+[30-Jun-2019 08:07:05 Asia/Saigon] PHP Warning:  unlink(../upload/images/2019063080622.jpg): No such file or directory in /home/cit/public_html/admin/delete_news.php on line 12
+[30-Jun-2019 08:07:05 Asia/Saigon] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/cit/public_html/admin/delete_news.php:12) in /home/cit/public_html/admin/delete_news.php on line 22
+[01-Jul-2019 12:54:02 Asia/Saigon] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 375
+[01-Jul-2019 12:56:59 Asia/Saigon] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 375
+[01-Jul-2019 13:05:57 Asia/Saigon] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 375
+[01-Jul-2019 13:06:26 Asia/Saigon] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 375
+[01-Jul-2019 13:06:48 Asia/Saigon] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/cit/public_html/admin/add_subcategory.php on line 49
+[01-Jul-2019 13:07:01 Asia/Saigon] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 375
+[01-Jul-2019 13:07:04 Asia/Saigon] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 375
+[01-Jul-2019 13:19:58 Asia/Saigon] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 375
+[01-Jul-2019 13:20:27 Asia/Saigon] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 375
+[01-Jul-2019 13:20:55 Asia/Saigon] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 375
+[01-Jul-2019 20:06:48 Asia/Saigon] PHP Warning:  unlink(../upload/images/201907180617.jpg): No such file or directory in /home/cit/public_html/admin/delete_news.php on line 12
+[01-Jul-2019 20:06:48 Asia/Saigon] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/cit/public_html/admin/delete_news.php:12) in /home/cit/public_html/admin/delete_news.php on line 22
+[01-Jul-2019 20:37:52 Asia/Saigon] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 375
+[01-Jul-2019 22:40:34 Asia/Saigon] PHP Warning:  unlink(../upload/images/201907190703.jpg): No such file or directory in /home/cit/public_html/admin/delete_news.php on line 12
+[01-Jul-2019 22:40:34 Asia/Saigon] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/cit/public_html/admin/delete_news.php:12) in /home/cit/public_html/admin/delete_news.php on line 22
+[01-Jul-2019 22:44:24 Asia/Saigon] PHP Warning:  unlink(../upload/images/2019071104317.jpg): No such file or directory in /home/cit/public_html/admin/delete_news.php on line 12
+[01-Jul-2019 22:44:24 Asia/Saigon] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/cit/public_html/admin/delete_news.php:12) in /home/cit/public_html/admin/delete_news.php on line 22
+[02-Jul-2019 10:20:33 Asia/Saigon] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 374
+[02-Jul-2019 10:21:19 Asia/Saigon] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/cit/public_html/admin/add_subcategory.php on line 49
+[02-Jul-2019 10:21:37 Asia/Saigon] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/cit/public_html/admin/inc/function.php on line 374
