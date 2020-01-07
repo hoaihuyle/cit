@@ -1071,7 +1071,7 @@ body.modal-open{
 		display: block;
 	  	margin-left: auto;
 	  	margin-right: auto;
-	  	width: 100%;
+	  	width: 80%;
 	  	height: auto;	
 		border-radius: 4px;
 		border: 0.3px solid black;
@@ -1245,12 +1245,14 @@ body.modal-open{
 #jobHot .list-job-item{
 	display: flex;
 	align-items: center;
+    min-height: 220px;	
 }
 
-#jobHot .job-watch span{
+#jobHot .job-watch{
 	float: right;
     position: relative;
     top: 25px;
+    margin-bottom: 15px;
 }
 
 .btn-collapse{
@@ -1357,6 +1359,7 @@ body.modal-open{
 
 #jobHot .job-item-title{
 	font-size: 15px;
+	min-height: 50px;
 }
 
 .job-item-title{
@@ -1429,6 +1432,9 @@ body.modal-open{
 	color: #ff3547;
 }
 
+#jobHot .job-tag{
+	min-height: 70px;
+}
 .job-tag{
 	margin: 7px 0px;
 	color: #0072ff;
@@ -1448,6 +1454,8 @@ body.modal-open{
 	border-radius: 10px;
 	text-align: center;
 	border: solid 1px black;
+	padding: 5px;
+	margin: 15px;
 }
 
 .sm-tag{
@@ -1921,6 +1929,10 @@ visibility: visible;
 	.star-rating span {
 	    font-size: 6px;
 	}
+
+	#listJobCon .image-post{
+		padding: 15px 30px;
+	}
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -1955,6 +1967,8 @@ visibility: visible;
 		width: 180px;
 		height: 180px;
 	}
+
+
 
 	.job-price{
 		font-size: 12.5px;
@@ -2093,12 +2107,40 @@ visibility: visible;
 
 }
 
+
+@media (max-width: 767.98px){
+	.logo-support-item {
+    	width: 50%;
+	}
+
+	#listJobCon .job-image{
+		right: -25px;
+    	bottom: 45px;
+	}
+
+	#jobHot .list-job-item {
+	    display: block;
+	}
+
+	#jobHot .image-post{
+		margin: auto;
+	}
+
+	#jobHot .job-watch {
+     	 float: right;
+     	position: initial;
+	}
+
+}
+
 @media(min-width: 576px)
 {
 	.modal-lg {
     max-width: 60% !important;
     max-height: 60% !important;
 	}
+
+	
 }
 @media(max-width: 576px)
 {
@@ -2140,13 +2182,28 @@ visibility: visible;
 	    font-size: 15px;
 	}
 
+	#listJobCon .job-info{
+		width: auto;
+	}
+
+	#listJobCon .job-image{
+		position: initial;
+	}
+
+	#listJobCon .image-post {
+     width: auto; 
+	}
+
+	#jobHot .jobhot-info {
+    	min-height: 250px;
+	}
+
+	#jobHot .job-tag {
+    	height: 160px;
+	}
+
 }
 
-@media (max-width: 767.98px){
-	.logo-support-item {
-    	width: 50%;
-	}
-}
 
 @media (min-width: 576px) and (max-width: 767.98px) {
 
@@ -2183,6 +2240,19 @@ visibility: visible;
 
 	.job-upload{
 		margin: 0px;
+	}
+
+	#jobHot .jobhot-info{
+		height: 220px;
+	}
+
+	#jobHot .job-item-title {
+    	min-height: 60px;
+	}
+
+	#jobHot .job-tag{
+
+   	 height: 110px;
 	}
 
 	.text-header,
@@ -2323,8 +2393,28 @@ visibility: visible;
 		width: 100%;
 	}
 
+
 	.navbar .navbar-nav .nav-link{
 		color: #262626;
+	}
+
+	#jobHot .col-6{
+		flex: 0 0 100%;
+    	max-width: 100%;
+	}
+
+	#jobHot .job-tag {
+    	height: auto;
+	}
+
+	#jobHot .jobhot-info {
+	    padding: 15px;
+	    min-height: auto;
+	}
+
+	#jobHot .image-post {
+	    height: 250px;
+	    width: 250px;
 	}
 
 	.navbar .btn-login{

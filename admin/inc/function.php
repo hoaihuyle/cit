@@ -29,9 +29,10 @@
 
 			$strHtml.='<div class="job-image">';
 			if($element_arr["files"]!=0) $linkImg='/upload/thumb/'.$element_arr["files"];
-			else $linkImg='/lib/img/noimage.jpg';
+			else $linkImg='/lib/img/commingsoon.jpg';
 
-			$strHtml .='<div class="image-post"><img src="'.$linkImg.'" onError="this.onerror=null;this.src="/lib/img/noimage.jpg"></div>';
+			$strHtml .='<div class="image-post">
+			<img src="'.$linkImg.'"  onError="this.onerror=null;this.src=&#039;/lib/img/commingsoon.jpg&#039;;"> </div>';
 			$strHtml.='</div>';//Close job-price	
 			// $id=$element_arr['nid'];
 			// $end_date = $element_arr["end_date"];
@@ -755,6 +756,7 @@
 
 			$sql =$sql.$str_q." a.end_date > DATE(CURDATE()) AND a.state = 1 AND a.end_date = (SELECT MAX(end_date) FROM `active` WHERE id_news = a.id_news ) ORDER BY a.modified DESC,n.id DESC ".$limit; 
 		}
+
 	    return $sql;
 	}
 

@@ -81,7 +81,7 @@ else
     <div class="row">
       <div class="col-lg-3">
          <?php include'_sidebar.php'; ?>
-         <a class="text-center text-uppercase nav-link css-findJobs" href="/all" ><strong> Tìm việc </strong><i class="fas fa-search-dollar"></i></a>
+         <a class="text-center text-uppercase nav-link css-findJobs mb-3" href="/all" ><strong> Tìm việc </strong><i class="fas fa-search-dollar"></i></a>
       </div>
 
       <div class="col-lg-9 container-post">
