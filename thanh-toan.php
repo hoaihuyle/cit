@@ -222,13 +222,13 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
         <span>Thanh toán</span>
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
-             <li class="breadcrumb-item"><a href="/index"><i class="fas fa-home"></i> Trang Chủ</a></li>
+            <li class="breadcrumb-item"><a href="index"><i class="fas fa-home"></i> Trang Chủ</a></li>
             <li class="breadcrumb-item active" aria-current="page">Thanh toán</li>
           </ol>
         </nav>
       </div>
       <div class="sp-right text-center">
-        <img src="/lib/img/about-img-01.svg" class="img-fluid img-about">
+        <img src="lib/img/about-img-01.svg" class="img-fluid img-about">
       </div>
     </div>
   </div>

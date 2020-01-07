@@ -6,7 +6,7 @@ $get=$_SESSION['get'];
 //     // var_dump($get);
 //     $idJob = $_GET["job"];
 // }
-// if($get=='all') $where=' WHERE ';
+// if($get=='tong-hop') $where=' WHERE ';
 // else
 // $where = ' WHERE m.slug = '.$get ." AND ";
 if($_GET["job"]==0 && $_GET["province"]==0 && $_GET["company"]==0){
@@ -24,14 +24,14 @@ $results=mysqli_query($dbc,list_news_jobsData($get));
         <span>Tìm kiếm</span>
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
-             <li class="breadcrumb-item"><a href="/index"><i class="fas fa-home"></i> Trang Chủ</a></li>
+            <li class="breadcrumb-item"><a href="index"><i class="fas fa-home"></i> Trang Chủ</a></li>
             <li class="breadcrumb-item active" aria-current="page">Tìm kiếm</li>
             <li class="breadcrumb-item active" aria-current="page"><?php echo $get; ?></li>
           </ol>
         </nav>
       </div>
       <div class="sp-right text-center">
-        <img src="/lib/img/sub-page-img-01.png" class="img-fluid">
+        <img src="lib/img/sub-page-img-01.png" class="img-fluid">
       </div>
     </div>
   </div>

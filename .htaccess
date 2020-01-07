@@ -10,9 +10,7 @@ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
 
 RewriteRule ^([a-zA-Z-]+)$ /tim-viec.php?get=$1 [L,QSA]
 
-#RewriteRule ^(postjob)?$ /viec-lam-ngay.php [L,QSA]
-
-#RewriteRule ^(intro) index.php [L,QSA]
+#RewriteRule ^(postjob)/ /viec-lam-ngay.php [L,QSA]
 
 RewriteRule ^(job)/([0-9]+) /chi-tiet-bai-dang.php?news_id=$2 [L,QSA] 
 

@@ -253,7 +253,7 @@ include('includes/layout_header.php');
               <div class="list-job-item">
                 <div class="jobhot-image">
                   <div class="image-post">
-                    <img src="upload/<?php echo isset($value["nfiles"])?$value["nfiles"]:"commingsoon"?>" class="mCS_img_loaded" onError="this.onerror=null;this.src='/lib/img/commingsoon.jpg';">
+                    <img src="upload/<?php echo isset($value["nfiles"])?$value["nfiles"]:"commingsoon"?>" class="mCS_img_loaded" onError="this.onerror=null;this.src='/lib/img/noimage.jpg';">
                   </div>
                 </div>
 

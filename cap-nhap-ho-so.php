@@ -72,14 +72,14 @@ header("Location: index.php");
         <span>Thông tin</span>
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
-             <li class="breadcrumb-item"><a href="/index"><i class="fas fa-home"></i> Trang Chủ</a></li>
-            <li class="breadcrumb-item active" aria-current="page"><a href="/account/<?php echo $user_id; ?>">Tài Khoản</a></li>
+            <li class="breadcrumb-item"><a href="index"><i class="fas fa-home"></i> Trang Chủ</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Tài khoản</li>
             <li class="breadcrumb-item active" aria-current="page">Hồ sơ</li>
           </ol>
         </nav>
       </div>
       <div class="sp-right text-center">
-        <img src="/lib/img/detail-user-img-03.png" class="img-fluid">
+        <img src="lib/img/detail-user-img-03.png" class="img-fluid">
       </div>
     </div>
   </div>
@@ -401,7 +401,7 @@ header("Location: index.php");
 		   		if(validateEmail(email))
 		   		{
 		   			appliData = {'id': id, 'name': name, 'email': email,'phone': phone,'male': male,'female':female, 'birth':birth }
-		   			 $.post('/user/upAppli.php',
+		   			 $.post('user/upAppli.php',
 				    {
 				       appliData:JSON.stringify(appliData)
 				    },

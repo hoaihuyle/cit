@@ -6,7 +6,7 @@
 			</div> -->
 			<div class="col-sm-4 text-left">
 				<div class="footer-title">liên hệ</div>
-				<a target="_blank" href="tel:0788362644"><i class="fas fa-phone"></i> 0788362644</a>
+				<a target="_blank" href="tel:0855566145"><i class="fas fa-phone"></i> 0788362644</a>
 				<a target="_blank" href="https://www.google.com/maps/place/6+L%C3%AA+L%E1%BB%A3i,+V%C4%A9nh+Ninh,+Th%C3%A0nh+ph%E1%BB%91+Hu%E1%BA%BF,+Th%E1%BB%ABa+Thi%C3%AAn+Hu%E1%BA%BF,+Vietnam/@16.4591854,107.5794543,17z/data=!3m1!4b1!4m5!3m4!1s0x3141a149e3e533ff:0x6e285115f6d47d67!8m2!3d16.4591854!4d107.581643"><i class="fas fa-map-marked-alt"></i>  Văn phòng: viectheogiocit.com <br> Tầng 3 - 06 Lê Lợi, Vĩnh Ninh - Tp.Huế</a>
 				<a target="_blank" href="mailto:vieclamtheogiocit@gmail.comsubject=Feedback&body=Message"><i class="fas fa-envelope"></i> cit@viectheogiocit.com</a>
 				<a target="_blank" href="https://www.facebook.com/viectheogiocit/"><i class="fab fa-facebook-square"></i> fb.com/viectheogiocit</a>

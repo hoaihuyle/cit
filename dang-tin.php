@@ -195,13 +195,13 @@ if($_SERVER['REQUEST_METHOD']=='POST')
         <span>đăng tuyển việc</span>
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
-             <li class="breadcrumb-item"><a href="/index"><i class="fas fa-home"></i> Trang Chủ</a></li>
+            <li class="breadcrumb-item"><a href="index"><i class="fas fa-home"></i> Trang Chủ</a></li>
             <li class="breadcrumb-item active" aria-current="page">Đăng tuyển việc</li>
           </ol>
         </nav>
       </div>
       <div class="sp-right text-center">
-        <img src="/lib/img/job-upload-01.png" class="img-fluid">
+        <img src="lib/img/job-upload-01.png" class="img-fluid">
       </div>
     </div>
   </div>
