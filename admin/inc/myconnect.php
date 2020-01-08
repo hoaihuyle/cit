@@ -1,5 +1,9 @@
 <?php
 //Kết Nối Với CSDL
+// $host = 'localhost';
+// $username = 'root';
+// $password = '';
+// $dbname = 'cit_db';
 $host = 'localhost';
 $username = 'root';
 $password = '';
