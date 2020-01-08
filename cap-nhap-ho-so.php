@@ -54,7 +54,7 @@ header("Location: index.php");
 		var_dump($result_up);
 		if(mysqli_affected_rows($dbc)==1){
 			//echo "<p style='color:green;'>Sửa Thành Công</p>";
-			header('Location: tai-khoan.php?user_id='.$userInfo[0]['uid']);
+			header('Location: /account/'.$userInfo[0]['uid']);
 		}
 		else{
 			echo "<p class='required'>Thông Tin Vẫn Chưa Được Chỉnh Sửa</p>";
@@ -79,7 +79,7 @@ header("Location: index.php");
         </nav>
       </div>
       <div class="sp-right text-center">
-        <img src="lib/img/detail-user-img-03.png" class="img-fluid">
+        <img src="/lib/img/detail-user-img-03.png" class="img-fluid">
       </div>
     </div>
   </div>
@@ -101,7 +101,7 @@ header("Location: index.php");
 								<i class="fas fa-pencil-alt"></i>
 							</div>
 							<?php 
-								$files = isset($userInfo[0]['apicture'])?'upload/uploadUser/'.$userInfo[0]['apicture']:($userInfo[0]['upicture']);
+								$files = isset($userInfo[0]['apicture'])?'/upload/uploadUser/'.$userInfo[0]['apicture']:($userInfo[0]['upicture']);
 							?>
 							<img src="<?php echo($files);  ?>">													
 						</div>
@@ -401,7 +401,7 @@ header("Location: index.php");
 		   		if(validateEmail(email))
 		   		{
 		   			appliData = {'id': id, 'name': name, 'email': email,'phone': phone,'male': male,'female':female, 'birth':birth }
-		   			 $.post('user/upAppli.php',
+		   			 $.post('/user/upAppli.php',
 				    {
 				       appliData:JSON.stringify(appliData)
 				    },

@@ -12,7 +12,7 @@ $userInfo = $db->fetchID("users",$user_id);
 //Check role access
 check_loginbySession($userInfo['oauth_uid']);
 
-if(!isset($userInfo['id_app'])) header('Location: cap-nhap-ho-so?user_id='.$user_id);
+if(!isset($userInfo['id_app'])) header('Location: user/'.$user_id);
 $appInfo = $db->fetchID("applicant", $userInfo['id_app']);
 
 // var_dump($userInfo['id_app']);

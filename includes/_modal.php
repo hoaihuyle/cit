@@ -394,7 +394,7 @@ if (localStorage.getItem('userData') != null) userData=JSON.parse(localStorage.g
       if(data !=null){ //Sign success redirect to detail account
         $(".overlay-div").css("display", "none");//hide load
         localStorage.setItem('userData', data);
-        window.location.href="/cap-nhap-ho-so?user_id="+uid;
+        window.location.href="/user/"+uid;
       }
       else{
         alert('Đăng kí không thành công');
@@ -496,7 +496,7 @@ if (localStorage.getItem('userData') != null) userData=JSON.parse(localStorage.g
     profileHTML +='<button onclick="successAppliModal('+aid+','+nid+',\''+contacts+'\')" class="hideAnnout btn btn-info waves-effect waves-light">Chắc chắn <i class="fa fa-phone" aria-hidden="true" ></i></button>';//button YES
   }
   else{
-    profileHTML +='<a href="cap-nhap-ho-so?user_id='+uid+'" class="btn btn-info">Chuyển trang</a>';//button YES
+    profileHTML +='<a href="user/='+uid+'" class="btn btn-info">Chuyển trang</a>';//button YES
 
   }//End else
       profileHTML +='<a type="button" class="btn btn-outline-info waves-effect" data-dismiss="modal">Đóng</a> ';//button NO
