@@ -1,10 +1,11 @@
 <?php 
 include('admin/inc/database.php');
 include('includes/layout_header.php');
-$Cty = $db->fetchAll('companies');
 $tinhthanh = $db->fetchAll('province');
 $congviec = $db->fetchAll('jobs');
 $loailuong = $db->fetchAll('typesalary');
+$congty = $db->fetchAll('companies');
+$cate_cty = $db->fetchAll('category');
 ?>
  
 <style type="text/css">
@@ -17,6 +18,8 @@ $loailuong = $db->fetchAll('typesalary');
 //check post
 if($_SERVER['REQUEST_METHOD']=='POST')
 {
+
+
 
   $errors=array();
   if(empty($_POST['title'])) {
@@ -37,30 +40,59 @@ if($_SERVER['REQUEST_METHOD']=='POST')
     $type_id=$_POST['type_id'];
   }
 
-  if(empty($_POST['job_id'])) {
-    $errors[]='job_id';
-  } else {
-    if(is_numeric($_POST['job_id']))
-    {
-      if($_POST['job_id'] == 0)
-      {
-        $errors[] = 'job_id';  
-      }
-      else 
-        $job_id = $_POST['job_id'];
-    }
-    else
-    {
-      $name = $_POST['job_id'];
-      $des_job_id=" "; 
-      $stmt_insert = $dbc->prepare($getSQL["iJobs"]);//Thêm vào CSDL
-      $stmt_insert->bind_param("ss",$name,$des_job_id);
-      $stmt_insert->execute();
-      $job_id = $dbc->insert_id;//Lấy id của job vừa tạo
-      // _debug($job_id);
-    }
+  // // của danh mục kinh doanh
+  // if(empty($_POST['cate_id'])) {
+  //   $errors[]='cate_id';
+  // } else {
+  //   if(is_numeric($_POST['cate_id']))
+  //   {
+  //     if($_POST['cate_id'] == 0)
+  //     {
+  //       $errors[] = 'cate_id';  
+  //     }
+  //     else 
+  //       $cat_cty = $_POST['cate_id'];
+  //   }
+  //   else
+  //   {
+  //     $name = $_POST['cate_id'];
+  //     $des_cpny_id=" "; 
+  //     $stmt_insert = $dbc->prepare($getSQL["C_Cate"]);//Thêm vào CSDL
+  //     $stmt_insert->bind_param("ss",$name,$des_job_id);
+  //     $stmt_insert->execute();
+  //     $cat_cty = $dbc->insert_id;//Lấy id của job vừa tạo
+  //   }
     
-  }
+  // }
+
+
+  // // của công ty
+  // if(empty($_POST['id'])) {
+  //   $errors[]='id';
+  // } else {
+  //   if(is_numeric($_POST['id']))
+  //   {
+  //     if($_POST['id'] == 0)
+  //     {
+  //       $errors[] = 'id';  
+  //     }
+  //     else 
+  //       $c_ty = $_POST['id'];
+  //   }
+  //   else
+  //   {
+  //     $name = $_POST['id'];
+  //     $des_cpny_id=" "; 
+  //     $stmt_insert = $dbc->prepare($getSQL["iCompanies"]);//Thêm vào CSDL
+  //     $stmt_insert->bind_param("ss",$name,$des_job_id);
+  //     $stmt_insert->execute();
+  //     $c_ty = $dbc->insert_id;//Lấy id của job vừa tạo
+  //     _debug($job_id);
+
+      
+  //   }
+    
+  // }
 
   if(empty($_POST['etime'])){
     $errors[]='etime';
@@ -101,7 +133,6 @@ if($_SERVER['REQUEST_METHOD']=='POST')
   }
   if(empty($_POST['price'])) {
     $errors[]='price';
-    // $price=0;
   } else {
     $price=$_POST['price'];
     if($price%2!=0 && $price%5!=0 && $price%1000!=0) $errors[]='price';
@@ -218,7 +249,7 @@ if($_SERVER['REQUEST_METHOD']=='POST')
           <!-- End tiêu đề -->
 
           <!-- Danh mục và công việc -->  
-          <div class="form-group">
+          <!-- <div class="form-group">
               <label>Chọn loại công việc bạn cần đăng ? <strong class="text-danger">*</strong></label>
               <?php 
               $sql ="SELECT tp.id as tid, tp.menu_id, m.id as mid, m.name FROM type_post as tp
@@ -236,7 +267,7 @@ if($_SERVER['REQUEST_METHOD']=='POST')
                   echo '</select>';              
                 } // end if
                 ?>
-
+                
                 <select id="job_ids" name="job_id" class="custom-select" onchange="if(this.options[this.selectedIndex].value=='customOption1'){toggleField(this,this.nextSibling); this.selectedIndex='0';}">
                     <option value="">- Chọn loại công việc -</option>
                   <?php foreach($congviec as $cv){ ?>
@@ -247,9 +278,43 @@ if($_SERVER['REQUEST_METHOD']=='POST')
                 <?php if(isset($errors) && in_array('job_id', $errors)){
                   echo "<p class='required'>Hãy chọn công việc bạn muốn thuê</p>";
                 } ?>
-          </div>
+          </div> -->
           <!-- End công việc và danh mục -->
 
+          <!-- kinh doanh -->
+          
+
+          <!-- Công ty -->
+          <!-- <div class="form-group">
+              <label id="aaaa">Lựa chọn công ty của bạn <strong class="text-danger">*</strong></label>
+                <select id="job_ids" name="id" class="custom-select" onchange="if(this.options[this.selectedIndex].value=='customOption1'){toggleField(this,this.nextSibling); this.selectedIndex='0';}">
+                    <option value="">- Chọn công ty -</option>
+                  <?php foreach($congty as $cv){ ?>
+                    <option value="<?php echo $cv['id']?>" <?php echo isset($c_ty)&&$c_ty==$cv['id']?'selected':' '?> ><?php echo $cv['name'] ?></option>
+                  <?php } ?>
+                  <option value="customOption1">Khác</option>
+                </select><input type="text" class="form-control" id="cty" name="id" style="display:none;" disabled="disabled" onblur="if(this.value==''){toggleField(this,this.previousSibling);}">
+                <?php if(isset($errors) && in_array('id', $errors)){
+                  echo "<p class='required'>Hãy chọn công ty của bạn</p>";
+                } ?>
+          </div> -->
+
+          <!-- loại hình công ty -->
+          <!-- <div class="form-group" id="cate_cty" style="display:none;">
+                        <label>Loại hình kinh doanh <strong class="text-danger">*</strong></label>
+                          <select id="cate_cty" name="cate_id" class="custom-select" onchange="if(this.options[this.selectedIndex].value=='customOption1'){toggleField(this,this.nextSibling); this.selectedIndex='0';}">
+                              <option value="">- Chọn loại hình -</option>
+                            <?php foreach($cate_cty as $cv){ ?>
+                              <option value="<?php echo $cv['id']?>" <?php echo isset($cat_cty) && $cat_cty==$cv['id']?'selected':' '?> ><?php echo $cv['name'] ?></option>
+                            <?php } ?>
+                            <option value="customOption1">Khác</option>
+                          </select><input type="text" class="form-control" id="cate_id" name="cate_id" style="display:none;" disabled="disabled" onblur="if(this.value==''){toggleField(this,this.previousSibling);}">
+                          <?php if(isset($errors) && in_array('cate_id', $errors)){
+                            echo "<p class='required'>Chọn loại hình bạn muốn sử dụng cho công ty</p>";
+                          } ?>
+          </div> -->
+
+          <!-- end công ty -->
           <!-- Thời hạn -->
           <div class="form-group">
             <label>Hạn cuối ứng tuyển <strong class="text-danger">*</strong></label>
