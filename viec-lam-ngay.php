@@ -188,7 +188,7 @@ if($_SERVER['REQUEST_METHOD']=='POST')
     //End insert active
     if(mysqli_affected_rows($dbc)==1)
     { 
-      header('Location: tim-viec?get='.(display_slug_by_typeid($type_id)));
+      header('Location: /'.(display_slug_by_typeid($type_id)));
       // _debug($type_id);
     }
     
