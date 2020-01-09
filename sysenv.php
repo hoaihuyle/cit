@@ -55,6 +55,14 @@ $getSQL["iSubcate_Cate"]="INSERT INTO cate_company(id_cate,id_subcate) VALUES(?,
 $getSQL["gJobs"]="SELECT * FROM jobs ORDER BY name desc";
 $getSQL['iJobs']="INSERT INTO jobs (name,description) VALUES(?,?)";
 
+//companies
+$getSQL['iCompanies']="INSERT INTO companies (id,id_add, name, rateMark, description, files,validate) VALUES(?,?,?,?,?,?,?)";
+
+//category companies(danh mục)
+$getSQL['C_Cate'] = "INSERT INTO category (name, description) VALUES(?,?)";
+
+//cate_company
+$getSQL['cate_companies'] = "INSERT INTO cate_company (id_cate, id_subcate) VALUES(?,?)";
 
 // =========User============
 $getSQL["gUsers"]=" SELECT `id`, `oauth_provider`, `oauth_uid`, `id_app`, `id_em`, `email`, `fullname`, `password`, `picture`, `link`, `phone` FROM `users` WHERE id = ?";
