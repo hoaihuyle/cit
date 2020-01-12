@@ -1,0 +1,46 @@
+/****************** Đăng tin *****************/
+#job-DT .job-post-wrap{
+    padding: 100px 20px;
+}
+#job-DT .right h4{
+    position: relative;
+    top: -55px;
+}
+#job-DT .left {
+    display: flex;
+    justify-content: center;
+}
+
+#job-DT .left a{
+    display: block;
+}
+#job-DT .left a img{
+    width: 100%;
+}
+
+#job-DT .cate_per{
+    display: flex;
+    justify-content: space-between;
+}
+
+#job-DT .right input, #job-DT .right select{
+    height: calc(2.25rem + 2px);
+}
+
+#job-DT .right .mater-ht{
+    display: flex;
+}
+
+#job-DT .right .icheck-material-indigo{width: 100%;}
+#job-DT .right .icheck-material-indigo label{font-size: 15px}
+#job-DT .right .Work_ip{margin-bottom: 10px}
+
+#job-DT .right .form-group{margin-bottom: 2rem;}
+#job-DT .right .add_work{ margin: 15px 0 0 0}
+#job-DT .right .add_work:hover, #job-DT .right .add_work label:hover{cursor: pointer;}
+#job-DT .right .add_work a{width: 32px; height: 32px; display: inline-block}
+#job-DT .right .add_work img{width: 100%}
+#job-DT label{font-size: 18px}
+#box-contain{
+    margin-top: -20px;
+}
