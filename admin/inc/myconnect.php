@@ -1,8 +1,8 @@
 <?php
 //Kết Nối Với CSDL
-// $host = 'localhost';
-// $username = 'root';
-// $password = '';
+// $host = '192.185.30.196:3306';
+// $username = 'cit';
+// $password = 'zaq1@WSX';	
 // $dbname = 'cit_db';
 $host = 'localhost';
 $username = 'root';
