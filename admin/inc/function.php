@@ -28,7 +28,7 @@
 			$strHtml.='</div>';//Close job-info
 
 			$strHtml.='<div class="job-image">';
-			if($element_arr["files"]!=0) $linkImg='/upload/thumb/'.$element_arr["files"];
+			if($element_arr["files"]!=0) $linkImg='upload/'.$element_arr["files"];
 			else $linkImg='/lib/img/commingsoon.jpg';
 
 			$strHtml .='<div class="image-post">
