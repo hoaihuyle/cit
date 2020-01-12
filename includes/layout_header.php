@@ -48,7 +48,6 @@ include('sysenv.php');
   <link rel="stylesheet" type="text/css" href="/lib/css/slick.css">
   <link rel="stylesheet" type="text/css" href="/lib/css/slick-theme.css">
   <link rel="stylesheet" type="text/css" href="/lib/css/select2.min.css">
-  
   <link rel="stylesheet" type="text/css" href="/lib/css/select2-bootstrap4.min.css">
   <link rel="stylesheet" type="text/css" href="/lib/css/icheck-material.min.css">
   <link rel="stylesheet" type="text/css" href="/lib/css/jquery.mCustomScrollbar.min.css">
@@ -63,6 +62,9 @@ include('sysenv.php');
   <link rel="stylesheet" href="/lib/css/inputFile.css?sizefile=<?php echo md5_file("lib/css/inputFile.css");?>">
   <!-- End input -->
   <link rel="stylesheet" type="text/css" href="/lib/css/style.css?sizefile=<?php echo md5_file("lib/css/style.css");?>">
+
+  <!-- thanhcss -->
+  <link rel="stylesheet" type="text/css" href="/lib/css/thanh.css">
 
   <title>VIỆC LÀM THEO GIỜ</title>
 </head>

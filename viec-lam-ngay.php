@@ -6,6 +6,7 @@ $congviec = $db->fetchAll('jobs');
 $loailuong = $db->fetchAll('typesalary');
 $congty = $db->fetchAll('companies');
 $cate_cty = $db->fetchAll('category');
+_debug($congviec);
 ?>
  
 <style type="text/css">
@@ -19,7 +20,7 @@ $cate_cty = $db->fetchAll('category');
 if($_SERVER['REQUEST_METHOD']=='POST')
 {
 
-
+  _debug($_POST);
 
   $errors=array();
   if(empty($_POST['title'])) {
@@ -32,67 +33,8 @@ if($_SERVER['REQUEST_METHOD']=='POST')
   } else {
     $description=$_POST['description'];
   }
-  if(empty($_POST['type_id'])) {
-    $errors[]='type_id';
-  } else {
-    if($_POST['type_id']==0)
-      $errors[]='type_id';
-    $type_id=$_POST['type_id'];
-  }
 
-  // // của danh mục kinh doanh
-  // if(empty($_POST['cate_id'])) {
-  //   $errors[]='cate_id';
-  // } else {
-  //   if(is_numeric($_POST['cate_id']))
-  //   {
-  //     if($_POST['cate_id'] == 0)
-  //     {
-  //       $errors[] = 'cate_id';  
-  //     }
-  //     else 
-  //       $cat_cty = $_POST['cate_id'];
-  //   }
-  //   else
-  //   {
-  //     $name = $_POST['cate_id'];
-  //     $des_cpny_id=" "; 
-  //     $stmt_insert = $dbc->prepare($getSQL["C_Cate"]);//Thêm vào CSDL
-  //     $stmt_insert->bind_param("ss",$name,$des_job_id);
-  //     $stmt_insert->execute();
-  //     $cat_cty = $dbc->insert_id;//Lấy id của job vừa tạo
-  //   }
-    
-  // }
-
-
-  // // của công ty
-  // if(empty($_POST['id'])) {
-  //   $errors[]='id';
-  // } else {
-  //   if(is_numeric($_POST['id']))
-  //   {
-  //     if($_POST['id'] == 0)
-  //     {
-  //       $errors[] = 'id';  
-  //     }
-  //     else 
-  //       $c_ty = $_POST['id'];
-  //   }
-  //   else
-  //   {
-  //     $name = $_POST['id'];
-  //     $des_cpny_id=" "; 
-  //     $stmt_insert = $dbc->prepare($getSQL["iCompanies"]);//Thêm vào CSDL
-  //     $stmt_insert->bind_param("ss",$name,$des_job_id);
-  //     $stmt_insert->execute();
-  //     $c_ty = $dbc->insert_id;//Lấy id của job vừa tạo
-  //     _debug($job_id);
-
-      
-  //   }
-    
-  // }
+ 
 
   if(empty($_POST['etime'])){
     $errors[]='etime';
@@ -172,10 +114,10 @@ if($_SERVER['REQUEST_METHOD']=='POST')
     $start_pr=0;
     $end_pr=0;
     $subcate_id=null;
-
+    $id_job = null;
     $stmt=$dbc->prepare($getSQL["iNews"]);
 
-    $stmt->bind_param("iiiiisiissss", $type_id, $job_id, $province_id, $subcate_id, $salary_id,$price, $start_pr, $end_pr, $title, $description, $img, $contacts);
+    $stmt->bind_param("iiiiisiissss", $type_id, $province_id, $subcate_id, $salary_id,$price, $start_pr, $end_pr, $title, $description, $img, $contacts);
     // $news_id = mysqli_insert_id($dbc);
     $results=$stmt->execute();
     $news_id = $dbc->insert_id;// id news vừa tạo
@@ -247,57 +189,6 @@ if($_SERVER['REQUEST_METHOD']=='POST')
             ?>
           </div>
           <!-- End tiêu đề -->
-
-          <!-- Danh mục và công việc -->  
-          <!-- <div class="form-group">
-              <label>Chọn loại công việc bạn cần đăng ? <strong class="text-danger">*</strong></label>
-              <?php 
-              $sql ="SELECT tp.id as tid, tp.menu_id, m.id as mid, m.name FROM type_post as tp
-              LEFT JOIN menu as m ON tp.menu_id=m.id
-              ORDER BY tp.id ASC";
-              $results = mysqli_query($dbc, $sql);
-              if ($results->num_rows > 0) {
-                echo ("<select required name='type_id' class='custom-select'>");
-                    // output data of each row
-                while($row = $results->fetch_assoc()) {
-                  ?>
-                  <option  value="<?php echo $row['tid']; ?>" <?php echo ($row['tid']==4)?'selected':'' ?> > <?php echo $row['name']; ?></option>';
-                  <?php
-                  }// end while  
-                  echo '</select>';              
-                } // end if
-                ?>
-                
-                <select id="job_ids" name="job_id" class="custom-select" onchange="if(this.options[this.selectedIndex].value=='customOption1'){toggleField(this,this.nextSibling); this.selectedIndex='0';}">
-                    <option value="">- Chọn loại công việc -</option>
-                  <?php foreach($congviec as $cv){ ?>
-                    <option value="<?php echo $cv['id']?>" <?php echo isset($job_id)&&$job_id==$cv['id']?'selected':' '?> ><?php echo $cv['name'] ?></option>
-                  <?php } ?>
-                  <option value="customOption1">Khác</option>
-                </select><input type="text" class="form-control" id="job_ids" name="job_id" style="display:none;" disabled="disabled" onblur="if(this.value==''){toggleField(this,this.previousSibling);}">
-                <?php if(isset($errors) && in_array('job_id', $errors)){
-                  echo "<p class='required'>Hãy chọn công việc bạn muốn thuê</p>";
-                } ?>
-          </div> -->
-          <!-- End công việc và danh mục -->
-
-          <!-- kinh doanh -->
-          
-
-          <!-- Công ty -->
-          <!-- <div class="form-group">
-              <label id="aaaa">Lựa chọn công ty của bạn <strong class="text-danger">*</strong></label>
-                <select id="job_ids" name="id" class="custom-select" onchange="if(this.options[this.selectedIndex].value=='customOption1'){toggleField(this,this.nextSibling); this.selectedIndex='0';}">
-                    <option value="">- Chọn công ty -</option>
-                  <?php foreach($congty as $cv){ ?>
-                    <option value="<?php echo $cv['id']?>" <?php echo isset($c_ty)&&$c_ty==$cv['id']?'selected':' '?> ><?php echo $cv['name'] ?></option>
-                  <?php } ?>
-                  <option value="customOption1">Khác</option>
-                </select><input type="text" class="form-control" id="cty" name="id" style="display:none;" disabled="disabled" onblur="if(this.value==''){toggleField(this,this.previousSibling);}">
-                <?php if(isset($errors) && in_array('id', $errors)){
-                  echo "<p class='required'>Hãy chọn công ty của bạn</p>";
-                } ?>
-          </div> -->
 
           <!-- loại hình công ty -->
           <!-- <div class="form-group" id="cate_cty" style="display:none;">
