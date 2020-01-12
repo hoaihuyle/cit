@@ -43,6 +43,9 @@
 <script type="text/javascript" src="/lib/js/slick.min.js"></script>
 <script type="text/javascript" src="/lib/js/jquery.scroll-with-ease.min.js"></script>
 
+<!-- thanhjs -->
+<script type="text/javascript" src="/lib/js/thanh.js"></script>
+
 
 <?php 
 include('_modal.php');
