@@ -25,12 +25,12 @@ include('includes/layout_header.php');
 <section id="job-DT">
   <div class="container">
     <div class="row">
-      <div class="col-md-11 mx-auto job-post-wrap">
+      <div class="col-md-12 mx-auto job-post-wrap">
         
 
         
         <form method="POST" enctype="multipart/form-data">
-          <div class="col-sm-12 row">
+          <div class="row">
           <div class="col-md-4 left">
              <a href="#">
                 <img src="/lib/img/logo-transparent.png" alt="">
@@ -57,47 +57,7 @@ include('includes/layout_header.php');
                 ?>
             </div>
             <!-- End tiêu đề -->
-            <!-- Địa chỉ tỉnh, thành phố, huyện -->
-            <!-- <div class="form-group"> -->
-                <!-- <label>Chọn khu vực bạn cần tuyển <strong class="text-danger">*</strong></label>           -->
-                <!-- <select class="custom-select jobFilter" name="job"> -->
-                    <!-- <option selected value="0">Chọn khu vực bạn cần tuyển</option> -->
-                    <?php
-                    // $jobs=mysqli_query($dbc,$getSQL["gJobs"]);
-                    // if(mysqli_num_rows($jobs)>0)
-                    // {
-                    //     while($job = $jobs->fetch_assoc()){    
-                        ?>
-                        <!-- <option value="<?php echo($job['id']); ?>"><?php echo($job['name']) ?></option> -->
-                        <?php 
-                    //     }
-                    // }
-                    ?>
-                    <!-- </select> -->
-            <!-- </div> -->
-
-            <!-- End địa chỉ-->
-            <!-- Hình thức công việc -->
-            <div class="form-group row">
-                <div class="col-sm-8">
-                    <label style="width: 100%">Hình thức</label>
-
-                       <div class="mater-ht">
-                        <div class="icheck-material-indigo">
-                                <input type="checkbox" checked id="chb1" />
-                                <label for="chb1">Full Time</label>
-                            </div>
-                            <div class="icheck-material-indigo">
-                                <input type="checkbox" id="chb2" />
-                                <label for="chb2">Part Time</label>
-                            </div>
-                            <div class="icheck-material-indigo">
-                                <input type="checkbox" id="chb3" />
-                                <label for="chb3">One Time</label>
-                            </div>  
-                       </div>
-                </div>
-                <div class="col-md-4">
+            <div class="form-group">
                     <label>Hạn cuối ứng tuyển <strong class="text-danger">*</strong></label>
                         <?php 
                         $now = new DateTime('tomorrow');
@@ -108,63 +68,149 @@ include('includes/layout_header.php');
                         <input type="text" class="form-control datetimepicker-input" data-toggle="datetimepicker" data-target="#endFastJobs" name="etime" placeholder="<?php echo($etime); ?>" value="<?php echo(isset($etime)?$etime:''); ?>"/>
                         <div class="input-group-append" data-target="#endFastJobs" data-toggle="datetimepicker">
                             <div class="input-group-text"><i class="fa fa-calendar"></i></div>
-                        </div>
+                            </div>
                         </div>
                         <?php
                         if(isset($errors) && in_array('etime', $errors)){
                         echo "<p class='required'>Thông tin thời gian sai hoặc để trống!</p>";
                         }
                     ?>
-                </div>
+                    </div>
                </div>
+            <!-- End địa chỉ-->
+            <!-- Hình thức công việc -->
+            <div class="form-group row">
+                <div class="col-sm-8">
+                    <label style="width: 100%">Hình thức</label>
+
+                       <div class="mater-ht">
+                        <div class="icheck-material-indigo" id="lbfull">
+                                <input type="checkbox" checked id="chb1" />
+                                <label for="chb1">Full Time</label>
+                            </div>
+                            <div class="icheck-material-indigo" id="lbpart">
+                                <input type="checkbox" id="chb2" />
+                                <label for="chb2">Part Time</label>
+                            </div>
+                            <div class="icheck-material-indigo" id="lbone">
+                                <input type="checkbox" id="chb3" />
+                                <label for="chb3">One Time</label>
+                            </div>  
+                       </div>
+                </div>
+                
             </div>
             <!-- end hình thức công việc  -->
 
-            <div class="form-group ">
+            <div class="form-group" id="fulltime">
                         <div class="title_work row">
                             <div class="col-md-4">
-                                <label>Công việc cần tuyển</label>
+                                <label>Công việc Fulltime</label>
                             </div>
                             <div class="col-md-4">
-                                <label>Lương thỏa thuận</label>
-                            </div>
-                            <div class="col-md-4">
-                                <label>Tùy chọn</label>
+                                <label>Lương</label>
                             </div>
                         </div>
-                        <div class="ct_work row">
+                        <div class="ct_work">
+                            <div class="ct_father row">
                             <div class="col-md-4">
                                 <div class="Work_ip">
-                                <select class="custom-select jobFilter" name="job">
-                                    <option selected value="0">Nhập tên công việc</option>
-                                    <?php
-                                    $jobs=mysqli_query($dbc,$getSQL["gJobs"]);
-                                    if(mysqli_num_rows($jobs)>0)
-                                    {
-                                        while($job = $jobs->fetch_assoc()){    
+                                    <select class="custom-select jobFilter" name="job">
+                                        <option selected value="0">Nhập tên công việc</option>
+                                        <?php
+                                        $jobs=mysqli_query($dbc,$getSQL["gJobs"]);
+                                        if(mysqli_num_rows($jobs)>0)
+                                        {
+                                            while($job = $jobs->fetch_assoc()){    
+                                            ?>
+                                            <option value="<?php echo($job['id']); ?>"><?php echo($job['name']) ?></option>
+                                            <?php }
+                                        }
                                         ?>
-                                        <option value="<?php echo($job['id']); ?>"><?php echo($job['name']) ?></option>
-                                        <?php }
-                                    }
-                                    ?>
-                                </select>
+                                    </select>
                                 </div>
                                 
                             </div>      
-                            <div class="col-md-3" style="text-align: center">
+                            <div class="col-md-1">
                                 <div class="icheck-material-indigo Work_per">
                                     <input type="checkbox" checked id="thoathuan" />
                                     <label for="thoathuan"></label>
                                 </div>
                             </div>
-                            <div class="col-md-5">
+                            <div class="col-md-6">
                                 <div class="cate_per">
-                                    <input type="number" class="form-control" style="width: 45%" placeholder="100,000">
-                                    <select class="form-control" style="width: 50%" name="" id="">
+                                    <input type="number" class="form-control" style="width: 50%" placeholder="100,000">
+                                    <select class="form-control" style="width: 45%" name="" id="">
                                         <option value="">VND/Giờ</option>
                                     </select>
                                 </div>
                             </div>
+                            <div class="col-md-1 del_work">
+                                <a id="add_btn_work">
+                                    <img src="/admin/images/close.svg" alt="">
+                                </a>
+                            </div>
+                           </div> 
+                        </div>
+                    <div class="add_work">
+                        <a id="add_btn_work">
+                            <img src="/admin/images/plus.svg" alt="">
+                        </a>
+                        <label for="add_btn_work">Thêm</label>
+                    </div>
+                    
+            </div>
+
+            <!-- parttime -->
+            <div class="form-group" id="parttime" style="display: none">
+                        <div class="title_work row">
+                            <div class="col-md-4">
+                                <label>Công việc Parttime</label>
+                            </div>
+                            <div class="col-md-4">
+                                <label>Lương</label>
+                            </div>
+                        </div>
+                        <div class="ct_work">
+                            <div class="ct_father row">
+                            <div class="col-md-4">
+                                <div class="Work_ip">
+                                    <select class="custom-select jobFilter" name="job">
+                                        <option selected value="0">Nhập tên công việc</option>
+                                        <?php
+                                        $jobs=mysqli_query($dbc,$getSQL["gJobs"]);
+                                        if(mysqli_num_rows($jobs)>0)
+                                        {
+                                            while($job = $jobs->fetch_assoc()){    
+                                            ?>
+                                            <option value="<?php echo($job['id']); ?>"><?php echo($job['name']) ?></option>
+                                            <?php }
+                                        }
+                                        ?>
+                                    </select>
+                                </div>
+                                
+                            </div>      
+                            <div class="col-md-1">
+                                <div class="icheck-material-indigo Work_per">
+                                    <input type="checkbox" checked id="thoathuan" />
+                                    <label for="thoathuan"></label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="cate_per">
+                                    <input type="number" class="form-control" style="width: 50%" placeholder="100,000">
+                                    <select class="form-control" style="width: 45%" name="" id="">
+                                        <option value="">VND/Giờ</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-1 del_work">
+                                <a id="add_btn_work">
+                                    <img src="/admin/images/close.svg" alt="">
+                                </a>
+                            </div>
+                           </div> 
                         </div>
                     <div class="add_work">
                         <a id="add_btn_work">
@@ -173,8 +219,74 @@ include('includes/layout_header.php');
                         <label for="add_btn_work">Thêm</label>
                     </div>
             </div>
-
          
+            <!-- end parttime -->
+
+            <!-- one time -->
+            <div class="form-group" id="onetime" style="display: none">
+                        <div class="title_work row">
+                            <div class="col-md-4">
+                                <label>Công việc Onetime</label>
+                            </div>
+                            <div class="col-md-4">
+                                <label>Lương</label>
+                            </div>
+                            <div class="col-md-4">
+                                <label>Tùy chọn</label>
+                            </div>
+                        </div>
+                        <div class="ct_work">
+                            <div class="ct_father row">
+                            <div class="col-md-4">
+                                <div class="Work_ip">
+                                    <select class="custom-select jobFilter" name="job">
+                                        <option selected value="0">Nhập tên công việc</option>
+                                        <?php
+                                        $jobs=mysqli_query($dbc,$getSQL["gJobs"]);
+                                        if(mysqli_num_rows($jobs)>0)
+                                        {
+                                            while($job = $jobs->fetch_assoc()){    
+                                            ?>
+                                            <option value="<?php echo($job['id']); ?>"><?php echo($job['name']) ?></option>
+                                            <?php }
+                                        }
+                                        ?>
+                                    </select>
+                                </div>
+                                
+                            </div>      
+                            <div class="col-md-1">
+                                <div class="icheck-material-indigo Work_per">
+                                    <input type="checkbox" checked id="thoathuan" />
+                                    <label for="thoathuan"></label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="cate_per">
+                                    <input type="number" class="form-control" style="width: 50%" placeholder="100,000">
+                                    <select class="form-control" style="width: 45%" name="" id="">
+                                        <option value="">VND/Giờ</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-1 del_work">
+                                <a id="add_btn_work">
+                                    <img src="/admin/images/close.svg" alt="">
+                                </a>
+                            </div>
+                           </div> 
+                        </div>
+                    <div class="add_work">
+                        <a id="add_btn_work">
+                            <img src="/admin/images/plus.svg" alt="">
+                        </a>
+                        <label for="add_btn_work">Thêm</label>
+                    </div>
+
+            </div>
+
+            <!-- end onetime -->
+
 
             <!-- Thông tin liên hệ -->
             <div class="form-group">
