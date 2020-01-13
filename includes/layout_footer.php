@@ -2,7 +2,7 @@
 	<div class="container"> 
 		<div class="row">
 <!-- 			<div class="col-sm-4 text-left">
-				<img src="lib/img/logo-transparent.png" class="img-fluid footer-img">
+				<img src="lib/img/logo-transparent.png" alt="logo" class="img-fluid footer-img">
 			</div> -->
 			<div class="col-sm-4 text-left">
 				<div class="footer-title">liên hệ</div>
@@ -42,16 +42,14 @@
 <script type="text/javascript" src="/lib/js/select2.min.js"></script>
 <script type="text/javascript" src="/lib/js/slick.min.js"></script>
 <script type="text/javascript" src="/lib/js/jquery.scroll-with-ease.min.js"></script>
-
-<!-- thanhjs -->
-<script type="text/javascript" src="/lib/js/thanh.js"></script>
-
+<script type="text/javascript" src="/lib/js/jquery.lazy.min.js"></script>
 
 <?php 
 include('_modal.php');
 ?>
-
 <!-- Buildt js -->
+<!-- thanhjs -->
+<script type="text/javascript" src="/lib/js/thanh.js"></script>
 <!-- Login FireBase -->
 <script type="text/javascript" src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
 <!-- Calendar -->
