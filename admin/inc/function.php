@@ -32,7 +32,7 @@
 			else $linkImg='/lib/img/commingsoon.jpg';
 
 			$strHtml .='<div class="image-post">
-			<img src="'.$linkImg.'"  onError="this.onerror=null;this.src=&#039;/lib/img/commingsoon.jpg&#039;;"> </div>';
+			<img class="lazy" src="'.$linkImg.'"  onError="this.onerror=null;this.src=&#039;/lib/img/commingsoon.jpg&#039;;"> </div>';
 			$strHtml.='</div>';//Close job-price	
 			// $id=$element_arr['nid'];
 			// $end_date = $element_arr["end_date"];

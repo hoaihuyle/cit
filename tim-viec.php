@@ -28,10 +28,10 @@ include('includes/layout_header.php');
 
           </ol>
           <ol class=" breadcrumb logo-support">
-            <li class=" breadcrumb-item logo-support-item" aria-current="page"><img src="lib/img/logo/dntre.jpg"></li>
-            <li class=" breadcrumb-item logo-support-item" aria-current="page"><img src="lib/img/logo/hcelogo.jpg"></li>
-            <li class=" breadcrumb-item logo-support-item" aria-current="page"><img src="lib/img/logo/khoinghiephue.png"></li>
-            <li class=" breadcrumb-item logo-support-item" aria-current="page"><img src="lib/img/logo/hsa.jpg"></li>
+            <li class=" breadcrumb-item logo-support-item" aria-current="page"><img src="lib/img/logo/dntrelogo-fit.jpg"></li>
+            <li class=" breadcrumb-item logo-support-item" aria-current="page"><img src="lib/img/logo/hcelogo-fit.jpg"></li>
+            <li class=" breadcrumb-item logo-support-item" aria-current="page"><img src="lib/img/logo/khoinghiephuelogo-fit.png"></li>
+            <li class=" breadcrumb-item logo-support-item" aria-current="page"><img src="lib/img/logo/hsalogo-fit.jpg"></li>
           </ol>
         </nav>
       </div>
@@ -75,7 +75,7 @@ include('includes/layout_header.php');
       <div>
         <div class="ih-item employers-square">
           <a href="#">
-           <img src="/lib/img/logoCompany/bigC.png" alt="img">
+           <img class="lazy" src="/lib/img/logoCompany/bigC.png" alt="img">
             <!--  <div class="info">
                 <div class="info-back">
                   <h3>Siêu thị BigC</h3>
@@ -88,7 +88,7 @@ include('includes/layout_header.php');
        <div>
         <div class="ih-item employers-square">
           <a href="#">
-           <img src="/lib/img/logoCompany/Gongcha_Logo.jpg" alt="img">
+           <img class="lazy" src="/lib/img/logoCompany/gongcha-fit.jpg" alt="img">
          <!--     <div class="info">
                 <div class="info-back">
                    <h3>Gong cha</h3>
@@ -102,7 +102,7 @@ include('includes/layout_header.php');
        <div>
         <div class="ih-item employers-square">
           <a href="#">
-            <img src="/lib/img/logoCompany/july.png" alt="img">
+            <img class="lazy" src="/lib/img/logoCompany/july.png" alt="img">
         <!--      <div class="info">
                 <div class="info-back">
                   <h3>Coffee July</h3>
@@ -115,7 +115,7 @@ include('includes/layout_header.php');
        <div>
         <div class="ih-item employers-square">
           <a href="#">
-            <img src="/lib/img/logoCompany/highlands.jpg" alt="img">
+            <img class="lazy" src="/lib/img/logoCompany/highlands-fit.jpg" alt="img">
              <!-- <div class="info">
                 <div class="info-back">
                   <h3>Coffee HighLand</h3>
@@ -128,7 +128,7 @@ include('includes/layout_header.php');
        <div>
         <div class="ih-item employers-square">
           <a href="#">
-            <img src="/lib/img/logoCompany/grab.jfif" alt="img">
+            <img class="lazy" src="/lib/img/logoCompany/grab.jfif" alt="img">
        <!--       <div class="info">
                 <div class="info-back">
                   <h3>Grab</h3>
@@ -141,7 +141,7 @@ include('includes/layout_header.php');
        <div>
         <div class="ih-item employers-square">
           <a href="#">
-             <img src="/lib/img/logoCompany/fnow.png" alt="img">
+             <img class="lazy" src="/lib/img/logoCompany/fnow.png" alt="img">
        <!--       <div class="info">
                 <div class="info-back">
                   <h3>Foody NOW</h3>
@@ -155,7 +155,7 @@ include('includes/layout_header.php');
         <div class="ih-item employers-square">
           <a href="#">
             <div class="img-logo">
-             <img src="/lib/img/logoCompany/phuclong.png" alt="img">
+             <img class="lazy" src="/lib/img/logoCompany/phuclong.png" alt="img">
             </div>
       <!--        <div class="info">
                 <div class="info-back">
@@ -170,7 +170,7 @@ include('includes/layout_header.php');
         <div class="ih-item employers-square">
           <a href="#">
             <div class="img-logo">
-              <img src="/lib/img/logoCompany/mrtrum.jfif" alt="img">
+              <img class="lazy" src="/lib/img/logoCompany/mrtrum.jfif" alt="img">
             </div>
         <!--      <div class="info">
                 <div class="info-back">
@@ -185,7 +185,7 @@ include('includes/layout_header.php');
         <div class="ih-item employers-square">
           <a href="#">
             <div class="img-logo">
-              <img src="/lib/img/logoCompany/kingbbq.jpg" alt="img">
+              <img class="lazy" src="/lib/img/logoCompany/kingbbq-fit.jpg" alt="img">
             </div>
              <!-- <div class="info">
                 <div class="info-back">
@@ -200,7 +200,7 @@ include('includes/layout_header.php');
         <div class="ih-item employers-square">
           <a href="#">
             <div class="img-logo">
-              <img src="/lib/img/logoCompany/sasin.jfif" alt="img">
+              <img class="lazy" src="/lib/img/logoCompany/sasin.jfif" alt="img">
             </div>
             <!--  <div class="info">
                 <div class="info-back">
@@ -215,7 +215,7 @@ include('includes/layout_header.php');
         <div class="ih-item employers-square">
           <a href="#">
             <div class="img-logo">
-              <img src="/lib/img/logoCompany/owl.png" alt="img">
+              <img class="lazy" src="/lib/img/logoCompany/owl.png" alt="img">
             </div>
              <!-- <div class="info">
                 <div class="info-back">
@@ -253,7 +253,7 @@ include('includes/layout_header.php');
               <div class="list-job-item">
                 <div class="jobhot-image">
                   <div class="image-post">
-                    <img src="upload/<?php echo isset($value["nfiles"])?$value["nfiles"]:"commingsoon"?>" class="mCS_img_loaded" onError="this.onerror=null;this.src='/lib/img/noimage.jpg';">
+                    <img src="upload/<?php echo isset($value["nfiles"])?$value["nfiles"]:"commingsoon"?>" class="mCS_img_loaded lazy" onError="this.onerror=null;this.src='/lib/img/noimage.jpg';">
                   </div>
                 </div>
 
