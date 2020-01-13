@@ -146,7 +146,7 @@ include('includes/layout_header.php');
                                 </div>
                             </div>
                             <div class="col-md-1 del_work">
-                                <a id="add_btn_work">
+                                <a>
                                     <img src="/admin/images/close.svg" alt="">
                                 </a>
                             </div>
@@ -162,7 +162,7 @@ include('includes/layout_header.php');
             </div>
 
             <!-- parttime -->
-            <div class="form-group" id="parttime" style="display: none">
+            <!-- <div class="form-group" id="parttime" style="display: none">
                         <div class="title_work row">
                             <div class="col-md-4">
                                 <label>Công việc Parttime</label>
@@ -206,7 +206,7 @@ include('includes/layout_header.php');
                                 </div>
                             </div>
                             <div class="col-md-1 del_work">
-                                <a id="add_btn_work">
+                                <a>
                                     <img src="/admin/images/close.svg" alt="">
                                 </a>
                             </div>
@@ -219,11 +219,11 @@ include('includes/layout_header.php');
                         <label for="add_btn_work">Thêm</label>
                     </div>
             </div>
-         
+          -->
             <!-- end parttime -->
 
             <!-- one time -->
-            <div class="form-group" id="onetime" style="display: none">
+            <!-- <div class="form-group" id="onetime" style="display: none">
                         <div class="title_work row">
                             <div class="col-md-4">
                                 <label>Công việc Onetime</label>
@@ -270,7 +270,7 @@ include('includes/layout_header.php');
                                 </div>
                             </div>
                             <div class="col-md-1 del_work">
-                                <a id="add_btn_work">
+                                <a>
                                     <img src="/admin/images/close.svg" alt="">
                                 </a>
                             </div>
@@ -283,7 +283,7 @@ include('includes/layout_header.php');
                         <label for="add_btn_work">Thêm</label>
                     </div>
 
-            </div>
+            </div> -->
 
             <!-- end onetime -->
 
