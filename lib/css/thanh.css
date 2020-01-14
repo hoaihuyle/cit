@@ -13,6 +13,7 @@
 #job-DT .right .Work_ip{margin-bottom: 10px}
 #job-DT .right .Work_per{display: flex; justify-content: center;}
 #job-DT .right .form-group{margin-bottom: 2rem;}
+#job-DT .right .row{margin: 0 15px;}
 #job-DT .row{margin: 0}
 #job-DT .right .del_work{margin: 0; padding: 5px; text-align: center;}
 #job-DT .right .add_work{ margin: 15px}
