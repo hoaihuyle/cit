@@ -1,6 +1,12 @@
 <?php 
+ 
 include('admin/inc/database.php');
 include('includes/layout_header.php');
+$Cty = $db->fetchAll('companies');
+$tinhthanh = $db->fetchAll('province');
+$congviec = $db->fetchAll('jobs');
+$loailuong = $db->fetchAll('typesalary');
+
 ?>
 
 <div class="sub-panel">
@@ -104,20 +110,20 @@ include('includes/layout_header.php');
 
             <div class="form-group" id="fulltime">
                         <div class="title_work row">
-                            <div class="col-md-4">
+                            <div class="col-md-5">
                                 <label>Công việc Fulltime</label>
                             </div>
-                            <div class="col-md-4">
-                                <label>Lương</label>
+                            <div class="col-md-5">
+                                <label>Lựa chọn mức lương</label>
                             </div>
-                        </div>
+                        </div>                 
                         <div class="ct_work">
                             <div class="ct_father row">
-                            <div class="col-md-4">
+                            <div class="col-md-5">
                                 <div class="Work_ip">
-                                    <select class="custom-select jobFilter" name="job">
-                                        <option selected value="0">Nhập tên công việc</option>
-                                        <?php
+                                <select class="form-control js-example-tags" >
+                                    <option value ="" selected >Chọn công việc của bạn</option>
+                                    <?php
                                         $jobs=mysqli_query($dbc,$getSQL["gJobs"]);
                                         if(mysqli_num_rows($jobs)>0)
                                         {
@@ -126,22 +132,19 @@ include('includes/layout_header.php');
                                             <option value="<?php echo($job['id']); ?>"><?php echo($job['name']) ?></option>
                                             <?php }
                                         }
-                                        ?>
-                                    </select>
+                                    ?>
+                                </select>
                                 </div>
-                                
-                            </div>      
-                            <div class="col-md-1">
-                                <div class="icheck-material-indigo Work_per">
-                                    <input type="checkbox" checked id="thoathuan" />
-                                    <label for="thoathuan"></label>
-                                </div>
-                            </div>
+                               
+                            </div>  
                             <div class="col-md-6">
                                 <div class="cate_per">
-                                    <input type="number" class="form-control" style="width: 50%" placeholder="100,000">
-                                    <select class="form-control" style="width: 45%" name="" id="">
-                                        <option value="">VND/Giờ</option>
+                                    <input type="number" name="priceFull" class="form-control" style="width: 50%" placeholder="100,000">
+                                    <select class="form-control" style="width: 45%" name="TypePrFull" id="">
+                                            <?php
+                                                foreach($loailuong as $TypeL) { ?>
+                                                <option value="<?php echo $TypeL['id'] ?>"><?php echo $TypeL['name'] ?></option>            
+                                                <?php } ?>
                                     </select>
                                 </div>
                             </div>
@@ -151,6 +154,8 @@ include('includes/layout_header.php');
                                 </a>
                             </div>
                            </div> 
+
+                           
                         </div>
                     <div class="add_work">
                         <a id="add_btn_work">
@@ -162,22 +167,22 @@ include('includes/layout_header.php');
             </div>
 
             <!-- parttime -->
-            <!-- <div class="form-group" id="parttime" style="display: none">
+            <div class="form-group" id="parttime" style="display: none">
                         <div class="title_work row">
-                            <div class="col-md-4">
+                            <div class="col-md-5">
                                 <label>Công việc Parttime</label>
                             </div>
-                            <div class="col-md-4">
-                                <label>Lương</label>
+                            <div class="col-md-5">
+                                <label>Lựa chọn mức lương</label>
                             </div>
                         </div>
                         <div class="ct_work">
                             <div class="ct_father row">
-                            <div class="col-md-4">
+                            <div class="col-md-5">
                                 <div class="Work_ip">
-                                    <select class="custom-select jobFilter" name="job">
-                                        <option selected value="0">Nhập tên công việc</option>
-                                        <?php
+                                <select class="form-control js-example-tags" >
+                                    <option value ="" selected >Chọn công việc của bạn</option>
+                                    <?php
                                         $jobs=mysqli_query($dbc,$getSQL["gJobs"]);
                                         if(mysqli_num_rows($jobs)>0)
                                         {
@@ -186,22 +191,19 @@ include('includes/layout_header.php');
                                             <option value="<?php echo($job['id']); ?>"><?php echo($job['name']) ?></option>
                                             <?php }
                                         }
-                                        ?>
-                                    </select>
+                                    ?>
+                                </select>
                                 </div>
-                                
-                            </div>      
-                            <div class="col-md-1">
-                                <div class="icheck-material-indigo Work_per">
-                                    <input type="checkbox" checked id="thoathuan" />
-                                    <label for="thoathuan"></label>
-                                </div>
+                               
                             </div>
                             <div class="col-md-6">
-                                <div class="cate_per">
-                                    <input type="number" class="form-control" style="width: 50%" placeholder="100,000">
-                                    <select class="form-control" style="width: 45%" name="" id="">
-                                        <option value="">VND/Giờ</option>
+                            <div class="cate_per">
+                                    <input type="number" name="pricePart" class="form-control" style="width: 50%" placeholder="100,000">
+                                    <select class="form-control" style="width: 45%" name="TypePrPart" id="">
+                                            <?php
+                                                foreach($loailuong as $TypeL) { ?>
+                                                <option value="<?php echo $TypeL['id'] ?>"><?php echo $TypeL['name'] ?></option>            
+                                                <?php } ?>
                                     </select>
                                 </div>
                             </div>
@@ -219,29 +221,26 @@ include('includes/layout_header.php');
                         <label for="add_btn_work">Thêm</label>
                     </div>
             </div>
-          -->
+         
             <!-- end parttime -->
 
             <!-- one time -->
-            <!-- <div class="form-group" id="onetime" style="display: none">
+            <div class="form-group" id="onetime" style="display: none">
                         <div class="title_work row">
-                            <div class="col-md-4">
-                                <label>Công việc Onetime</label>
+                            <div class="col-md-5">
+                                <label>Công việc Parttime</label>
                             </div>
-                            <div class="col-md-4">
-                                <label>Lương</label>
-                            </div>
-                            <div class="col-md-4">
-                                <label>Tùy chọn</label>
+                            <div class="col-md-5">
+                                <label>Lựa chọn mức lương</label>
                             </div>
                         </div>
                         <div class="ct_work">
                             <div class="ct_father row">
-                            <div class="col-md-4">
+                            <div class="col-md-5">
                                 <div class="Work_ip">
-                                    <select class="custom-select jobFilter" name="job">
-                                        <option selected value="0">Nhập tên công việc</option>
-                                        <?php
+                                <select class="form-control js-example-tags" >
+                                    <option value ="" selected >Chọn công việc của bạn</option>
+                                    <?php
                                         $jobs=mysqli_query($dbc,$getSQL["gJobs"]);
                                         if(mysqli_num_rows($jobs)>0)
                                         {
@@ -250,22 +249,19 @@ include('includes/layout_header.php');
                                             <option value="<?php echo($job['id']); ?>"><?php echo($job['name']) ?></option>
                                             <?php }
                                         }
-                                        ?>
-                                    </select>
+                                    ?>
+                                </select>
                                 </div>
-                                
-                            </div>      
-                            <div class="col-md-1">
-                                <div class="icheck-material-indigo Work_per">
-                                    <input type="checkbox" checked id="thoathuan" />
-                                    <label for="thoathuan"></label>
-                                </div>
-                            </div>
+                               
+                            </div> 
                             <div class="col-md-6">
                                 <div class="cate_per">
-                                    <input type="number" class="form-control" style="width: 50%" placeholder="100,000">
-                                    <select class="form-control" style="width: 45%" name="" id="">
-                                        <option value="">VND/Giờ</option>
+                                    <input type="number" name="priceOne" class="form-control" style="width: 50%" placeholder="100,000">
+                                    <select class="form-control" style="width: 45%" name="TypePrOne" id="">
+                                            <?php
+                                                foreach($loailuong as $TypeL) { ?>
+                                                <option value="<?php echo $TypeL['id'] ?>"><?php echo $TypeL['name'] ?></option>            
+                                                <?php } ?>
                                     </select>
                                 </div>
                             </div>
@@ -282,9 +278,7 @@ include('includes/layout_header.php');
                         </a>
                         <label for="add_btn_work">Thêm</label>
                     </div>
-
-            </div> -->
-
+            </div>
             <!-- end onetime -->
 
 
@@ -301,10 +295,6 @@ include('includes/layout_header.php');
                 ?>
             </div>
             <!-- Thông tin liên hệ -->
-
-            
-
-            
 
             <!-- Chi tiết bài đăng -->
             <div class="form-group">
@@ -327,20 +317,20 @@ include('includes/layout_header.php');
             <!-- End ảnh đại diện -->
 
             <div class="text-right">
-                <button type="" class="btn btn-warning">Xem mẫu bài đăng</button>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Xem mẫu bài đăng</button>
+                
                 <button type="submit" class="btn btn-orange">ĐĂNG TUYỂN VIỆC</button>
             </div>
             </div>
           </div>
           </div>
         </form>
-       
-       
-
       </div>
     </div>
   </div>
 </section>
+<!-- endsection -->
 <?php
 include('includes/layout_footer.php');
 ?>
+
