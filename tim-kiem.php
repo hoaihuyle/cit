@@ -18,7 +18,7 @@ $numSearchJob = (mysqli_num_rows($results));
 ?>
 
  <!-- <===========Main=======> -->
-<div class="sub-panel">
+<!-- <div class="sub-panel">
   <div class="container">
     <div class="sub-panel-title">
       <div class="sp-left">
@@ -36,9 +36,9 @@ $numSearchJob = (mysqli_num_rows($results));
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
-<section id="job-list-wrap" class="padding-space">
+<section id="job-list-wrap" class="padding-space mt-5">
   <div class="container">
     <div class="row">
      <!--  <div class="col-md-3">
@@ -59,7 +59,7 @@ $numSearchJob = (mysqli_num_rows($results));
       </div>
         <div class="col-md-9 list-job-search">
           <div class="list-job">
-            <h2><?php echo(strtoupper($get)); ?></h2>
+            <!-- <h2><?php echo(strtoupper($get)); ?></h2> -->
             <?php if($numSearchJob>1){ ?>
             <h2>Kết quả tìm kiếm: <?php echo($numSearchJob); ?> bài đăng 
             <?php } ?>
