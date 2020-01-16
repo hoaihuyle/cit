@@ -931,7 +931,9 @@
         $str = str_replace("-", " ", $str);
 		$str = preg_replace('/\s+/', '-', $str);
         return $str;
-    }
+	}
+	
+	
     // if( ! function_exists('xss_clean') ) {
     //     function xss_clean($data)
     //     {

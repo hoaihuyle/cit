@@ -13,14 +13,20 @@
 #job-DT .right .Work_ip{margin-bottom: 10px}
 #job-DT .right .Work_per{display: flex; justify-content: center;}
 #job-DT .right .form-group{margin-bottom: 2rem;}
-#job-DT .right .row{margin: 0 15px;}
+#job-DT .right .row{margin: 10px -15px;}
 #job-DT .row{margin: 0}
 #job-DT .right .del_work{margin: 0; padding: 5px; text-align: center;}
-#job-DT .right .add_work{ margin: 15px}
+#job-DT .right .title_work{padding-top: 10px}
+#job-DT .right .add_work{ margin: 15px 0}
 #job-DT .right .add_work:hover, #job-DT .right .add_work label:hover, #job-DT .right .del_work:hover, #job-DT .right .del_work label:hover{cursor: pointer;}
 #job-DT .right .add_work, #job-DT .right .del_work{display: inline-block;}
 #job-DT .right .del_work a{width: 25px; height: 25px; display: inline-block}
 #job-DT .right .add_work a{width: 32px; height: 32px; display: inline-block}
 #job-DT .right .add_work img, #job-DT .right .del_work img{width: 100%}
 #job-DT label{font-size: 18px}
+#job-DT .right .select2-container--default .select2-selection--single{height: calc(2.25rem + 2px);border: 1px solid #ced4da;}
+#job-DT .right .select2-container--default .select2-selection--single .select2-selection__rendered{line-height: 35px;}
+#job-DT .right .select2-container--default .select2-selection--single .select2-selection__arrow{top: 5px}
+
+
 #box-contain{ margin-top: -20px; }
