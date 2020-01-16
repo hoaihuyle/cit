@@ -1,19 +1,9 @@
 <?php
 include('includes/layout_header.php');
-
-	$get =null;
-  if(isset($_GET["get"])){
-    $get=$_GET['get'];
-    if($get =="tong-hop") $get = "all";
-    $_SESSION['get'] = $get;
-
-  }
-  if($get==null || !(is_string($get))){
-		header("Location: index.php");
-  }
-
-
- ?>
+if($get==null || !(is_string($get))){
+  header("Location: index.php");
+}
+?>
 
 <!-- <===========Main=======> -->
 <!-- <div class="sub-panel">
@@ -50,7 +40,7 @@ include('includes/layout_header.php');
       <div class="col-md-3">
 
       <?php include'_sidebar.php'; ?>
-      <a class="text-center text-uppercase nav-link css-sendFastJobs m-2" id="sendFastJobs" href="/viec-lam-ngay" ><strong> Đăng tin ngay </strong><i class="fa fa-bolt" style="padding-left: 10px;" aria-hidden="true"></i></a>
+      
       </div>
       <div class="col-md-9 list-job-containt">
 

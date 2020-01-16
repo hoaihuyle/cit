@@ -7,6 +7,17 @@ session_start();
 // die();
 /*session_destroy();
 unset($_SESSION['user']);*/
+
+$get =null;
+if(isset($_GET["get"])){
+  $get=$_GET['get'];
+  if($get =="tong-hop") $get = "all";
+  $_SESSION['get'] = $get;
+
+}
+
+
+
 include('admin/inc/myconnect.php');
 include('admin/inc/function.php');
 include('config/config.php');
@@ -111,21 +122,35 @@ include('sysenv.php');
             <?php }//End if
             else{
               if($info['parent']==0){ //not exitst parent
-                if($info['id']==51){ 
+                if($info['id']==51){
                ?>
                 <li class="nav-item bg-gradient-primary">
-                  <a class="nav-link css-sendFastJobs" id="sendFastJobs" href=" <?php echo('/'.$info['slug']) ?>" ><?php echo($info['name']); ?><i class="fa fa-bolt" style="padding-left: 10px;" aria-hidden="true"></i></a>
+                  <a class="nav-link css-sendFastJobs" id="sendFastJobs" href=" <?php echo('/'.$info['slug']) ?>" >
+                  <?php echo($info['name']); ?><i class="fa fa-bolt" style="padding-left: 10px;" aria-hidden="true"></i>
+                </a>
                 </li>
-              <?php }//end if 51
+              <?php }//end if dang-tin
+              else{
+                if($info['id']==57){ 
+              ?>
+              <li class="nav-item filter-job  ">
+                  <div class="nav-link card-header" style="background: #ff9800;color: #fff; border-radius: 5px;">
+                    <span><i class="fas fa-newspaper mr-2"></i><?php echo($info['name']); ?></span>
+                  <div class="icon-rotate ml-1 float-right"><i class="fas fa-angle-down"></i></div>
+              </div>
+              </li>
+              <?php
+                }//end if search
                 else{
                ?>
                <li class="nav-item">
                 <a class="nav-link" href="<?php echo('/'.($info['slug'])); ?>"><?php echo($info['name']); ?></a>
               </li>
               <?php 
-                }//end else (id==25)
-               }//End if 2
-              }// End else
+                }//end else
+               }//End else
+              }// End if parent
+            }//end else
             }//End while ?>
           </ul>
 
@@ -171,20 +196,111 @@ include('sysenv.php');
 
           </div>
 
-        </nav><!-- /.navbar -->
-      </div>
+    </nav><!-- /.navbar -->
+    <!-- FORM for search -->
+    <!-- <div class=" card filter-job mb-3">
+      <div class="card-header" style="background: #ff9800;color: #fff;">
+        <span><i class="fas fa-newspaper mr-2"></i>Tìm kiếm</span>
+        <div class="icon-rotate"><i class="fas fa-angle-down"></i></div>
+      </div> -->
+      <div id="searchFormNav" class="card-body">
+        <form action="tim-kiem.php" method="GET">
 
-      <div class="overlay-div">
-        <img src="/lib/img/load-icon.svg" class="img-fluid">
-      </div>
-
-      <div class="overlay-success">
-        <div class="dummy-positioning d-flex ">
-
-          <div class="success-icon">
-            <div class="success-icon__tip"></div>
-            <div class="success-icon__long"></div>
+          <div class="row filter-select">
+            <div class="col-md-4">
+              <select class="custom-select jobFilter" name="job">
+                <option selected value="0">Ngành nghề</option>
+                <?php
+                $jobs=mysqli_query($dbc,$getSQL["gJobs"]);
+                if(mysqli_num_rows($jobs)>0)
+                {
+                  while($job = $jobs->fetch_assoc()){    
+                    ?>
+                    <option value="<?php echo($job['id']); ?>"><?php echo($job['name']) ?></option>
+                  <?php }
+                }
+                ?>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <select class="custom-select companyFilter" name="company">
+                <option selected value="0">Cửa hàng</option>
+                <?php
+                $companies=mysqli_query($dbc,$getSQL["gSub"]);
+                if(mysqli_num_rows($companies)>0)
+                {
+                  while($company = $companies->fetch_assoc()){    
+                    ?>
+                    <option value="<?php echo($company['id']); ?>"><?php echo($company['name']) ?></option>
+                  <?php }
+                }
+                ?>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <select class="custom-select cityFilter" name="province">
+                <option  value="0">Thành phố</option>
+                <?php
+                $results_p=mysqli_query($dbc,$getSQL["gProvinceActive"]);
+                if(mysqli_num_rows($results_p)>0){
+                  while($result_p = $results_p->fetch_assoc()){    ?>
+                    <option <?php echo ($result_p['id']==49)?'selected':''; ?> value="<?php echo($result_p['id']); ?>">
+                      <?php echo($result_p['name']) ?>
+                    </option>
+                    <?php }//End while
+                  }?>
+              </select>
+            </div>
           </div>
 
-        </div>
+          <div class="form-group search-job dropdown">
+            <div class="input-group mb-3">
+              <input type="text" id="searchNewsInput" class="form-control" onkeyup="searchTitleNews()" placeholder="Tìm tên bài đăng" title="Nhập tên bài đăng" name="search">
+              <ul id="elementNews" class="dropdown-content">
+                <?php
+                /*Create new var query for $sql*/
+              
+                $r=mysqli_query($dbc,list_news_jobsData($get));
+                if(mysqli_num_rows($r)>0) {
+                  $i=0;
+                  while($result = $r->fetch_assoc()) {
+                    $bg_color = $i % 2 === 0 ? "secondary" : "light";
+                    $txt_color = $i % 2 === 0 ? "light" : "dark";
+                    $i++;
+                ?>
+
+                <li>
+                  <a href="<?php echo display_href_article_link( $result["nid"], $result["title"]); ?>" class="bg-<?php echo $bg_color; ?> text-<?php echo $txt_color; ?>"><i class="fas fa-search " ></i><?php echo $result['title']?></a>
+                </li>
+
+                <?php 
+                  }//End while
+                  }else {
+                    echo '<li>
+                            <a> 
+                              <i class="fas fa-search " ></i>
+                              Hiện tại không có bài đăng nào tồn tại
+                            </a>
+                          </li>';
+                  }
+                ?>
+              </ul>
+              <div class="input-group-append"><button type="submit" name="searchJob"class="btn btn-orange input-group-text" value="Lọc" placeholder="Lọc">
+                  <i class="fas fa-search"></i></button>
+              </div>
+
+            </div>
+          </div>
+        </form>
       </div>
+    <!-- </div> -->
+    <!-- END FORM for search -->
+</div>
+
+<div class="overlay-div"><img src="/lib/img/load-icon.svg" class="img-fluid"></div>
+
+<div class="overlay-success">
+  <div class="dummy-positioning d-flex ">
+    <div class="success-icon"><div class="success-icon__tip"></div><div class="success-icon__long"></div></div>
+  </div>
+</div>

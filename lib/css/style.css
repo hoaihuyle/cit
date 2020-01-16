@@ -1209,13 +1209,30 @@ body.modal-open{
 /*/Maps*/
 
 .form-control{height: 50px;}
-
+#searchFormNav{
+    width: 100%;
+    z-index: 11;
+    position: fixed;
+	margin-top: 35px;
+	display: none;
+}
+#searchFormNav form{
+	width: 80%;
+    margin: 5px;
+    margin: auto;
+    background-color: #fff;
+    padding: 15px;
+	border-radius: 10px;
+	border: 1px solid rgba(0,0,0,0.1);
+	box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
+}
 .filter-job{
 	box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 	-webkit-box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
-.filter-job .card-body{padding: 0.75rem 1.25rem;}
+.card-body{padding: 0.75rem 1.25rem;}
 .card-body{font-size: 12px;}
 .filter-job .card-header{
 	cursor: pointer;
@@ -1224,8 +1241,10 @@ body.modal-open{
 	justify-content: space-between;
 	align-items: center;
 }
-
-.filter-job [class*="icheck-material"]{
+#searchFormNav .select2{
+	width: auto !important;
+}
+.card-body [class*="icheck-material"]{
 	margin-bottom: 15px!important;
 }
 
@@ -1267,7 +1286,7 @@ body.modal-open{
 
 
 .list-job-item:first-child, .list-apply:first-child{
-	margin-top: 30px;
+	margin-top: -5px;
 }
 
 .list-job-container, .apply-post{

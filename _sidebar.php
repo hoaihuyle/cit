@@ -24,3 +24,7 @@
   </div>
 </div>
 
+<a class="text-center text-uppercase nav-link css-sendFastJobs m-2" id="sendFastJobs" href="/viec-lam-ngay" >
+<strong> Đăng tuyển ngay </strong>
+<i class="fa fa-bolt" style="padding-left: 10px;" aria-hidden="true"></i></a>
+
