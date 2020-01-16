@@ -78,7 +78,7 @@ include('sysenv.php');
 
     <div class="overlay-wrap"></div><!-- /.overlay-wrap -->
 
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top rounded-bottom bg-primary">
 
       <a class="navbar-brand" href="/index"><img src="/lib/img/logo-transparent.png" class="img-fluid img-nav"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
