@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th1 11, 2020 lúc 09:56 AM
+-- Thời gian đã tạo: Th1 16, 2020 lúc 08:47 AM
 -- Phiên bản máy phục vụ: 10.4.10-MariaDB
 -- Phiên bản PHP: 7.3.12
 
@@ -31,6 +31,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `news_job` (
   `id_news` int(11) NOT NULL,
   `id_job` int(11) NOT NULL,
+  `id_priceMul` int(11) NOT NULL COMMENT 'Type Salary',
   `priceMul` double NOT NULL,
   `quality` int(11) NOT NULL,
   `status` int(1) NOT NULL DEFAULT 0 COMMENT 'default0; 1- ok',
