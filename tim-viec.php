@@ -29,7 +29,7 @@ include('includes/layout_header.php');
           </ol>
           <ol class=" breadcrumb logo-support">
             <li class=" breadcrumb-item logo-support-item" aria-current="page"><img src="lib/img/logo/dntrelogo-fit.jpg"></li>
-            <li class=" breadcrumb-item logo-support-item" aria-current="page"><img src="lib/img/logo/hcelogo-fit.jpg"></li>
+            <li class=" breadcrumb-item logo-support-item" aria-current="page"><img src="lib/img/logo/logoclbit-fit.jpg"></li>
             <li class=" breadcrumb-item logo-support-item" aria-current="page"><img src="lib/img/logo/khoinghiephuelogo-fit.png"></li>
             <li class=" breadcrumb-item logo-support-item" aria-current="page"><img src="lib/img/logo/hsalogo-fit.jpg"></li>
           </ol>
