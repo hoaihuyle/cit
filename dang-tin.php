@@ -7,7 +7,6 @@ $Cty = $db->fetchAll('companies');
 $tinhthanh = $db->fetchAll('province');
 $congviec = $db->fetchAll('jobs');
 $loailuong = $db->fetchAll('typesalary');
-
 ?>
 
 <div class="sub-panel">
@@ -135,7 +134,7 @@ $loailuong = $db->fetchAll('typesalary');
                             </div>  
                             <div class="col-md-6">
                                 <div class="cate_per">
-                                    <input type="number" name="priceFull" class="form-control" style="width: 50%" placeholder="100,000">
+                                    <input type="number" name="pricefulltime" class="form-control" style="width: 50%" placeholder="100,000">
                                     <select class="form-control" style="width: 45%" name="TypePrfulltime" id="">
                                             <?php
                                                 foreach($loailuong as $TypeL) { ?>
@@ -194,7 +193,7 @@ $loailuong = $db->fetchAll('typesalary');
                             </div>
                             <div class="col-md-6">
                             <div class="cate_per">
-                                    <input type="number" name="pricePart" class="form-control" style="width: 50%" placeholder="100,000">
+                                    <input type="number" name="priceparttime" class="form-control" style="width: 50%" placeholder="100,000">
                                     <select class="form-control" style="width: 45%" name="TypePrparttime" id="">
                                             <?php
                                                 foreach($loailuong as $TypeL) { ?>
@@ -252,7 +251,7 @@ $loailuong = $db->fetchAll('typesalary');
                             </div> 
                             <div class="col-md-6">
                                 <div class="cate_per">
-                                    <input type="number" name="priceOne" class="form-control" style="width: 50%" placeholder="100,000">
+                                    <input type="number" name="priceonetime" class="form-control" style="width: 50%" placeholder="100,000">
                                     <select class="form-control" style="width: 45%" name="TypePronetime" id="">
                                             <?php
                                                 foreach($loailuong as $TypeL) { ?>
@@ -313,8 +312,29 @@ $loailuong = $db->fetchAll('typesalary');
             <!-- End ảnh đại diện -->
 
             <div class="text-right">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Xem mẫu bài đăng</button>
-                
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Xem mẫu bài đăng</button>
+
+                <!-- Modal -->
+<div class="modal fade" style="padding: 0 !important" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
                 <button type="submit" class="btn btn-orange">ĐĂNG TUYỂN VIỆC</button>
             </div>
             </div>
