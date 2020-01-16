@@ -4,7 +4,7 @@ include('includes/layout_header.php');
 	$get =null;
   if(isset($_GET["get"])){
     $get=$_GET['get'];
-    if($get ="tong-hop") $get = "all";
+    if($get =="tong-hop") $get = "all";
     $_SESSION['get'] = $get;
 
   }
@@ -16,7 +16,7 @@ include('includes/layout_header.php');
  ?>
 
 <!-- <===========Main=======> -->
-<div class="sub-panel">
+<!-- <div class="sub-panel">
   <div class="container">
     <div class="sub-panel-title">
       <div class="sp-left">
@@ -36,15 +36,14 @@ include('includes/layout_header.php');
         </nav>
       </div>
       <div class="sp-right text-center">
-        <!-- <img src="lib/img/sub-page-img-01.png" class="img-fluid"> -->
         <img src="lib/img/sub-page-img-01.png" class="">
       </div>
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
-<section id="job-list-wrap" class="padding-space">
+<section id="job-list-wrap" class="padding-space mt-5">
   <div class="container">
     <div class="row">
 
@@ -53,7 +52,7 @@ include('includes/layout_header.php');
       <?php include'_sidebar.php'; ?>
       <a class="text-center text-uppercase nav-link css-sendFastJobs m-2" id="sendFastJobs" href="/viec-lam-ngay" ><strong> Đăng tin ngay </strong><i class="fa fa-bolt" style="padding-left: 10px;" aria-hidden="true"></i></a>
       </div>
-      <div class="col-md-9">
+      <div class="col-md-9 list-job-containt">
 
         <?php include'_list-job.php'; ?>
        

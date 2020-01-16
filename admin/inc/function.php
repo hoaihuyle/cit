@@ -43,6 +43,7 @@
 			// if(isset($_SESSION["user"]))$strHtml.=display_html_box($id, $contacts, $price, $end_date, $_SESSION["user"]["id"]);
 			// else $strHtml.=display_html_box($id, $contacts, $price, $end_date);
    //          $strHtml.='</div>';//Close job-price	
+   
 		}
 		else{
 			$strHtml.='<div class="job-header"> Quá trình tải bài xảy ra lỗi, vui lòng thử lại sau </div>';
@@ -741,7 +742,10 @@
 		    }
 		    if(isset($search))
 		    {
-		    	$conditions[]="title LIKE '%$search%'";
+				if($search!=""){
+					$conditions[]="title LIKE '%$search%'";
+				}
+		    
 		    }
 		    $sql = $query;
 		    if (count($conditions) > 0) {
@@ -756,7 +760,6 @@
 
 			$sql =$sql.$str_q." a.end_date > DATE(CURDATE()) AND a.state = 1 AND a.end_date = (SELECT MAX(end_date) FROM `active` WHERE id_news = a.id_news ) ORDER BY a.modified DESC,n.id DESC ".$limit; 
 		}
-
 	    return $sql;
 	}
 

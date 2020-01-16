@@ -14,6 +14,7 @@ if($_GET["job"]==0 && $_GET["province"]==0 && $_GET["company"]==0){
   header("Location: tim-viec.php?get=$get");
 }
 $results=mysqli_query($dbc,list_news_jobsData($get));
+$numSearchJob = (mysqli_num_rows($results));
 ?>
 
  <!-- <===========Main=======> -->
@@ -56,10 +57,12 @@ $results=mysqli_query($dbc,list_news_jobsData($get));
       <div class="col-md-3">
          <?php include'_sidebar.php'; ?>
       </div>
-        <div class="col-md-9">
+        <div class="col-md-9 list-job-search">
           <div class="list-job">
             <h2><?php echo(strtoupper($get)); ?></h2>
-            <h2>Kết quả tìm kiếm: <?php echo(mysqli_num_rows($results)); ?> bài đăng 
+            <?php if($numSearchJob>1){ ?>
+            <h2>Kết quả tìm kiếm: <?php echo($numSearchJob); ?> bài đăng 
+            <?php } ?>
             </h2>
 
         </div>
