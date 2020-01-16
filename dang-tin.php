@@ -1,7 +1,8 @@
 <?php 
  
-include('admin/inc/database.php');
-include('includes/layout_header.php');
+// include('admin/inc/database.php');
+
+include('Controller/AddDangtin.php');
 $Cty = $db->fetchAll('companies');
 $tinhthanh = $db->fetchAll('province');
 $congviec = $db->fetchAll('jobs');
@@ -32,9 +33,6 @@ $loailuong = $db->fetchAll('typesalary');
   <div class="container">
     <div class="row">
       <div class="col-md-12 mx-auto job-post-wrap">
-        
-
-        
         <form method="POST" enctype="multipart/form-data">
           <div class="row">
           <div class="col-md-4 left">
@@ -88,23 +86,21 @@ $loailuong = $db->fetchAll('typesalary');
             <div class="form-group row">
                 <div class="col-sm-8">
                     <label style="width: 100%">Hình thức</label>
-
                        <div class="mater-ht">
                         <div class="icheck-material-indigo" id="lbfull">
-                                <input type="checkbox" checked id="chb1" />
+                                <input type="checkbox" checked id="chb1" name="fTime" />
                                 <label for="chb1">Full Time</label>
                             </div>
                             <div class="icheck-material-indigo" id="lbpart">
-                                <input type="checkbox" id="chb2" />
+                                <input type="checkbox" id="chb2" name="pTime" />
                                 <label for="chb2">Part Time</label>
                             </div>
                             <div class="icheck-material-indigo" id="lbone">
-                                <input type="checkbox" id="chb3" />
+                                <input type="checkbox" id="chb3" name="oTime" />
                                 <label for="chb3">One Time</label>
                             </div>  
                        </div>
                 </div>
-                
             </div>
             <!-- end hình thức công việc  -->
 
@@ -121,7 +117,7 @@ $loailuong = $db->fetchAll('typesalary');
                             <div class="ct_father row">
                             <div class="col-md-5">
                                 <div class="Work_ip">
-                                <select class="form-control js-example-tags" >
+                                <select class="form-control js-example-tags" name="nameWorkfulltime">
                                     <option value ="" selected >Chọn công việc của bạn</option>
                                     <?php
                                         $jobs=mysqli_query($dbc,$getSQL["gJobs"]);
@@ -140,7 +136,7 @@ $loailuong = $db->fetchAll('typesalary');
                             <div class="col-md-6">
                                 <div class="cate_per">
                                     <input type="number" name="priceFull" class="form-control" style="width: 50%" placeholder="100,000">
-                                    <select class="form-control" style="width: 45%" name="TypePrFull" id="">
+                                    <select class="form-control" style="width: 45%" name="TypePrfulltime" id="">
                                             <?php
                                                 foreach($loailuong as $TypeL) { ?>
                                                 <option value="<?php echo $TypeL['id'] ?>"><?php echo $TypeL['name'] ?></option>            
@@ -180,7 +176,7 @@ $loailuong = $db->fetchAll('typesalary');
                             <div class="ct_father row">
                             <div class="col-md-5">
                                 <div class="Work_ip">
-                                <select class="form-control js-example-tags" >
+                                <select class="form-control js-example-tags" name="nameWorkparttime">
                                     <option value ="" selected >Chọn công việc của bạn</option>
                                     <?php
                                         $jobs=mysqli_query($dbc,$getSQL["gJobs"]);
@@ -199,7 +195,7 @@ $loailuong = $db->fetchAll('typesalary');
                             <div class="col-md-6">
                             <div class="cate_per">
                                     <input type="number" name="pricePart" class="form-control" style="width: 50%" placeholder="100,000">
-                                    <select class="form-control" style="width: 45%" name="TypePrPart" id="">
+                                    <select class="form-control" style="width: 45%" name="TypePrparttime" id="">
                                             <?php
                                                 foreach($loailuong as $TypeL) { ?>
                                                 <option value="<?php echo $TypeL['id'] ?>"><?php echo $TypeL['name'] ?></option>            
@@ -238,7 +234,7 @@ $loailuong = $db->fetchAll('typesalary');
                             <div class="ct_father row">
                             <div class="col-md-5">
                                 <div class="Work_ip">
-                                <select class="form-control js-example-tags" >
+                                <select class="form-control js-example-tags" name="nameWorkonetime">
                                     <option value ="" selected >Chọn công việc của bạn</option>
                                     <?php
                                         $jobs=mysqli_query($dbc,$getSQL["gJobs"]);
@@ -257,7 +253,7 @@ $loailuong = $db->fetchAll('typesalary');
                             <div class="col-md-6">
                                 <div class="cate_per">
                                     <input type="number" name="priceOne" class="form-control" style="width: 50%" placeholder="100,000">
-                                    <select class="form-control" style="width: 45%" name="TypePrOne" id="">
+                                    <select class="form-control" style="width: 45%" name="TypePronetime" id="">
                                             <?php
                                                 foreach($loailuong as $TypeL) { ?>
                                                 <option value="<?php echo $TypeL['id'] ?>"><?php echo $TypeL['name'] ?></option>            
@@ -285,7 +281,7 @@ $loailuong = $db->fetchAll('typesalary');
             <!-- Thông tin liên hệ -->
             <div class="form-group">
                 <label>Thông tin cho người ứng tuyển liên hệ với bạn <strong class="text-danger">*</strong></label>
-                <textarea class="form-control" name="" id="" cols="30" rows="3" placeholder="Số điện thoai/ Thông tin liên hệ"
+                <textarea class="form-control" name="infoWork" id="" cols="30" rows="3" placeholder="Số điện thoai/ Thông tin liên hệ"
                 value="<?php if(isset($_POST['contacts'])){echo $_POST['contacts'];} ?>"
                 ></textarea>
                 <?php
