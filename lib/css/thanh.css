@@ -1,3 +1,15 @@
+
+/****************** Custom Scroll *****************/
+body.modal-open {
+    height: 100vh;
+    overflow-y: hidden;
+}
+body{
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+
 /****************** Đăng tin *****************/
 #job-DT { margin-bottom: 100px}
 #job-DT .job-post-wrap{padding: 100px 20px;}

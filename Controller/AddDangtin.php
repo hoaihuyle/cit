@@ -45,6 +45,11 @@ function checkWorkTime($POST, $db, $arr){
 
 //Xử lý thêm news
 function CreateNews($db,$new){
+
+    //Xử lý hình ảnh
+
+
+
     return $db->insert('news', $new);
 }
 //Bài đăng active
@@ -66,7 +71,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 
     // title
         if(empty($_POST['title'])) { $errors[]='title';} 
-        else {$news['title']=$_POST['title']; }
+        else {$nametitle=$_POST['title']; }
     // end time
         if(empty($_POST['etime'])) { $errors[]='etime'; } 
         else {$date = str_replace('/', '-', $_POST['etime'] ); $Active['end_date'] = date('Y-m-d H:i:s', strtotime($date));}
@@ -79,6 +84,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
     //Check full time 
         if(isset($_POST['fTime']))
         {
+            $news['title'] = $nametitle .' - Fulltime' ;
             $news['id_type'] = 3;
             //Tạo bài viết lấy id
             $Active['id_news'] = CreateNews($db,$news);
@@ -91,10 +97,12 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
                 'id_news' => $Active['id_news'],
                 'num' => 16
             );  
+            //Kiểm tra hình thức làm việc
             checkWorkTime($_POST, $db, $arr);
         }
         if(isset($_POST['pTime']))
         {
+            $news['title'] = $nametitle .' - Parttime' ;
             $new['id_type'] = 2;
             $Active['id_news'] = CreateNews($db,$news);
             ActiveNews($db, $Active);
@@ -106,14 +114,16 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
                 'id_news' => $Active['id_news'],
                 'num' => 16
             ); 
+            //Kiểm tra hình thức làm việc
             checkWorkTime($_POST, $db, $arr);
         }
         if(isset($_POST['oTime']))
         {
+            $news['title'] = $nametitle .' - Onetime' ;
             $new['id_type'] = 56;
             $Active['id_news'] = CreateNews($db,$news);
             ActiveNews($db, $Active);
-            
+
             $arr = array(
                 'name' => 'nameWorkfulltime',
                 'price' => 'pricefulltime',
@@ -121,6 +131,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
                 'id_news' => $Active['id_news'],
                 'num' => 15
             ); 
+            //Kiểm tra hình thức làm việc
             checkWorkTime($_POST, $db, $arr);
         }
 
