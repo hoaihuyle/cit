@@ -89,7 +89,7 @@ include('sysenv.php');
 
     <div class="overlay-wrap"></div><!-- /.overlay-wrap -->
 
-    <nav class="navbar navbar-expand-lg fixed-top rounded-bottom bg-primary">
+    <nav class="navbar navbar-expand-lg fixed-top rounded-bottom">
 
       <a class="navbar-brand" href="/index"><img src="/lib/img/logo-transparent.png" class="img-fluid img-nav"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -203,7 +203,7 @@ include('sysenv.php');
         <span><i class="fas fa-newspaper mr-2"></i>Tìm kiếm</span>
         <div class="icon-rotate"><i class="fas fa-angle-down"></i></div>
       </div> -->
-      <div id="searchFormNav" class="card-body">
+      <div id="searchFormNav" class="card-body mt-5">
         <form action="tim-kiem.php" method="GET">
 
           <div class="row filter-select">
