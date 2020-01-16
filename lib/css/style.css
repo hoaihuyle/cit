@@ -1211,7 +1211,7 @@ body.modal-open{
 .form-control{height: 50px;}
 #searchFormNav{
     width: 100%;
-    z-index: 11;
+    z-index: 1000;
     position: fixed;
 	margin-top: 35px;
 	display: none;
@@ -1277,7 +1277,6 @@ body.modal-open{
 .btn-collapse{
 	width: 100%;
 	text-align: center;
-	padding: 15px;
 }
 
 .btn-collapse button{

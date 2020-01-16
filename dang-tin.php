@@ -135,7 +135,7 @@ $loailuong = $db->fetchAll('typesalary');
                             <div class="col-md-6">
                                 <div class="cate_per">
                                     <input type="number" name="pricefulltime" class="form-control" style="width: 50%" placeholder="100,000">
-                                    <select class="form-control" style="width: 45%" name="TypePrfulltime" id="">
+                                    <select class="form-control" style="width: 45%" name="TypePrfulltime">
                                             <?php
                                                 foreach($loailuong as $TypeL) { ?>
                                                 <option value="<?php echo $TypeL['id'] ?>"><?php echo $TypeL['name'] ?></option>            
@@ -194,7 +194,7 @@ $loailuong = $db->fetchAll('typesalary');
                             <div class="col-md-6">
                             <div class="cate_per">
                                     <input type="number" name="priceparttime" class="form-control" style="width: 50%" placeholder="100,000">
-                                    <select class="form-control" style="width: 45%" name="TypePrparttime" id="">
+                                    <select class="form-control" style="width: 45%" name="TypePrparttime">
                                             <?php
                                                 foreach($loailuong as $TypeL) { ?>
                                                 <option value="<?php echo $TypeL['id'] ?>"><?php echo $TypeL['name'] ?></option>            
@@ -252,7 +252,7 @@ $loailuong = $db->fetchAll('typesalary');
                             <div class="col-md-6">
                                 <div class="cate_per">
                                     <input type="number" name="priceonetime" class="form-control" style="width: 50%" placeholder="100,000">
-                                    <select class="form-control" style="width: 45%" name="TypePronetime" id="">
+                                    <select class="form-control" style="width: 45%" name="TypePronetime">
                                             <?php
                                                 foreach($loailuong as $TypeL) { ?>
                                                 <option value="<?php echo $TypeL['id'] ?>"><?php echo $TypeL['name'] ?></option>            
