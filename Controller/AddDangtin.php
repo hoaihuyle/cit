@@ -2,6 +2,7 @@
 
 include('admin/inc/database.php');
 include('includes/layout_header.php');
+include('lib.php');
 
 // Xử lý/kiểm tra công việc trong bảng
 function CreateJobs($db,$nameW){
@@ -43,17 +44,38 @@ function checkWorkTime($POST, $db, $arr){
     }
 }
 
-//Xử lý thêm news
-// function CreateNews($db,$new){
-
+//Xử lý hình ảnh
+function CreateImg($new){
     //Xử lý hình ảnh
- /*Upload hình ản*/
+    if(isset($new["img"]) && !empty($new['img']['name'])){
+        $allowed =  array('gif','png' ,'jpg');
+        //Tên file
+        $filename = $new['img']['name'];
+        //Đuôi file
+        $ext = pathinfo($filename, PATHINFO_EXTENSION);
+        $messageError = "";
+        if ($new["img"]["error"] > 0) {
+        $messageError .= "Lỗi quá trình mở file.";
+        }
+        if (!in_array($ext, $allowed)) {
+        $messageError .= " File không đúng định dạng.";
+        }
+        if ($new["img"]["size"] > 6*1024*1024) {
+        $messageError .= " Dung lượng file không được lớn hơn 6MB.";
+        }
+        _debug($new['img']);
+        // die();
+        if($messageError == ""){
+            $img = uploadImagesThumb($new['img'], 'upload/', 'upload/demo/');
+        }else {
+        $message = $messageError;
+        }
+        } else {
+            $img = ''; 
+        }
 
-  
 
-
-    // return $db->insert('news', $new);
-// }
+}
 //Bài đăng active
 function ActiveNews($db, $active)
 {
@@ -138,12 +160,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
         }
 
 
-        if(empty($errors)){
-        
-
-
-
-
+        if(empty($errors)){            
+            $img = CreateImg($_FILES);
             header('Location: tong-hop');
         }
         else
