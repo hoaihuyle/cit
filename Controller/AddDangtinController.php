@@ -49,7 +49,7 @@ function CreateNews($db,$new){
 //Xử lý hình ảnh
 function CreateImg($new){
     //Xử lý hình ảnh
-    if(isset($new["img"]) && !empty($new['img']['name'])){
+    
         $allowed =  array('gif','png' ,'jpg');
         //Tên file
         $filename = $new['img']['name'];
@@ -65,16 +65,13 @@ function CreateImg($new){
         if ($new["img"]["size"] > 6*1024*1024) {
         $messageError .= " Dung lượng file không được lớn hơn 6MB.";
         }
-        _debug($new['img']);
-        // die();
         if($messageError == ""){
-            $img = uploadImagesThumb($new['img'], 'upload/', 'upload/demo/');
-        }else {
-        $message = $messageError;
+           $img = uploadImagesThumb($new['img'], 'upload/', 'upload/demo/');
         }
-        } else {
-            $img = ''; 
-        }
+        else {
+            $messageError = 'Không thành công';}
+        
+        return array('img' => $img, 'mess' => $messageError);
 
 
 }
@@ -107,6 +104,15 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
     // description
         if(empty($_POST['description'])){ $errors[] = 'description';}
         else{ $news['description'] = $_POST['description']; }
+        // img
+        if(isset($_FILES["img"]) && !empty($_FILES['img']['name'])){
+            $img = CreateImg($_FILES);
+            if(empty($img['mess']))
+             $news['files'] = $img['img'];
+            else(
+                $errors[] = $img['mess']);
+        }
+        else{ $errors[] = 'img'; }
     //Check full time 
         if(isset($_POST['fTime']))
         {
@@ -160,10 +166,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
             //Kiểm tra hình thức làm việc
             checkWorkTime($_POST, $db, $arr);
         }
-
-
         if(empty($errors)){            
-            $img = CreateImg($_FILES);
             header('Location: tong-hop');
         }
         else
