@@ -17,7 +17,7 @@ $n = new NewsDAO();
 $url = "https://cit.cit/search";
 $CONST="/L%E1%BB%8Dc";
 
-$searchView = new SearchView();
+$searchView = new SearchView();//Class View
 
 if($_SERVER['REQUEST_METHOD'] == 'GET') {
 //     var_dump($_GET);
