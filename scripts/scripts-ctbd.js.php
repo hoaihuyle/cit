@@ -1,4 +1,4 @@
-<!-- File called by index.php  -->
+<!-- File called by chi-tiet-bai-dang.php  -->
 <script>
 $(document).ready(function(){
     var showModal = '<?php echo $show_modal; ?>';

@@ -2,7 +2,8 @@ RewriteEngine On
 
 RewriteCond %{HTTPS} !on
 
-DirectoryIndex tim-viec.php?get=all
+#first page default
+DirectoryIndex tim-viec.php?get=all 
 
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
 
@@ -11,6 +12,9 @@ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
 RewriteRule ^([a-zA-Z-]+)$ /tim-viec.php?get=$1 [L,QSA]
 
 #RewriteRule ^(postjob)/ /viec-lam-ngay.php [L,QSA]
+
+#https://cit.cit/search/5/0/0/h/L%E1%BB%8Dc/
+RewriteRule ^(search)/([0-9]+)/([0-9]+)/([0-9]+)/([^/]+)/([^/]+)/?$ /tim-kiem.php?job=$2&company=$3&province=$4&search=$5&searchJob=Lọc [L,QSA]
 
 RewriteRule ^(job)/([0-9]+) /chi-tiet-bai-dang.php?news_id=$2 [L,QSA] 
 

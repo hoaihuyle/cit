@@ -129,14 +129,11 @@ else
           
         </div>
         <div class="body-post">
-
           <div class="detail-post">
-             <div class="image-post">
-            <!-- Image -->
+            <div class="image-post">
               <img src="<?php echo ($files!=0)?'/upload/'.$files:'/lib/img/noimage.jpg'; ?>">
             </div>
             <?php echo($description); ?>
-
           </div>
         </div>
        

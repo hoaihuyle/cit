@@ -28,7 +28,7 @@
 			$strHtml.='</div>';//Close job-info
 
 			$strHtml.='<div class="job-image">';
-			if($element_arr["files"]!=0) $linkImg='upload/'.$element_arr["files"];
+			if($element_arr["files"]!=0) $linkImg='/upload/'.$element_arr["files"];
 			else $linkImg='/lib/img/commingsoon.jpg';
 
 			$strHtml .='<div class="image-post">
@@ -690,13 +690,15 @@
 		$string.='.....<a class="more-detail" href="'.display_href_article_link($nid,$title).'">Click để biết thêm thông tin và ứng tuyển<i class="fas fa-mouse"></i></a>';
 		return $string;
 	}
-	// Code search filter advance
-	function list_news_jobsData($get, $limit =null, $offset=null) {
-		$state=1;
+	/**
+	 * get: saved in header by sesstion get ->  type post
+	 * List job news Data with state 0:all post ; 1: post are activing; 2:post not active
+	 */
+	function list_news_jobsData($get, $state,$limit =null, $offset=null) {
 		$job=null; $province=null; $company=null;
 		$sql ="SELECT DISTINCT n.id as nid, n.id_type as ntype, n.title, n.description, n.files,n.price, a.timestamp, a.end_date,m.slug, n.contacts 
 			FROM news as n 
-			JOIN active as a ON a.id_news=n.id 
+			LEFT JOIN active as a ON a.id_news=n.id 
 			LEFT JOIN type_post as tp ON n.id_type=tp.id 
 			LEFT JOIN menu as m ON m.id= tp.menu_id ";
 
@@ -740,12 +742,9 @@
 		    	$str=implode(',',list_post_activing());
 		    	$conditions[]="n.id NOT IN ($str)";
 		    }
-		    if(isset($search))
+			if($search!="null")
 		    {
-				if($search!=""){
-					$conditions[]="title LIKE '%$search%'";
-				}
-		    
+				$conditions[]="title LIKE '%$search%'";
 		    }
 		    $sql = $query;
 		    if (count($conditions) > 0) {
@@ -760,6 +759,7 @@
 
 			$sql =$sql.$str_q." a.end_date > DATE(CURDATE()) AND a.state = 1 AND a.end_date = (SELECT MAX(end_date) FROM `active` WHERE id_news = a.id_news ) ORDER BY a.modified DESC,n.id DESC ".$limit; 
 		}
+		
 	    return $sql;
 	}
 
@@ -877,46 +877,46 @@
     $base_forgotPass ='https://cit.cit/doimk';
     $base_url = "https://cit.cit/";
     //Gửi mail
-    function sendMail($title, $content, $nTo, $mTo,$diachicc=''){
+    // function sendMail($title, $content, $nTo, $mTo,$diachicc=''){
 
 
-		$developmentMode = true;
-		$mailer = new PHPMailer($developmentMode);
+	// 	$developmentMode = true;
+	// 	$mailer = new PHPMailer($developmentMode);
 
-		try{
-		    $mailer->SMTPDebug = 2;
-		    $mailer->isSMTP();
+	// 	try{
+	// 	    $mailer->SMTPDebug = 2;
+	// 	    $mailer->isSMTP();
 
-		    if($developmentMode){
-		        $mailer->SMTPOptions = [
-		            'ssl' => [
-		                'verify_peer' => false,
-		                'verify_peer_name'=>false,
-		                'allow_self_signed' => true,
-		            ]
-		        ];
-		    }
-		    $mailer->Host ='smtp.gmail.com';
-		    $mailer->SMTPAuth = true;
-		    $mailer->Username = 'vieclamtheogiocit@gmail.com';
-		    $mailer->Password = 'vieclamtheogiocit';
-		    $mailer->SMTPSecure = "tls";
-		    $mailer->Port       = 587;
+	// 	    if($developmentMode){
+	// 	        $mailer->SMTPOptions = [
+	// 	            'ssl' => [
+	// 	                'verify_peer' => false,
+	// 	                'verify_peer_name'=>false,
+	// 	                'allow_self_signed' => true,
+	// 	            ]
+	// 	        ];
+	// 	    }
+	// 	    $mailer->Host ='smtp.gmail.com';
+	// 	    $mailer->SMTPAuth = true;
+	// 	    $mailer->Username = 'vieclamtheogiocit@gmail.com';
+	// 	    $mailer->Password = 'vieclamtheogiocit';
+	// 	    $mailer->SMTPSecure = "tls";
+	// 	    $mailer->Port       = 587;
 
-		    $mailer->SetFrom('vieclamtheogiocit@gmail.com','CIT');
-		    $mailer->addAddress('hoaihuy2011.vn@gmail.com','ABC');
+	// 	    $mailer->SetFrom('vieclamtheogiocit@gmail.com','CIT');
+	// 	    $mailer->addAddress('hoaihuy2011.vn@gmail.com','ABC');
 
-		    $mailer->isHTML(true);
-		    $mailer->Subject = 'PHP';
-		    $mailer->Body = 'ABC';
-		    $mailer->send();
-		    $mailer->ClearAllRecipients();
-		    echo 'Maill send';
-		}
-		catch(Exception $e){
-		    echo "dont send".$mailer->ErrorInfo;
-		}
-	}
+	// 	    $mailer->isHTML(true);
+	// 	    $mailer->Subject = 'PHP';
+	// 	    $mailer->Body = 'ABC';
+	// 	    $mailer->send();
+	// 	    $mailer->ClearAllRecipients();
+	// 	    echo 'Maill send';
+	// 	}
+	// 	catch(Exception $e){
+	// 	    echo "dont send".$mailer->ErrorInfo;
+	// 	}
+	// }
    
  //Có file và filename   
 //CHUYỂN DẤU THÀNH KHÔNG DẤU VÀ THÊM DẤU GẠCH NGANG

@@ -3,10 +3,14 @@ include('includes/layout_header.php');
 if($get==null || !(is_string($get))){
   header("Location: index.php");
 }
+
+$jobsData=mysqli_query($dbc,list_news_jobsData($get, 0,$limit_LISTJOBS)); //_list-job.php
+
+$numJob = (mysqli_num_rows($jobsData));
 ?>
 
 <!-- <===========Main=======> -->
-<!-- <div class="sub-panel">
+<div class="sub-panel">
   <div class="container">
     <div class="sub-panel-title">
       <div class="sp-left">
@@ -15,7 +19,7 @@ if($get==null || !(is_string($get))){
           <ol class="breadcrumb">
              <li class="breadcrumb-item"><a href="/index"><i class="fas fa-home"></i> Trang Chủ</a></li>
              <li class="breadcrumb-item active" aria-current="page">Danh sách việc</li>
-
+             <li class="breadcrumb-item active" aria-current="page"><?php if($get='all') echo 'TỔNG HỢP'; else echo strtoupper($get); ?></li>
           </ol>
           <ol class=" breadcrumb logo-support">
             <li class=" breadcrumb-item logo-support-item" aria-current="page"><img src="lib/img/logo/dntrelogo-fit.jpg"></li>
@@ -31,9 +35,9 @@ if($get==null || !(is_string($get))){
       </div>
     </div>
   </div>
-</div> -->
+</div>
 
-<section id="job-list-wrap" class="padding-space mt-5">
+<section id="job-list-wrap" class="padding-space">
   <div class="container">
     <div class="row">
 

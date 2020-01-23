@@ -9,7 +9,8 @@ if($_SERVER['REQUEST_METHOD'] == 'GET') {
 	$offset = ($_GET["dem"]-1)*$limit;
 	$get =  $_SESSION['get'];
 
-	$result_query_arr = mysqli_query($dbc,list_news_jobsData($get,$limit,$offset));
+	$result_query_arr = mysqli_query($dbc,list_news_jobsData($get, 0, $limit, $offset));
+	// echo(list_news_jobsData($get, 0, $limit, $offset));
 	if($result_query_arr->num_rows > 0){ 
 		$i=0;
 		while ($element_arr =  mysqli_fetch_assoc($result_query_arr)){
@@ -18,7 +19,7 @@ if($_SERVER['REQUEST_METHOD'] == 'GET') {
             $strHtmlArr[]=display_htlm_listJobsItem($element_arr);
 		}
 	}
-	if($i - $limit ==0){
+	if($i == $limit){
 		$check = false;
 	}else $check = true;
 
