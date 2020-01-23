@@ -2,7 +2,7 @@
  
 // include('admin/inc/database.php');
 
-include('Controller/AddDangtin.php');
+include('Controller/AddDangtinController.php');
 $Cty = $db->fetchAll('companies');
 $tinhthanh = $db->fetchAll('province');
 $congviec = $db->fetchAll('jobs');
