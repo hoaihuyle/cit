@@ -44,14 +44,16 @@ function checkWorkTime($POST, $db, $arr){
 }
 
 //Xử lý thêm news
-function CreateNews($db,$new){
+// function CreateNews($db,$new){
 
     //Xử lý hình ảnh
+ /*Upload hình ản*/
+
+  
 
 
-
-    return $db->insert('news', $new);
-}
+    // return $db->insert('news', $new);
+// }
 //Bài đăng active
 function ActiveNews($db, $active)
 {
@@ -136,6 +138,19 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
         }
 
 
+        if(empty($errors)){
+        
+
+
+
+
+            header('Location: tong-hop');
+        }
+        else
+        { 
+            $message="<p class='required'>Bạn Hãy Nhập Đầy Đủ Thông Tin</p>";
+            
+        }
 
 
 
