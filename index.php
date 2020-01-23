@@ -496,7 +496,7 @@
 <?php include('includes/layout_footer.php');?>
 
 <?php
-    // $show_modal="";
-    // if(isset($_SESSION["user"])){$show_modal="0";}else{$show_modal="1";}
-    // include("scripts/scripts.js.php"); 
+    $show_modal="";
+    if(isset($_SESSION["user"])){$show_modal="0";}else{$show_modal="1";}
+    include("scripts/scripts.js.php"); 
 ?>

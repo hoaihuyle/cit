@@ -48,22 +48,16 @@
 include('_modal.php');
 ?>
 <!-- Buildt js -->
-<!-- thanhjs -->
-<script type="text/javascript" src="/lib/js/thanh.js"></script>
 <!-- Login FireBase -->
 <script type="text/javascript" src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
 <!-- Calendar -->
 <script src="/lib/js/moment-with-locales.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="/lib/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- customjs -->
 <script type="text/javascript"  src="/lib/js/firebase.js?sizefile=<?php echo md5_file("lib/js/firebase.js") ?>"></script>
+<script type="text/javascript" src="/lib/js/thanh.js?sizefile=<?php echo md5_file("lib/js/thanh.js");?>"></script>
 <script type="text/javascript" src="/lib/js/custom.js?sizefile=<?php echo md5_file("lib/js/custom.js");?>"></script>
-
 <!-- Go back -->
-<script>
-	function goBack() {
-	  window.history.back();
-	}
-	
-</script>
+<script> function goBack() { window.history.back(); } </script>
 </body>
 </html>

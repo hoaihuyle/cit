@@ -154,6 +154,105 @@
             $result = mysqli_query($this->link,$sql) or die("Lỗi  truy vấn fetchID " .mysqli_error($this->link));
             return mysqli_fetch_assoc($result);
         }
+        //lấy toàn bộ dữ liệu ở 1 bảng có 1 trường ở trong bảng với điều kiện
+        public function fetchAllTb1JoinWhere($tableAll, $tableJoin, $fore, $col, $clause)
+        {
+            $sql = "SELECT tb1.*, $col 
+            FROM {$tableAll} as tb1 
+            JOIN {$tableJoin} as tb2 
+            ON tb1.id = tb2.{$fore}  
+            WHERE {$col} >= {$clause} ";
+            $result = mysqli_query($this->link,$sql) or die("Lỗi  truy vấn fetchAllTb1JoinWhere " .mysqli_error($this->link).$sql);
+            $data = [];
+            if( $result)
+            {
+                while ($num = mysqli_fetch_assoc($result))
+                {
+                    $data[] = $num;
+                }
+            }
+            return $data;
+            
+        }
+        /**
+         * Custom SQL - Variable $state to check posts are activing or not
+         */
+        public function fetchCustom($get, $limit, $offset){
+            $state=1;$job=null; $province=null; $company=null;
+            $sql ="SELECT DISTINCT n.id as nid, n.id_type as ntype, n.title, n.description, n.files,n.price, a.timestamp, a.end_date,m.slug, n.contacts 
+                FROM news as n 
+                JOIN active as a ON a.id_news=n.id 
+                LEFT JOIN type_post as tp ON n.id_type=tp.id 
+                LEFT JOIN menu as m ON m.id= tp.menu_id ";
+
+            if($get!='all') $str_q=" m.slug ='$get' AND ";
+            else $str_q=" ";
+            // m.slug IN ('one-time','fulltime','parttime')
+
+            if(isset($_GET['job'])&&isset($_GET['province'])&&isset($_GET['company']) && isset($_GET['search'])){
+
+                $job = $_GET['job'];
+                $province = $_GET['province'];
+                $company = $_GET['company'];
+                $search=$_GET['search'];
+
+                $query = $sql." 
+                LEFT JOIN jobs as j
+                ON n.id_job= j.id 
+                LEFT JOIN province as p
+                on n.id_province= p.id
+                LEFT JOIN companies as c
+                on n.id_subcate= c.id WHERE ". $str_q;
+                //Do real escaping here
+
+                $conditions = array();
+            
+                if($job!=0 && $job !=null) {
+                $conditions[] = "id_job='$job'";
+                }
+                if($province!=0 && $province !=null) {
+                $conditions[] = "id_province='$province'";
+                }
+                if($company!=0 && $company !=null) {
+                $conditions[] = "id_subcate='$company'";
+                }
+                // if($state==1){
+                //     $str=implode(',',list_post_activing());
+                //     $conditions[]="n.id IN ($str)";
+                // }
+                // if($state==2)
+                // {
+                //     $str=implode(',',list_post_activing());
+                //     $conditions[]="n.id NOT IN ($str)";
+                // }
+                if($search!="null")
+                {
+                    $conditions[]="title LIKE '%$search%'";
+                }
+                $sql = $query;
+                if (count($conditions) > 0) {
+                $sql .= implode(' AND ', $conditions);
+                }
+            }else{
+                if($get!='all') $str_q=" WHERE m.slug ='$get' AND";
+                else $str_q=" WHERE ";
+
+                if(isset($limit)) $limit = " LIMIT ".$limit;
+                if(isset($offset)) $limit .= " OFFSET ".$offset;
+
+                $sql =$sql.$str_q." a.end_date > DATE(CURDATE()) AND a.state = 1 AND a.end_date = (SELECT MAX(end_date) FROM `active` WHERE id_news = a.id_news ) ORDER BY a.modified DESC,n.id DESC ".$limit; 
+            }
+            $result = mysqli_query($this->link,$sql) or die("Lỗi  truy vấn fetchAllTb1JoinWhere " .mysqli_error($this->link).$sql);
+            $data = [];
+            if( $result)
+            {
+                while ($num = mysqli_fetch_assoc($result))
+                {
+                    $data[] = $num;
+                }
+            }
+            return $data;
+        }
         //kiểm tra dữ liệu tồn tại trong bảng hay chưa??
         public function fetchOne($table , $query)
         {

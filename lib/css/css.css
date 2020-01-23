@@ -48,14 +48,8 @@ body{
   margin-top: 30px;
   background-color: white;
 }
-
 #menu_fix .nav-item a {
     font-size: 1.5vw;
-}
-
-/*=====================Main===================*/
-#main{
-
 }
 /*==========Carousel===========*/
 
@@ -129,10 +123,6 @@ body{
 
 
 /*===========Services=========*/
-#services{
-
-}
-
 .con_service h2 {
   text-align: center;
     font-size: 32px;
