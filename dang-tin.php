@@ -314,7 +314,7 @@ $loailuong = $db->fetchAll('typesalary');
                 <label>Chọn Ảnh Đại Diện Của Bài Viết</label>
                 <label for="files" class="btn btn-success">Chọn ảnh</label>
                 <label id="nameimg"></label>
-                <input type="file" style="visibility:hidden" id="files" name="img">
+                <input type="file" style="visibility:hidden" id="files"  name="img">
                 <?php
                     if(isset($errors) && in_array('img', $errors))
                     {
