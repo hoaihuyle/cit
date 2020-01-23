@@ -43,7 +43,9 @@ function checkWorkTime($POST, $db, $arr){
             }
     }
 }
-
+function CreateNews($db,$new){	
+    return $db->insert('news', $new);	
+}
 //Xử lý hình ảnh
 function CreateImg($new){
     //Xử lý hình ảnh
