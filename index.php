@@ -102,7 +102,7 @@
     </div>
 
 
-    <div class="employee-slider">
+    <div class="employee-slider slide">
       <div>
         <div class="ih-item employers-square">
           <a href="#">

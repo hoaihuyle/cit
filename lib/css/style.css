@@ -779,15 +779,11 @@ body.modal-open{
 	display: table;
 }
 /*===============SLIDE  show*===========*/
-
-
-
-/* #memeber style */
-.memeber-slider .ih-item.circle.effect1 .spinner{
-	/*border: 10px solid #FFD900;
+/* .memeber-slider .ih-item.circle.effect1 .spinner{
+	border: 10px solid #FFD900;
 	border-right-color: #507EBC;
-	border-bottom-color: #507EBC;*/
-}
+	border-bottom-color: #507EBC;
+} */
 
 .memeber-slider .slick-track{
 	margin: 20px 0px;
@@ -1209,7 +1205,7 @@ body.modal-open{
     width: 100%;
 	z-index: 1031;
     position: fixed;
-	margin-top: 35px;
+	top: 6%;
 	display: none;
 }
 #searchFormNav form{
