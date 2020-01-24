@@ -1,27 +1,2 @@
-RewriteEngine On
-
-RewriteCond %{HTTPS} !on
-
-#first page default
-DirectoryIndex tim-viec.php?get=all 
-
-RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
-
-#RewriteRule ^([^\.]+)$ $1.php [NC,L]
-
-RewriteRule ^([a-zA-Z-]+)$ /tim-viec.php?get=$1 [L,QSA]
-
-#RewriteRule ^(postjob)/ /viec-lam-ngay.php [L,QSA]
-
-#https://cit.cit/search/5/0/0/h/L%E1%BB%8Dc/
-RewriteRule ^(search)/([0-9]+)/([0-9]+)/([0-9]+)/([^/]+)/([^/]+)/?$ /tim-kiem.php?job=$2&company=$3&province=$4&search=$5&searchJob=Lọc [L,QSA]
-
-RewriteRule ^(job)/([0-9]+) /chi-tiet-bai-dang.php?news_id=$2 [L,QSA] 
-
-RewriteRule ^(job)/([0-9]+)/([^/]+).html/?$ /chi-tiet-bai-dang.php?news_id=$2&title=$3 [L,QSA]
-
-RewriteRule ^(company)/([0-9]+)/([^/]+)/?$ /chi-tiet-cong-ty.php?company_id=$2&title=$3 [L,QSA]
-
-RewriteRule ^(account)/([0-9]+) /tai-khoan.php?user_id=$2 [L,QSA]
-
-RewriteRule ^(user)/([0-9]+) /cap-nhap-ho-so.php?user_id=$2 [L,QSA]
+RewriteEngine on
+RewriteRule ^([a-zA-Z0-9\-\_\/]*)$ Webroot/$1
