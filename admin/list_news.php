@@ -80,7 +80,7 @@ h5{
 						<td style="text-align: left;"><?php echo display_news_jobs($news['id']); ?></td>
 						<td style="text-align: left;"><?php echo display_news_province($news['id']);?></td>
 						<td style="text-align: center;"><?php echo $news['title']; ?></td>
-						<td><img width="100" src="../upload/<?php echo(!empty($news['files'])?$news['files']:'noimage.jpg')?>"></td>
+						<td><img width="100" src="../upload/<?php echo(!empty($news['files'])?$news['files']:'noimage.png')?>"></td>
 						<td><?php echo( (check_active_news($news['id'])?'Có':'Không') );?></td>
 						<td style="text-align: center;">
 							<?php 
