@@ -1,5 +1,4 @@
 <?php
-include('includes/layout_header.php');
 if($get==null || !(is_string($get))){
   header("Location: index.php");
 }
@@ -264,5 +263,4 @@ $numJob = (mysqli_num_rows($jobsData));
   </div>
 </section>
 
-<?php include('includes/layout_footer.php') ?>
 

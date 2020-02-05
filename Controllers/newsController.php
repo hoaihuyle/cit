@@ -7,7 +7,11 @@ class NewsController extends Controller
         $news = new NewsDAO();
         $d['news'] = $news->listNews($db);
         $this->set($d);
-        $this->render("index");
+        $this->render("tim-viec");
+    }
+
+    function all(){
+        $this -> index();
     }
 
     // function create()

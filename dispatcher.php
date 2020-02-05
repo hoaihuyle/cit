@@ -18,6 +18,7 @@ class Dispatcher
         //["action"]=> string(5) "index" 
         //["params"]=> array(0) { }
         call_user_func_array([$controller, $this->request->action], $this->request->params);
+       
     }
 
     /**
