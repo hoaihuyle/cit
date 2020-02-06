@@ -131,8 +131,10 @@
             }
             return true;
         }
+        //
+    // ==========================FETCH ===========================
         // truy vấn dữ liệu trong bảng - tùy chọn
-        public function fetchsql( $sql )
+        public function fetchsql($sql)
         {
             $result = mysqli_query($this->link,$sql) or die("Lỗi  truy vấn sql " .mysqli_error($this->link));
             $data = [];
@@ -149,7 +151,7 @@
          //lấy toàn bộ dữ liệu của id có trong bảng
          public function fetchByColOther($table , $col, $colval )
          {
-            $sql = "SELECT * FROM {$table} WHERE $col != $colval ORDER BY `menu`.`sort_order` ASC";
+            $sql = "SELECT * FROM {$table} as tb WHERE $col != $colval ORDER BY tb.`sort_order` ASC";
             $result = mysqli_query($this->link,$sql) or die("Lỗi  truy vấn fetchID " .mysqli_error($this->link));
             $data = [];
             if( $result)
@@ -163,20 +165,55 @@
          }
         
         //lấy toàn bộ dữ liệu của id có trong bảng
-        public function fetchID($table , $id )
+        public function fetchID($table , $id)
         {
             $sql = "SELECT * FROM {$table} WHERE id = $id ";
             $result = mysqli_query($this->link,$sql) or die("Lỗi  truy vấn fetchID " .mysqli_error($this->link));
             return mysqli_fetch_assoc($result);
         }
+        /**
+         * String query active join between two table
+         * read all col in table 1
+         * read few col in table 2 throw array parameter
+         * return string
+         */
+        public function queryJoin($tableAll, $tableJoin, $fore, $cols)
+        {
+            $cols = implode(",tb2.", $cols);
+            $sql = "SELECT tb1.*,tb2.".$cols." 
+            FROM {$tableAll} as tb1 
+            JOIN {$tableJoin} as tb2 
+            ON tb1.id = tb2.{$fore} ";
+
+            return $sql;
+        }
+
+        /**
+         * Extend queryJoin
+         * return array 
+         * ORDER BY COL
+         */
+        public function fetchAlltb1Coltb2JoinOrder($tableAll, $tableJoin, $fore, $cols, $order){
+           
+            $sql = $this -> queryJoin($tableAll, $tableJoin, $fore, $cols);
+            $sql.="ORDER BY {$order} DESC";
+            $result = mysqli_query($this->link,$sql) or die("Lỗi  truy vấn fetchAllTb1JoinWhere " .mysqli_error($this->link).$sql);
+            $data = [];
+            if( $result)
+            {
+                while ($num = mysqli_fetch_assoc($result))
+                {
+                    $data[] = $num;
+                }
+            }
+            return $data;
+        }
+
         //lấy toàn bộ dữ liệu ở 1 bảng có 1 trường ở trong bảng với điều kiện
         public function fetchAllTb1JoinWhere($tableAll, $tableJoin, $fore, $col, $clause)
         {
-            $sql = "SELECT tb1.*, $col 
-            FROM {$tableAll} as tb1 
-            JOIN {$tableJoin} as tb2 
-            ON tb1.id = tb2.{$fore}  
-            WHERE {$col} >= {$clause} ";
+            $sql = $this -> queryJoin($tableAll, $tableJoin, $fore, $col);
+            $sql .= "WHERE {$col} >= {$clause} ";
             $result = mysqli_query($this->link,$sql) or die("Lỗi  truy vấn fetchAllTb1JoinWhere " .mysqli_error($this->link).$sql);
             $data = [];
             if( $result)
@@ -189,6 +226,7 @@
             return $data;
             
         }
+
         /**
          * Custom SQL - Variable $state to check posts are activing or not
          */
@@ -334,7 +372,8 @@
             
             return $data;
         }
-         public  function fetchJone($table,$sql ,$page = 0,$row ,$pagi = false )
+
+        public  function fetchJone($table,$sql ,$page = 0,$row ,$pagi = false )
         {
             
             $data = [];
@@ -393,6 +432,8 @@
             $tien = mysqli_fetch_assoc($result);
             return $tien;
         }
+    //===========End FETCH
     }
+    
    
 ?>

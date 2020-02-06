@@ -766,7 +766,12 @@
 	//Display jobs Hot in home page
 	function list_news_jobsHot(){
 		global $dbc;
-		$sql_sidebar="SELECT n.`id` as nid, a.`count` as acount ,n.`id_type`, n.`id_job`, n.`id_province`, n.`id_subcate`, n.`id_typesalary`, n.`title` as ntitle, n.`files` as nfiles, n.`price` as nprice, n.`role` as nrole, n.`timestamp` as ntimestamp, n.`contacts` as ncontacts FROM `news` as n LEFT JOIN active as a ON n.id = a.id_news ORDER BY `a`.`count` DESC";
+		$sql_sidebar="SELECT n.`id` as nid, a.`count` as acount ,
+		n.`id_type`, n.`id_job`, n.`id_province`, n.`id_subcate`, n.`id_typesalary`, 
+		n.`title` as ntitle, n.`files` as nfiles, n.`price` as nprice, n.`role` as nrole, 
+		n.`timestamp` as ntimestamp, n.`contacts` as ncontacts 
+		FROM `news` as n 
+		LEFT JOIN active as a ON n.id = a.id_news ORDER BY `a`.`count` DESC";
         $results_sidebar=mysqli_query($dbc,$sql_sidebar);
         if(mysqli_num_rows($results_sidebar)>0)
         {

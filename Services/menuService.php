@@ -1,22 +1,17 @@
 <?php 
 $db = new Database();
+require(ROOT . 'Models/DAO/menuDAO.php');
 class MenuService extends Service{
-    function fetchAll($db){
-        require(ROOT . 'Models/DAO/menuDAO.php');
-        $menu = new MenuDAO();
-        return $menu->fetchAll($db); 
-    }
-    function fetchByColOther($db){
-        require(ROOT . 'Models/DAO/menuDAO.php');
-        $menu = new MenuDAO();
-        return $menu->fetchByColOther($db); 
-    }
+
     function listMenuByParent($db){
+       
+        $menu = new MenuDAO();
+       
         $dataPa=[];
         $dataChil=[];
         
         $data[]=[];
-        $menus = $this->fetchByColOther($db);
+        $menus =  $menu->fetchByColOther($db); 
         $i=0; 
 
         foreach ($menus as $menu){
@@ -28,7 +23,9 @@ class MenuService extends Service{
             }          
             $i++;
         }
+
         $i=0;
+        
         foreach($dataPa as $pa){
             $data[$i] = $pa;
             $arr=[];

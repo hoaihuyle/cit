@@ -28,17 +28,22 @@ class NewsDAO extends Model
     //     return null;
     // }
 
-    public function listNews($db){
+    public function fetchAll($db){
         return $db->fetchAll('news');
-     }
+    }
+
+    public function fetchAlltb1Coltb2JoinOrder($db){
+        $cols = array("count", "end_date");
+        return $db ->fetchAlltb1Coltb2JoinOrder('news', 'active', 'id_news', $cols,'count');
+    }
  
-    public function listNewsActive($db){
-         return $db ->fetchAllTb1JoinWhere('news', 'active', 'id_news','end_date', 'NOW()');
-     }
+    public function fetchAllTb1JoinWhere($db){
+        return $db ->fetchAllTb1JoinWhere('news', 'active', 'id_news','end_date', 'NOW()');
+    }
  
-    public function listNewsActiveCust($db, $get, $limit, $offset){
+    public function fetchCustom($db, $get, $limit, $offset){
          return $db -> fetchCustom($get, $limit, $offset);
-     }
+    }
 
     // public function edit($id, $title, $description)
     // {

@@ -1,6 +1,4 @@
 <?php
-
-
 class MenuDAO extends Model
 {
     

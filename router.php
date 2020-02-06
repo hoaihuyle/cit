@@ -9,7 +9,7 @@ class Router
 
         if ($url == "/")
         {
-            $request->controller = "home";
+            $request->controller = "news";
             $request->action = "index";
             $request->params = [];
         }

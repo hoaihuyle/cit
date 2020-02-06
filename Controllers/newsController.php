@@ -1,13 +1,15 @@
 <?php
 class NewsController extends Controller
 {
-    function index()
-    {
-        require(ROOT . 'Models/DAO/newsDAO.php');
-        $news = new NewsDAO();
-        $d['news'] = $news->listNews($db);
+    function index(){
+        require(ROOT . 'Services/newsService.php');
+        $news = new NewsService();
+        
+        $d['newsHot'] = $news->listHotNews($db);  
+        $d['newsRecents'] = $news->listRecentNews($db, $get, $limit, $offset);
         $this->set($d);
-        $this->render("tim-viec");
+
+        $this->render("News/index");
     }
 
     function all(){

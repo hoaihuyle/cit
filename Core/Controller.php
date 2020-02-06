@@ -3,6 +3,8 @@
     class Controller
     {
         var $vars = [];
+        var $menu = "_menu";
+        var $func = "myUntils";
         var $layout = "default";
         var $layout_header ="includes/layout_header";
 
@@ -32,6 +34,10 @@
             extract($this->vars);
 
             ob_start();
+            require(ROOT . "Views/includes/" . $this->func . '.php');
+            $content_for_Func = ob_get_clean();
+
+            ob_start();
             // require(ROOT . "Views/" . ucfirst(str_replace('Controller', '', get_class($this))) . '/' . $filename . '.php');
             require(ROOT . "Views/" . $filename . '.php');
             // echo(ROOT . "Views/" .ucfirst(str_replace('Controller', '', get_class($this))) . '/' . $filename . '.php');
@@ -39,11 +45,12 @@
             $content_for_layout = ob_get_clean();
 
             ob_start();
-            require(ROOT . "Views/includes/_menu.php");
+            require(ROOT . "Views/includes/" . $this->menu . '.php');
             $content_for_Menu = ob_get_clean();
 
             if ($this->layout == false||$this->layout_header == false)
             {
+                $content_for_Func; 
                 if($this->layout == false)
                 $content_for_layout;
                 if($this->layout_header == false)
