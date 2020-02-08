@@ -807,7 +807,9 @@
 	//Code to display sidebar - Favorite jobs 
 	function list_news_jobsHotData_SideBar($listJob, $limit){
 		global $dbc;
-		$sql_sidebar="SELECT n.`id` as nid, n.`title` as ntitle, `count` FROM news as n JOIN active as a ON n.id = a.id_news WHERE n.id IN (".implode(',',$listJob).") ORDER BY count DESC LIMIT ".$limit;
+		$sql_sidebar="SELECT n.`id` as nid, n.`title` as ntitle, `count` 
+		FROM news as n JOIN active as a ON n.id = a.id_news 
+		WHERE n.id IN (".implode(',',$listJob).") ORDER BY count DESC LIMIT ".$limit;
         $results_sidebar=mysqli_query($dbc,$sql_sidebar);
         if(mysqli_num_rows($results_sidebar)>0)
         {

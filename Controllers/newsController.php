@@ -1,19 +1,46 @@
 <?php
 class NewsController extends Controller
 {
+    var $LIMIT_SIDEBAR=8;
+    var $LIMIT = 7;
+    var $index="News/index";
+    var $template="_list-job";
+
     function index(){
         require(ROOT . 'Services/newsService.php');
         $news = new NewsService();
         
         $d['newsHot'] = $news->listHotNews($db);  
-        $d['newsRecents'] = $news->listRecentNews($db, $get, $limit, $offset);
+        $d['newsRecents'] = $news->listRecentNews($db, 'all', $this->LIMIT, 0);
+        $d['newsSideBar'] = $news->listHotNewsActive($db, $this->LIMIT_SIDEBAR);
         $this->set($d);
 
-        $this->render("News/index");
+        $this->render($this->index);
     }
 
     function all(){
-        $this -> index();
+        $this -> templateList(__FUNCTION__);
+    }
+
+    function fulltime(){
+        $this -> templateList(__FUNCTION__);
+    }
+
+    function parttime(){
+        $this -> templateList(__FUNCTION__);
+    }
+
+    function onetime(){
+        $this -> templateList(__FUNCTION__);
+    }
+
+    function templateList($get){
+        require(ROOT . 'Services/newsService.php');
+        $news = new NewsService();
+        $d['newsRecents'] = $news->listRecentNews($db, $get, $this->LIMIT*2, 0);
+        $d['newsSideBar'] = $news->listHotNewsActive($db, $this->LIMIT_SIDEBAR);
+        $this->set($d);
+        $this->render($this->template);
     }
 
     // function create()
