@@ -35,7 +35,18 @@ class NewsService extends Service{
             $data[$i]['province']=  $province;
             $i++;
         }
+
         return $data;
+    }
+
+    /**
+     * listNews func
+     * List recent News use listNews func
+     */
+    public function listNewsByUser($db, $id){
+        $news = new NewsDAO();
+        $listNews =  $news->featchAllNewsByUser($db, $id); 
+        return $this -> listNews($db,$listNews);
     }
 
     /**
@@ -55,48 +66,40 @@ class NewsService extends Service{
     public function listHotNews($db){
 
         $news = new NewsDAO();
-        $listNews =  $news->fetchAlltb1Coltb2JoinOrder($db); 
+        $listNews =  $news->fetchsqlTotalWatch($db); 
         return $this -> listNews($db,$listNews);
     }
 
     /**
      * List all news are activing
-     * return array list 
+     * return list news
      */
-    public function listNewsActive($db){
+    public function listHotNewsActive($db, $limit){
         $news = new NewsDAO();
-        $list=array();
-        $results_acitve = $news->fetchsqlActive($db);
+        $data = [];
+        $results_acitve = $news->fetchsqlHotActive($db, $limit);
+        $i=0;
 	    while($acitve = $results_acitve->fetch_assoc())
 	    {
             $end_date = new DateTime($acitve['end_date']);
             $now = new DateTime("now");
-            if($end_date > $now && $acitve['state']==1) $arr[]=$acitve['id_news']; 		
-        }
-	    if(isset($arr))
-	    {
-	    	foreach ($arr as $key) {
-	    	# code...
-	    	if(!in_array($key,$list))
-	    		$list[]=$key;
-            }
-           
-		    return $list;
-	    }
-	    else
-            return null;
-            
-        
+            if($end_date > $now && $acitve['state']==1){
+                if($i==$limit) break;
+                $data[]=$acitve; 
+                $i++;
+            } 	
+        } 
+        return $data;
     }
 
     /**
      * List all news are activing to show sidebar
      */
-    public function listHotNewsActive($db, $limit){
-        $news = new NewsDAO();
-        $data = $news->fetchsqlHotActive($db, $this-> listNewsActive($db), $limit);
-        return $data; 
-    }
+    // public function listHotNewsActive($db, $limit){
+    //     $news = new NewsDAO();
+    //     $data = $news->fetchsqlHotActive($db, $this-> listNewsActive($db), $limit);
+    //     return $data; 
+    // }
    
 }
 

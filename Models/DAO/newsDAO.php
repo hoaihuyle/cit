@@ -28,23 +28,31 @@ class NewsDAO extends Model
     //     return null;
     // }
 
-    public function fetchAll($db){
-        return $db->fetchAll('news');
-    }
-
     /**
      * get all table1 JOIN table2 with a order in a column
      */
-    public function fetchAlltb1Coltb2JoinOrder($db){
-        $cols = array("count", "end_date");
-        return $db ->fetchAlltb1Coltb2JoinOrder('news', 'active', 'id_news', $cols,'count');
+    public function featchAllNewsByUser($db,$id){
+        $sql="SELECT n.*, ac.`end_date`, ac.`count`, SUM(count) as total
+        FROM `news` as n 
+        LEFT JOIN active as ac ON n.id = ac.id_news 
+        LEFT JOIN applies as ap ON ap.id_active = ac.id
+        JOIN users as u ON u.id_app = ap.id_app
+        WHERE u.id = $id
+        GROUP BY ac.id_news
+        ORDER BY ap.timestamp DESC";
+        return $db ->fetchsql($sql);
     }
     
     /**
+     * listHotNews: show all news top 
      * get all table1 JOIN table2 with a condition
      */
-    public function fetchAllTb1JoinWhere($db){
-        return $db ->fetchAllTb1JoinWhere('news', 'active', 'id_news','end_date', 'NOW()');
+    public function fetchsqlTotalWatch($db){
+        $sql="SELECT tb1.*,tb2.count,tb2.end_date, SUM(tb2.count) as total 
+        FROM news as tb1 JOIN active as tb2 ON tb1.id = tb2.id_news 
+        GROUP BY tb2.id_news 
+        ORDER BY total DESC";
+        return $db ->fetchsql($sql);
     }
  
     /**
@@ -119,22 +127,16 @@ class NewsDAO extends Model
     }
 
     /**
-     * List all news are activing
+     * List all news are activing to sidebar
      */
-    public function fetchsqlActive($db){
-        $sql="SELECT * FROM active";
+    public function fetchsqlHotActive($db){
+        // $sql="SELECT n.*, a.count, a.end_date, a.state, a.id_news
+        // FROM news as n JOIN active as a ON n.id = a.id_news
+        // ORDER BY count DESC LIMIT ".$limit; 
+        $cols = array("count", "end_date","state","id_news");
+        $sql = $db ->queryJoin('news','active','id_news',$cols);
+        $sql.=" ORDER BY count DESC";
         return $db ->fetchsqlConn($sql);
-    }
-
-     /**
-     * List all news are activing to show sidebar
-     */
-    public function fetchsqlHotActive($db, $list, $limit){
-        $sql="SELECT n.*, `count` 
-		FROM news as n JOIN active as a ON n.id = a.id_news 
-        WHERE n.id IN (".implode(',',$list).") ORDER BY count DESC LIMIT ".$limit;
-        return $db ->fetchsql($sql);
-       
     }
 
     // public function edit($id, $title, $description)

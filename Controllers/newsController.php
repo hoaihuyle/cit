@@ -1,13 +1,14 @@
 <?php
 class NewsController extends Controller
 {
-    var $LIMIT_SIDEBAR=8;
+    var $service ="Services/newsService.php";
+    var $LIMIT_SIDEBAR=7;
     var $LIMIT = 7;
     var $index="News/index";
     var $template="_list-job";
 
     function index(){
-        require(ROOT . 'Services/newsService.php');
+        require(ROOT . $this->service);
         $news = new NewsService();
         
         $d['newsHot'] = $news->listHotNews($db);  
@@ -35,7 +36,7 @@ class NewsController extends Controller
     }
 
     function templateList($get){
-        require(ROOT . 'Services/newsService.php');
+        require(ROOT . $this->service);
         $news = new NewsService();
         $d['newsRecents'] = $news->listRecentNews($db, $get, $this->LIMIT*2, 0);
         $d['newsSideBar'] = $news->listHotNewsActive($db, $this->LIMIT_SIDEBAR);

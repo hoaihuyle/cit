@@ -11,15 +11,15 @@
              <li class="breadcrumb-item active" aria-current="page"><?php if($get='all') echo 'TỔNG HỢP'; else echo strtoupper($get); ?></li>
           </ol>
           <ol class=" breadcrumb logo-support">
-            <li class=" breadcrumb-item logo-support-item" aria-current="page"><img src="lib/img/logo/dntrelogo-fit.jpg"></li>
-            <li class=" breadcrumb-item logo-support-item" aria-current="page"><img src="lib/img/logo/logoclbit-fit.jpg"></li>
-            <li class=" breadcrumb-item logo-support-item" aria-current="page"><img src="lib/img/logo/khoinghiephuelogo-fit.png"></li>
-            <li class=" breadcrumb-item logo-support-item" aria-current="page"><img src="lib/img/logo/hsalogo-fit.jpg"></li>
+            <li class=" breadcrumb-item logo-support-item" aria-current="page"><img src="/lib/img/logo/dntrelogo-fit.jpg"></li>
+            <li class=" breadcrumb-item logo-support-item" aria-current="page"><img src="/lib/img/logo/logoclbit-fit.jpg"></li>
+            <li class=" breadcrumb-item logo-support-item" aria-current="page"><img src="/lib/img/logo/khoinghiephuelogo-fit.png"></li>
+            <li class=" breadcrumb-item logo-support-item" aria-current="page"><img src="/lib/img/logo/hsalogo-fit.jpg"></li>
           </ol>
         </nav>
       </div>
       <div class="sp-right text-center">
-        <img src="lib/img/sub-page-img-01.png" class="">
+        <img src="/lib/img/sub-page-img-01.png" class="">
       </div>
       </div>
     </div>

@@ -158,7 +158,34 @@
 		}
 		$string.='.....<a class="more-detail" href="'.display_href_article_link($nid,$title).'">Click để biết thêm thông tin và ứng tuyển<i class="fas fa-mouse"></i></a>';
 		return $string;
-    }
+	}
+	
+	//Compare days: return null if day < now
+	// Powerful Function to get two date difference.
+
+	//////////////////////////////////////////////////////////////////////
+	//PARA: Date Should In YYYY-MM-DD Format
+	//RESULT FORMAT:
+	// '%y Year %m Month %d Day %h Hours %i Minute %s Seconds'        =>  1 Year 3 Month 14 Day 11 Hours 49 Minute 36 Seconds
+	// '%y Year %m Month %d Day'                                    =>  1 Year 3 Month 14 Days
+	// '%m Month %d Day'                                            =>  3 Month 14 Day
+	// '%d Day %h Hours'                                            =>  14 Day 11 Hours
+	// '%d Day'                                                        =>  14 Days
+	// '%h Hours %i Minute %s Seconds'                                =>  11 Hours 49 Minute 36 Seconds
+	// '%i Minute %s Seconds'                                        =>  49 Minute 36 Seconds
+	// '%h Hours                                                    =>  11 Hours
+	// '%a Days                                                        =>  468 Days
+	//////////////////////////////////////////////////////////////////////
+	function dateDifference($date_1 , $date_2 , $differenceFormat = '%a' ){
+		// date_diff($day,$now)->format("%R%a days")
+		$datetime1 = date_create($date_1->format('Y-m-d H:i:s'));
+		$datetime2 = date_create($date_2->format('Y-m-d H:i:s'));
+		
+		$interval = date_diff($datetime1, $datetime2);
+		
+		return $interval->format($differenceFormat);
+		
+	}
     
     /**
     * debug
@@ -194,5 +221,90 @@
 		$str = preg_replace('/\s+/', '-', $str);
         return $str;
 	}
+
+	// ================================Libarary Lib file ==================================
+	/**
+	 * Upload Image thumnbal
+	 */
+	function uploadImagesThumb($file,$org_path,$thumb_path){
+	
+		$imageName = date('Ymjgis').".jpg";
+	
+		///////// Start the thumbnail generation//////////////
+		$n_width=300;          // Fix the width of the thumb nail images
+		$n_height=200;         // Fix the height of the thumb nail imaage
+	
+		
+		$add=$org_path.$imageName;
+		$tsrc=$thumb_path.$imageName;
+		// var_dump($add);
+		// echo "-----------";
+		// var_dump(move_uploaded_file ($file['tmp_name'],$add));
+		// die();
+		//echo $add;
+		if(move_uploaded_file ($file['tmp_name'],$add)){
+			// echo "Successfully uploaded the mage";
+			// die();
+			chmod("$add",0777);
+		}else{
+			//echo "Failed to upload file Contact Site admin to fix the problem";
+		exit;
+		}
+		
+		//echo $tsrc;
+		if (!($file['type'] =="image/jpeg" OR $file['type']=="image/gif")){
+		echo json_encode("Your uploaded file must be of JPG or GIF. Other file types are not allowed<BR>");
+		exit;}
+		/////////////////////////////////////////////// Starting of GIF thumb nail creation///////////
+		if($file['type']=="image/gif")
+		{
+		$im=ImageCreateFromGIF($add);
+		$width=ImageSx($im);              // Original picture width is stored
+		$height=ImageSy($im);                  // Original picture height is stored
+		$newimage=imagecreatetruecolor($n_width,$n_height);
+		imageCopyResized($newimage,$im,0,0,0,0,$n_width,$n_height,$width,$height);
+		if (function_exists("imagegif")) {
+		Header("Content-type: image/gif");
+		ImageGIF($newimage,$tsrc);
+		}
+		elseif (function_exists("imagejpeg")) {
+		Header("Content-type: image/jpeg");
+		ImageJPEG($newimage,$tsrc);
+		}
+		chmod("$tsrc",0777);
+		}////////// end of gif file thumb nail creation//////////
+	
+		////////////// starting of JPG thumb nail creation//////////
+		if($file['type']=="image/jpeg"){
+			$im=ImageCreateFromJPEG($add); 
+			$width=ImageSx($im);              // Original picture width is stored
+			$height=ImageSy($im);             // Original picture height is stored
+			$newimage=imagecreatetruecolor($n_width,$n_height);                 
+			imageCopyResized($newimage,$im,0,0,0,0,$n_width,$n_height,$width,$height);
+			ImageJpeg($newimage,$tsrc);
+			chmod("$tsrc",0777);
+		}
+	
+		return $imageName;
+	}
+	/**
+	 * Function send email
+	 */
+	function sendeMail($mailto, $subject, $sender_name, $sender_email, $mailcontent) {
+		$extra= "Content-Type: text/html;charset=utf-8\r\n";
+		// $extra = "From: $sender_name<$sender_email>\nContent-Type:  text/html ";
+		$extra .= 'From: '.$sender_name.'<'.$sender_email.'>'."\r\n".
+		'Reply-To: '.$mailto."\r\n" .
+		'X-Mailer: PHP/' . phpversion();
+		if (empty ($mailto)) {
+			return false;
+		}
+		$message = '<html><body>';
+		$message .= $mailcontent;
+		$message .= '</body></html>';
+		return mail($mailto, $subject, $mailcontent, $extra);
+	};
+
+	
 	
 ?>

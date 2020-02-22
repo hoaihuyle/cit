@@ -15,26 +15,25 @@ class Router
         }
         else
         {
-            // https://cit.cit/{url} -> controller news
+            // https://cit.cit/{url} -> controller is url, action defaut index
             $explode_url = explode('/', $url);
             $explode_url = array_slice($explode_url, 1);
             if(!isset($explode_url[1])) {
-                $request->controller = "news";
-                $request->action = $explode_url[0];
+                $request->controller =  $explode_url[0];
+                $request->action = "index";
                 $request->params = [];
             }else {
-                //CRUD with R is default index
-                //https://cit.cit/{}/CUD/parameter/ || https://cit.cit/{url}/parameter/
+                //default is index can clear
+                //https://cit.cit/{url}/action/parameter/ || https://cit.cit/{url}/parameter/
                 $request->controller = $explode_url[0];
-
-                if(empty($explode_url[2])){
+                if(is_numeric($explode_url[1])){
                     $request->action = "index";
                     $request->params = array_slice($explode_url, 1);
-                }else{
+                }
+                else{
                     $request->action = $explode_url[1];
                     $request->params = array_slice($explode_url, 2);
-                }
-               
+                }               
             }
         }
 

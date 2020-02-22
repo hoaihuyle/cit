@@ -1,5 +1,5 @@
 <?php
-class provinceDAO extends Model
+class ProvinceDAO extends Model
 {
     
     public function fetchAll($db){

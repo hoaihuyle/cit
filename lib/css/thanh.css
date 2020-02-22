@@ -39,6 +39,6 @@ body{
 #job-DT .right .select2-container--default .select2-selection--single{height: calc(2.25rem + 2px);border: 1px solid #ced4da;}
 #job-DT .right .select2-container--default .select2-selection--single .select2-selection__rendered{line-height: 35px;}
 #job-DT .right .select2-container--default .select2-selection--single .select2-selection__arrow{top: 5px}
-#job-DT .modal.show .modal-dialog{padding-top: 15px}
+
 
 #box-contain{ margin-top: -20px; }

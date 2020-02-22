@@ -1,22 +1,22 @@
 <?php  
-if(isset($user_id)){
-	if(isset($id_app))
-		$newsInfo=display_newsInfo_by_appID($id_app);
-		// var_dump($newsInfo);
-		// die();
-}
-if(isset($company_id)){
-	$newsInfo=display_newsInfo_by_companyID($company_id);
-}
+// if(isset($user_id)){
+// 	if(isset($id_app))
+// 		$newsInfo=display_newsInfo_by_appID($id_app);
+// 		// var_dump($newsInfo);
+// 		// die();
+// }
+// if(isset($company_id)){
+// 	$newsInfo=display_newsInfo_by_companyID($company_id);
+// }
 ?>
 
 <div class="apply-post ">
 	<?php
-	if(isset($newsInfo))
-		foreach ($newsInfo as $key) { ?>
+	if(isset($listNews))
+		foreach ($listNews as $key) { ?>
 			<div class="list-apply ">
 				<div class="job-header job-tag">		
-					<a href=" <?php echo display_href_article_link( $key["nid"],$key["title"]) ?>" ><?php echo limit_title($key['title'],40); ?><sup><span class="badge badge-pill badge-secondary"><?php echo $key['count']; ?> lượt xem</span></sup> </a>
+					<a href=" <?php echo display_href_article_link( $key["id"],$key["title"]) ?>" ><?php echo limit_title($key['title'],40); ?><sup><span class="badge badge-pill badge-secondary"><?php echo $key['total']; ?> lượt xem</span></sup> </a>
 
 				</div>
 
@@ -50,16 +50,9 @@ if(isset($company_id)){
 					<?php } // End if user_id ?>
 				</div>
 				<div class="apply-info">
-					<div class="apply-item-title job-tag">
-
-						<span data-toggle="tooltip" title="Thông tin về thời gian bạn ứng tuyển công việc này"><i class="fas fa-calendar-day"></i><?php echo(date_format(date_create($key['end_date']),'d/m/Y')); ?></span>
-						<span><i class="fas fa-map-marker-alt"></i><?php echo display_news_province($key['nid']); ?></span>
-						<span><i class="fas fa-briefcase"></i><?php echo display_news_jobs($key['nid']); ?></span>
-						<span><i class="far fa-building"></i><?php echo display_name_company($key['nid']) ?></span>
-					</div>
 					<div class="job-content">
 						<?php 
-						$st='chi-tiet-bai-dang.php?news_id='.$key['nid']; 
+						$st='chi-tiet-bai-dang.php?news_id='.$key['id']; 
 						echo limit_text_length($key['description'],150,$st)
 						?>
 					</div>

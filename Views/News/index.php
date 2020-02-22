@@ -196,7 +196,7 @@
                     </div>
 
                     <div class="job-watch">
-                        <span class="badge badge-pill badge-secondary"><?php echo $news["count"] ?> lượt xem <i class="fas fa-eye"></i></span>
+                        <span class="badge badge-pill badge-secondary"><?php echo $news["total"] ?> lượt xem <i class="fas fa-eye"></i></span>
                     </div>
                 </div>
             </div>

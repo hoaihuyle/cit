@@ -1,15 +1,5 @@
 <?php
 session_start();
-// if(isset($_SESSION['user'])){
-//   var_dump($_SESSION['user']['id']);
-// } 
-// die();
-/*session_destroy();
-unset($_SESSION['user']);*/
-// include('admin/inc/myconnect.php');
-// include('config/config.php');
-// include('sysenv.php');
-
 ?>
 
 <html lang="en">

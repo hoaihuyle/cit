@@ -186,15 +186,35 @@
          * read few col in table 2 throw array parameter
          * return string
          */
-        public function queryJoin($tableAll, $tableJoin, $fore, $cols)
+        public function queryJoin($tableAll, $tableJoin, $fore, $cols, $cuscol=null)
         {
             $cols = implode(",tb2.", $cols);
-            $sql = "SELECT tb1.*,tb2.".$cols." 
+            if($cuscol==null) $cuscol="";
+            else $cuscol=','.$cuscol;
+            $sql = "SELECT tb1.*,tb2.".$cols.$cuscol." 
             FROM {$tableAll} as tb1 
             JOIN {$tableJoin} as tb2 
             ON tb1.id = tb2.{$fore} ";
-
+            // var_dump($sql);
+            // die();
             return $sql;
+        }
+
+        /**
+         * Parameter $sql: the query to excute
+         * return array
+         */
+        public function returnArrData($sql){
+            $result = mysqli_query($this->link,$sql) or die("Lỗi  truy vấn fetchAllTb1JoinWhere " .mysqli_error($this->link).$sql);
+            $data = [];
+            if( $result)
+            {
+                while ($num = mysqli_fetch_assoc($result))
+                {
+                    $data[] = $num;
+                }
+            }
+            return $data;
         }
 
         /**
@@ -202,9 +222,9 @@
          * return array 
          * ORDER BY COL
          */
-        public function fetchAlltb1Coltb2JoinOrder($tableAll, $tableJoin, $fore, $cols, $order){
+        public function fetchAlltb1Coltb2JoinOrder($tableAll, $tableJoin, $fore, $cols, $order, $cuscol=null){
            
-            $sql = $this -> queryJoin($tableAll, $tableJoin, $fore, $cols);
+            $sql = $this -> queryJoin($tableAll, $tableJoin, $fore, $cols, $cuscol);
             $sql.="ORDER BY {$order} DESC";
             $result = mysqli_query($this->link,$sql) or die("Lỗi  truy vấn fetchAllTb1JoinWhere " .mysqli_error($this->link).$sql);
             $data = [];

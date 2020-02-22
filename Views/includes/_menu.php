@@ -50,7 +50,7 @@
                     <?php
                     foreach($info['child'] as $x){
                         // if($x['id']=='50') $add='menustyle';
-		                echo" <a class='dropdown-item' href='/".$x['slug']."'>".$x['name']."</a>"; 
+		                echo" <a class='dropdown-item' href='/".$info['slug']."/".$x['slug']."'>".$x['name']."</a>"; 
                     }  
                     ?>
                 </div>
