@@ -1,0 +1,848 @@
+[30-Nov-2021 18:39:11 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function hello() in E:\Documents\Documents\C-IT\website\cit\API\func\api.php:46
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\API\index.php(44): API->run()
+#1 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\API\func\api.php on line 46
+[30-Nov-2021 18:40:04 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function hello() in E:\Documents\Documents\C-IT\website\cit\API\func\api.php:46
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\API\index.php(44): API->run()
+#1 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\API\func\api.php on line 46
+[30-Nov-2021 18:41:19 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function hello() in E:\Documents\Documents\C-IT\website\cit\API\func\api.php:46
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\API\index.php(44): API->run()
+#1 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\API\func\api.php on line 46
+[30-Nov-2021 18:41:21 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function hello() in E:\Documents\Documents\C-IT\website\cit\API\func\api.php:46
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\API\index.php(44): API->run()
+#1 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\API\func\api.php on line 46
+[30-Nov-2021 18:42:06 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function hello() in E:\Documents\Documents\C-IT\website\cit\API\func\api.php:46
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\API\index.php(44): API->run()
+#1 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\API\func\api.php on line 46
+[30-Nov-2021 18:44:20 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function hello() in E:\Documents\Documents\C-IT\website\cit\API\func\api.php:46
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\API\index.php(44): API->run()
+#1 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\API\func\api.php on line 46
+[30-Nov-2021 18:44:29 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function hello() in E:\Documents\Documents\C-IT\website\cit\API\func\api.php:46
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\API\index.php(44): API->run()
+#1 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\API\func\api.php on line 46
+[30-Nov-2021 18:44:37 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function hello() in E:\Documents\Documents\C-IT\website\cit\API\func\api.php:46
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\API\index.php(44): API->run()
+#1 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\API\func\api.php on line 46
+[30-Nov-2021 18:44:50 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function hello() in E:\Documents\Documents\C-IT\website\cit\API\func\api.php:46
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\API\index.php(44): API->run()
+#1 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\API\func\api.php on line 46
+[30-Nov-2021 18:45:04 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function hello() in E:\Documents\Documents\C-IT\website\cit\API\func\api.php:46
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\API\index.php(44): API->run()
+#1 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\API\func\api.php on line 46
+[30-Nov-2021 18:45:52 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function hello() in E:\Documents\Documents\C-IT\website\cit\API\func\api.php:46
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\API\index.php(44): API->run()
+#1 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\API\func\api.php on line 46
+[30-Nov-2021 18:46:23 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function hello() in E:\Documents\Documents\C-IT\website\cit\API\func\api.php:46
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\API\index.php(44): API->run()
+#1 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\API\func\api.php on line 46
+[30-Nov-2021 18:46:39 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function hello() in E:\Documents\Documents\C-IT\website\cit\API\func\api.php:46
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\API\index.php(44): API->run()
+#1 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\API\func\api.php on line 46
+[30-Nov-2021 18:46:44 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function world() in E:\Documents\Documents\C-IT\website\cit\API\func\api.php:46
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\API\index.php(44): API->run()
+#1 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\API\func\api.php on line 46
+[01-Dec-2021 08:56:41 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$price in E:\Documents\Documents\C-IT\website\cit\API\func\api.php on line 49
+[01-Dec-2021 08:56:46 Europe/Berlin] PHP Recoverable fatal error:  Object of class stdClass could not be converted to string in E:\Documents\Documents\C-IT\website\cit\API\func\api.php on line 49
+[01-Dec-2021 08:58:57 Europe/Berlin] PHP Notice:  Array to string conversion in E:\Documents\Documents\C-IT\website\cit\API\func\api.php on line 49
+[01-Dec-2021 08:59:03 Europe/Berlin] PHP Notice:  Array to string conversion in E:\Documents\Documents\C-IT\website\cit\API\func\api.php on line 49
+[01-Dec-2021 09:00:41 Europe/Berlin] PHP Warning:  json_decode() expects parameter 1 to be string, object given in E:\Documents\Documents\C-IT\website\cit\API\func\api.php on line 50
+[01-Dec-2021 09:24:07 Europe/Berlin] PHP Recoverable fatal error:  Object of class stdClass could not be converted to string in E:\Documents\Documents\C-IT\website\cit\API\func\api.php on line 49
+[01-Dec-2021 09:24:39 Europe/Berlin] PHP Recoverable fatal error:  Object of class stdClass could not be converted to string in E:\Documents\Documents\C-IT\website\cit\API\func\api.php on line 49
+[02-Dec-2021 17:13:51 Europe/Berlin] PHP Recoverable fatal error:  Object of class stdClass could not be converted to string in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 85
+[02-Dec-2021 17:28:21 Europe/Berlin] PHP Notice:  Undefined index: HTTP_AUTHORIZATION in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 104
+[02-Dec-2021 17:28:21 Europe/Berlin] PHP Notice:  Undefined offset: 1 in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 108
+[02-Dec-2021 17:29:49 Europe/Berlin] PHP Notice:  Undefined index: HTTP_AUTHORIZATION in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 104
+[02-Dec-2021 17:29:49 Europe/Berlin] PHP Notice:  Undefined offset: 1 in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 108
+[02-Dec-2021 17:32:05 Europe/Berlin] PHP Notice:  Undefined offset: 1 in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 108
+[02-Dec-2021 17:32:24 Europe/Berlin] PHP Notice:  Undefined offset: 1 in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 108
+[02-Dec-2021 17:33:49 Europe/Berlin] PHP Notice:  Undefined offset: 1 in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 108
+[02-Dec-2021 17:33:51 Europe/Berlin] PHP Notice:  Undefined offset: 1 in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 108
+[02-Dec-2021 17:35:15 Europe/Berlin] PHP Notice:  Undefined offset: 1 in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 108
+[02-Dec-2021 17:35:15 Europe/Berlin] PHP Notice:  Undefined index: HTTP_AUTHORIZATION in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 129
+[02-Dec-2021 17:35:28 Europe/Berlin] PHP Notice:  Undefined offset: 1 in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 108
+[02-Dec-2021 17:35:28 Europe/Berlin] PHP Notice:  Undefined index: HTTPS_AUTHORIZATION in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 129
+[02-Dec-2021 17:38:37 Europe/Berlin] PHP Notice:  Undefined offset: 1 in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 108
+[02-Dec-2021 17:38:37 Europe/Berlin] PHP Notice:  Undefined index: HTTP_X_REQUESTED_WITH in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 129
+[02-Dec-2021 17:38:38 Europe/Berlin] PHP Notice:  Undefined offset: 1 in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 108
+[02-Dec-2021 17:38:38 Europe/Berlin] PHP Notice:  Undefined index: HTTP_X_REQUESTED_WITH in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 129
+[02-Dec-2021 17:38:51 Europe/Berlin] PHP Notice:  Undefined index: HTTP_X_REQUESTED_WITH in E:\Documents\Documents\C-IT\website\cit\api\index.php on line 24
+[02-Dec-2021 17:38:51 Europe/Berlin] PHP Notice:  Undefined offset: 1 in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 108
+[02-Dec-2021 17:41:28 Europe/Berlin] PHP Notice:  Undefined index: HTTP_X_REQUESTED_WITH in E:\Documents\Documents\C-IT\website\cit\api\index.php on line 24
+[02-Dec-2021 17:41:28 Europe/Berlin] PHP Notice:  Undefined offset: 1 in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 108
+[02-Dec-2021 17:41:51 Europe/Berlin] PHP Notice:  Undefined index: HTTP_X_REQUESTED_WITH in E:\Documents\Documents\C-IT\website\cit\api\index.php on line 24
+[02-Dec-2021 17:41:51 Europe/Berlin] PHP Notice:  Undefined offset: 1 in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 108
+[02-Dec-2021 17:42:46 Europe/Berlin] PHP Notice:  Undefined index: HTTP_X_REQUESTED_WITH in E:\Documents\Documents\C-IT\website\cit\api\index.php on line 24
+[02-Dec-2021 17:42:46 Europe/Berlin] PHP Notice:  Undefined offset: 1 in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 108
+[02-Dec-2021 17:48:39 Europe/Berlin] PHP Notice:  Undefined offset: 1 in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 108
+[02-Dec-2021 17:49:28 Europe/Berlin] PHP Notice:  Undefined index: HTTP_AUTHORIZATION in E:\Documents\Documents\C-IT\website\cit\api\index.php on line 24
+[02-Dec-2021 17:49:28 Europe/Berlin] PHP Notice:  Undefined offset: 1 in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 108
+[02-Dec-2021 17:50:06 Europe/Berlin] PHP Notice:  Undefined index: HTTP_AUTHORIZATION in E:\Documents\Documents\C-IT\website\cit\api\index.php on line 24
+[02-Dec-2021 17:50:06 Europe/Berlin] PHP Notice:  Undefined offset: 1 in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 108
+[03-Dec-2021 17:06:03 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to Database::insert() must be of the type array, object given, called in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 90 and defined in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php:32
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(90): Database->insert('news', Object(stdClass))
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#3 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(104): Router->run('POST', '/createPost')
+#4 E:\Documents\Documents\C-IT\website\cit\api\index.php(44): API->run()
+#5 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php on line 32
+[03-Dec-2021 17:07:30 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to Database::insert() must be of the type array, object given, called in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 90 and defined in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php:32
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(90): Database->insert('news', Object(stdClass))
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#3 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(111): Router->run('POST', '/createPost')
+#4 E:\Documents\Documents\C-IT\website\cit\api\index.php(44): API->run()
+#5 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php on line 32
+[03-Dec-2021 17:08:29 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to Database::insert() must be of the type array, object given, called in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 90 and defined in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php:32
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(90): Database->insert('news', Object(stdClass))
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#3 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(111): Router->run('POST', '/createPost')
+#4 E:\Documents\Documents\C-IT\website\cit\api\index.php(44): API->run()
+#5 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php on line 32
+[03-Dec-2021 17:16:15 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$localtion in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 91
+[03-Dec-2021 17:16:15 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$email in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 92
+[03-Dec-2021 17:16:15 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$password in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 93
+[03-Dec-2021 17:16:15 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to Database::insert() must be of the type array, string given, called in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 95 and defined in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php:32
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(95): Database->insert('news', 'Nh\xC3\xA2n vi\xC3\xAAn s\xE1\xBB...')
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#3 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(116): Router->run('POST', '/createPost')
+#4 E:\Documents\Documents\C-IT\website\cit\api\index.php(44): API->run()
+#5 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php on line 32
+[03-Dec-2021 17:16:24 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$localtion in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 91
+[03-Dec-2021 17:16:24 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$email in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 92
+[03-Dec-2021 17:16:24 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$password in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 93
+[03-Dec-2021 17:16:24 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to Database::insert() must be of the type array, string given, called in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 95 and defined in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php:32
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(95): Database->insert('news', 'Nh\xC3\xA2n vi\xC3\xAAn s\xE1\xBB...')
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#3 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(116): Router->run('POST', '/createPost')
+#4 E:\Documents\Documents\C-IT\website\cit\api\index.php(44): API->run()
+#5 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php on line 32
+[03-Dec-2021 17:18:06 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$localtion in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 91
+[03-Dec-2021 17:18:06 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$email in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 92
+[03-Dec-2021 17:18:06 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$password in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 93
+[03-Dec-2021 17:18:06 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to Database::insert() must be of the type array, string given, called in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 95 and defined in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php:32
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(95): Database->insert('news', 'Nh\xC3\xA2n vi\xC3\xAAn s\xE1\xBB...')
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#3 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(117): Router->run('POST', '/createPost')
+#4 E:\Documents\Documents\C-IT\website\cit\api\index.php(44): API->run()
+#5 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php on line 32
+[03-Dec-2021 17:19:11 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$localtion in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 91
+[03-Dec-2021 17:19:11 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$email in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 92
+[03-Dec-2021 17:19:11 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$password in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 93
+[03-Dec-2021 17:19:11 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to Database::insert() must be of the type array, string given, called in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 95 and defined in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php:32
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(95): Database->insert('news', 'Nh\xC3\xA2n vi\xC3\xAAn s\xE1\xBB...')
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#3 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(117): Router->run('POST', '/createPost')
+#4 E:\Documents\Documents\C-IT\website\cit\api\index.php(44): API->run()
+#5 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php on line 32
+[03-Dec-2021 17:19:51 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$localtion in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 91
+[03-Dec-2021 17:19:51 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$email in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 92
+[03-Dec-2021 17:19:51 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$password in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 93
+[03-Dec-2021 17:19:51 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to Database::insert() must be of the type array, string given, called in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 102 and defined in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php:32
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(102): Database->insert('news', 'Nh\xC3\xA2n vi\xC3\xAAn s\xE1\xBB...')
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#3 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(118): Router->run('POST', '/createPost')
+#4 E:\Documents\Documents\C-IT\website\cit\api\index.php(44): API->run()
+#5 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php on line 32
+[03-Dec-2021 17:20:33 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$localtion in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 91
+[03-Dec-2021 17:20:33 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$email in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 92
+[03-Dec-2021 17:20:33 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$password in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 93
+[03-Dec-2021 17:20:33 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to Database::insert() must be of the type array, string given, called in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 95 and defined in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php:32
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(95): Database->insert('news', 'Nh\xC3\xA2n vi\xC3\xAAn s\xE1\xBB...')
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#3 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(118): Router->run('POST', '/createPost')
+#4 E:\Documents\Documents\C-IT\website\cit\api\index.php(44): API->run()
+#5 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php on line 32
+[03-Dec-2021 17:22:39 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function API::run(), 0 passed in E:\Documents\Documents\C-IT\website\cit\api\index.php on line 44 and exactly 1 expected in E:\Documents\Documents\C-IT\website\cit\api\func\api.php:36
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\index.php(44): API->run()
+#1 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 36
+[03-Dec-2021 17:23:02 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function API::run(), 0 passed in E:\Documents\Documents\C-IT\website\cit\api\index.php on line 44 and exactly 1 expected in E:\Documents\Documents\C-IT\website\cit\api\func\api.php:36
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\index.php(44): API->run()
+#1 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 36
+[03-Dec-2021 17:23:10 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function API::run(), 0 passed in E:\Documents\Documents\C-IT\website\cit\api\index.php on line 44 and exactly 1 expected in E:\Documents\Documents\C-IT\website\cit\api\func\api.php:36
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\index.php(44): API->run()
+#1 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 36
+[03-Dec-2021 17:24:37 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function API::run(), 0 passed in E:\Documents\Documents\C-IT\website\cit\api\index.php on line 44 and exactly 1 expected in E:\Documents\Documents\C-IT\website\cit\api\func\api.php:36
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\index.php(44): API->run()
+#1 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 36
+[03-Dec-2021 17:25:22 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function API::run(), 0 passed in E:\Documents\Documents\C-IT\website\cit\api\index.php on line 44 and exactly 1 expected in E:\Documents\Documents\C-IT\website\cit\api\func\api.php:36
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\index.php(44): API->run()
+#1 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 36
+[03-Dec-2021 17:26:25 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function API::run(), 0 passed in E:\Documents\Documents\C-IT\website\cit\api\index.php on line 44 and exactly 1 expected in E:\Documents\Documents\C-IT\website\cit\api\func\api.php:36
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\index.php(44): API->run()
+#1 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 36
+[03-Dec-2021 17:26:50 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function API::run(), 0 passed in E:\Documents\Documents\C-IT\website\cit\api\index.php on line 44 and exactly 1 expected in E:\Documents\Documents\C-IT\website\cit\api\func\api.php:36
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\index.php(44): API->run()
+#1 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 36
+[03-Dec-2021 17:27:07 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function API::run(), 0 passed in E:\Documents\Documents\C-IT\website\cit\api\index.php on line 44 and exactly 1 expected in E:\Documents\Documents\C-IT\website\cit\api\func\api.php:36
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\index.php(44): API->run()
+#1 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 36
+[03-Dec-2021 17:29:50 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function API::run(), 0 passed in E:\Documents\Documents\C-IT\website\cit\api\index.php on line 44 and exactly 1 expected in E:\Documents\Documents\C-IT\website\cit\api\func\api.php:37
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\index.php(44): API->run()
+#1 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 37
+[03-Dec-2021 17:31:15 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function API::run(), 0 passed in E:\Documents\Documents\C-IT\website\cit\api\index.php on line 44 and exactly 1 expected in E:\Documents\Documents\C-IT\website\cit\api\func\api.php:37
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\index.php(44): API->run()
+#1 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 37
+[03-Dec-2021 17:31:17 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function API::run(), 0 passed in E:\Documents\Documents\C-IT\website\cit\api\index.php on line 44 and exactly 1 expected in E:\Documents\Documents\C-IT\website\cit\api\func\api.php:37
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\index.php(44): API->run()
+#1 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 37
+[03-Dec-2021 17:31:35 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function API::run(), 0 passed in E:\Documents\Documents\C-IT\website\cit\api\index.php on line 44 and exactly 1 expected in E:\Documents\Documents\C-IT\website\cit\api\func\api.php:38
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\index.php(44): API->run()
+#1 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 38
+[03-Dec-2021 17:32:15 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function API::run(), 0 passed in E:\Documents\Documents\C-IT\website\cit\api\index.php on line 44 and exactly 1 expected in E:\Documents\Documents\C-IT\website\cit\api\func\api.php:38
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\index.php(44): API->run()
+#1 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 38
+[03-Dec-2021 17:32:24 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function API::run(), 0 passed in E:\Documents\Documents\C-IT\website\cit\api\index.php on line 44 and exactly 1 expected in E:\Documents\Documents\C-IT\website\cit\api\func\api.php:37
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\index.php(44): API->run()
+#1 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 37
+[03-Dec-2021 17:33:14 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function API::run(), 0 passed in E:\Documents\Documents\C-IT\website\cit\api\index.php on line 44 and exactly 1 expected in E:\Documents\Documents\C-IT\website\cit\api\func\api.php:37
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\index.php(44): API->run()
+#1 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 37
+[03-Dec-2021 17:33:45 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$localtion in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 90
+[03-Dec-2021 17:33:45 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$email in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 91
+[03-Dec-2021 17:33:45 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$password in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 92
+[03-Dec-2021 17:34:32 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$localtion in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 91
+[03-Dec-2021 17:34:32 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$email in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 92
+[03-Dec-2021 17:34:32 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$password in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 93
+[03-Dec-2021 17:34:53 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$localtion in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 91
+[03-Dec-2021 17:34:53 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$email in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 92
+[03-Dec-2021 17:34:53 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$password in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 93
+[03-Dec-2021 17:34:53 Europe/Berlin] PHP Notice:  Undefined variable: db in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 100
+[03-Dec-2021 17:35:15 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$localtion in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 91
+[03-Dec-2021 17:35:15 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$email in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 92
+[03-Dec-2021 17:35:15 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$password in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 93
+[03-Dec-2021 17:35:15 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to Database::insert() must be of the type array, string given, called in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 95 and defined in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php:32
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(95): Database->insert('news', 'Nh\xC3\xA2n vi\xC3\xAAn s\xE1\xBB...')
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#3 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(119): Router->run('POST', '/createPost')
+#4 E:\Documents\Documents\C-IT\website\cit\api\index.php(44): API->run()
+#5 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php on line 32
+[03-Dec-2021 17:35:36 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$localtion in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 91
+[03-Dec-2021 17:35:36 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$email in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 92
+[03-Dec-2021 17:35:36 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$password in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 93
+[03-Dec-2021 17:36:17 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$localtion in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 91
+[03-Dec-2021 17:36:17 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$email in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 92
+[03-Dec-2021 17:36:17 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$password in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 93
+[03-Dec-2021 17:36:17 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to Database::insert() must be of the type array, object given, called in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 95 and defined in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php:32
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(95): Database->insert('news', Object(stdClass))
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#3 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(120): Router->run('POST', '/createPost')
+#4 E:\Documents\Documents\C-IT\website\cit\api\index.php(44): API->run()
+#5 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php on line 32
+[03-Dec-2021 17:36:29 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$localtion in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 91
+[03-Dec-2021 17:36:29 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$email in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 92
+[03-Dec-2021 17:36:29 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$password in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 93
+[03-Dec-2021 17:36:29 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to Database::insert() must be of the type array, object given, called in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 95 and defined in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php:32
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(95): Database->insert('news', Object(stdClass))
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#3 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(120): Router->run('POST', '/createPost')
+#4 E:\Documents\Documents\C-IT\website\cit\api\index.php(44): API->run()
+#5 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php on line 32
+[03-Dec-2021 17:37:35 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$localtion in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 91
+[03-Dec-2021 17:37:35 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$email in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 92
+[03-Dec-2021 17:37:35 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$password in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 93
+[03-Dec-2021 17:37:35 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to Database::insert() must be of the type array, object given, called in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 95 and defined in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php:32
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(95): Database->insert('news', Object(stdClass))
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#3 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(120): Router->run('POST', '/createPost')
+#4 E:\Documents\Documents\C-IT\website\cit\api\index.php(44): API->run()
+#5 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php on line 32
+[03-Dec-2021 17:38:38 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$localtion in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 91
+[03-Dec-2021 17:38:38 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$email in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 92
+[03-Dec-2021 17:38:38 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$password in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 93
+[03-Dec-2021 17:38:53 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$localtion in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 91
+[03-Dec-2021 17:38:53 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$email in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 92
+[03-Dec-2021 17:38:53 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$password in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 93
+[03-Dec-2021 17:41:58 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$localtion in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 91
+[03-Dec-2021 17:41:58 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$email in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 92
+[03-Dec-2021 17:41:58 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$password in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 93
+[03-Dec-2021 17:44:34 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$localtion in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 91
+[03-Dec-2021 17:44:34 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$email in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 92
+[03-Dec-2021 17:44:34 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$password in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 93
+[03-Dec-2021 17:51:48 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$localtion in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 92
+[03-Dec-2021 17:51:48 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$email in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 93
+[03-Dec-2021 17:51:48 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$password in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 94
+[03-Dec-2021 17:54:05 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$localtion in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 92
+[03-Dec-2021 17:54:05 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$email in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 93
+[03-Dec-2021 17:54:05 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$password in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 94
+[03-Dec-2021 18:00:06 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$localtion in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 92
+[03-Dec-2021 18:00:06 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$email in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 93
+[03-Dec-2021 18:00:06 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$password in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 94
+[03-Dec-2021 18:00:41 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$localtion in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 92
+[03-Dec-2021 18:00:41 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$email in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 93
+[03-Dec-2021 18:00:41 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$password in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 94
+[03-Dec-2021 18:01:39 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$localtion in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 92
+[03-Dec-2021 18:01:39 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$email in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 93
+[03-Dec-2021 18:01:39 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$password in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 94
+[03-Dec-2021 18:01:39 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to Database::insert() must be of the type array, object given, called in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 97 and defined in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php:46
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(97): Database->insert('news', Object(stdClass))
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#3 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(122): Router->run('POST', '/createPost')
+#4 E:\Documents\Documents\C-IT\website\cit\api\index.php(44): API->run()
+#5 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php on line 46
+[03-Dec-2021 18:01:57 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$localtion in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 92
+[03-Dec-2021 18:01:57 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$email in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 93
+[03-Dec-2021 18:01:57 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$password in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 94
+[03-Dec-2021 18:01:57 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to Database::insert() must be of the type array, object given, called in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 97 and defined in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php:46
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(97): Database->insert('news', Object(stdClass))
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#3 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(122): Router->run('POST', '/createPost')
+#4 E:\Documents\Documents\C-IT\website\cit\api\index.php(44): API->run()
+#5 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php on line 46
+[03-Dec-2021 18:06:36 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function API::{closure}(), 0 passed in E:\Documents\Documents\C-IT\website\cit\api\func\route.php on line 70 and exactly 1 expected in E:\Documents\Documents\C-IT\website\cit\api\func\api.php:53
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(115): Router->run('POST', '/createPost')
+#3 E:\Documents\Documents\C-IT\website\cit\api\index.php(44): API->run()
+#4 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 53
+[03-Dec-2021 18:06:46 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function API::{closure}(), 0 passed in E:\Documents\Documents\C-IT\website\cit\api\func\route.php on line 70 and exactly 1 expected in E:\Documents\Documents\C-IT\website\cit\api\func\api.php:53
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(115): Router->run('POST', '/createPost')
+#3 E:\Documents\Documents\C-IT\website\cit\api\index.php(44): API->run()
+#4 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 53
+[03-Dec-2021 18:08:45 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$localtion in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 89
+[03-Dec-2021 18:08:45 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$email in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 90
+[03-Dec-2021 18:08:45 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$password in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 91
+[03-Dec-2021 18:09:20 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$localtion in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 89
+[03-Dec-2021 18:09:20 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$email in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 90
+[03-Dec-2021 18:09:20 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$password in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 91
+[03-Dec-2021 18:09:20 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to Database::insert() must be of the type array, string given, called in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 97 and defined in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php:46
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(97): Database->insert('news', 'Nh\xC3\xA2n vi\xC3\xAAn s\xE1\xBB...')
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#3 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(114): Router->run('POST', '/createPost')
+#4 E:\Documents\Documents\C-IT\website\cit\api\index.php(44): API->run()
+#5 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php on line 46
+[03-Dec-2021 18:09:34 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$localtion in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 89
+[03-Dec-2021 18:09:34 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$email in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 90
+[03-Dec-2021 18:09:34 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$password in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 91
+[03-Dec-2021 18:09:34 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to Database::insert() must be of the type array, string given, called in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 97 and defined in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php:46
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(97): Database->insert('news', 'Nh\xC3\xA2n vi\xC3\xAAn s\xE1\xBB...')
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#3 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(114): Router->run('POST', '/createPost')
+#4 E:\Documents\Documents\C-IT\website\cit\api\index.php(44): API->run()
+#5 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php on line 46
+[03-Dec-2021 18:09:52 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$localtion in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 89
+[03-Dec-2021 18:09:52 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$email in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 90
+[03-Dec-2021 18:09:52 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$password in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 91
+[03-Dec-2021 18:10:04 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$localtion in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 89
+[03-Dec-2021 18:10:04 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$email in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 90
+[03-Dec-2021 18:10:04 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$password in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 91
+[03-Dec-2021 18:11:50 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$localtion in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 89
+[03-Dec-2021 18:11:50 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$email in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 90
+[03-Dec-2021 18:11:50 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$password in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 91
+[03-Dec-2021 18:17:12 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function API::__construct(), 1 passed in E:\Documents\Documents\C-IT\website\cit\api\index.php on line 43 and exactly 2 expected in E:\Documents\Documents\C-IT\website\cit\api\func\api.php:22
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\index.php(43): API->__construct(Array)
+#1 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 22
+[03-Dec-2021 18:17:20 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function API::__construct(), 1 passed in E:\Documents\Documents\C-IT\website\cit\api\index.php on line 43 and exactly 2 expected in E:\Documents\Documents\C-IT\website\cit\api\func\api.php:22
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\index.php(43): API->__construct(Array)
+#1 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 22
+[03-Dec-2021 18:17:35 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function API::__construct(), 1 passed in E:\Documents\Documents\C-IT\website\cit\api\index.php on line 43 and exactly 2 expected in E:\Documents\Documents\C-IT\website\cit\api\func\api.php:22
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\index.php(43): API->__construct(Array)
+#1 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 22
+[03-Dec-2021 18:19:04 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function API::__construct(), 1 passed in E:\Documents\Documents\C-IT\website\cit\api\index.php on line 43 and exactly 2 expected in E:\Documents\Documents\C-IT\website\cit\api\func\api.php:22
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\index.php(43): API->__construct(Array)
+#1 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 22
+[03-Dec-2021 18:21:14 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function API::__construct(), 1 passed in E:\Documents\Documents\C-IT\website\cit\api\index.php on line 43 and exactly 2 expected in E:\Documents\Documents\C-IT\website\cit\api\func\api.php:22
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\index.php(43): API->__construct(Array)
+#1 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 22
+[03-Dec-2021 18:21:58 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$localtion in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 89
+[03-Dec-2021 18:21:58 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$email in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 90
+[03-Dec-2021 18:21:58 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$password in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 91
+[03-Dec-2021 18:25:34 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$localtion in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 89
+[03-Dec-2021 18:25:34 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$email in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 90
+[03-Dec-2021 18:25:34 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$password in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 91
+[03-Dec-2021 18:28:00 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function API::__construct(), 1 passed in E:\Documents\Documents\C-IT\website\cit\api\index.php on line 43 and exactly 2 expected in E:\Documents\Documents\C-IT\website\cit\api\func\api.php:22
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\index.php(43): API->__construct(Array)
+#1 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 22
+[03-Dec-2021 18:28:08 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function API::__construct(), 1 passed in E:\Documents\Documents\C-IT\website\cit\api\index.php on line 43 and exactly 2 expected in E:\Documents\Documents\C-IT\website\cit\api\func\api.php:22
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\index.php(43): API->__construct(Array)
+#1 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 22
+[04-Dec-2021 15:18:15 Europe/Berlin] PHP Warning:  mysqli_real_escape_string() expects parameter 2 to be string, object given in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php on line 57
+[04-Dec-2021 15:19:43 Europe/Berlin] PHP Warning:  mysqli_real_escape_string() expects parameter 2 to be string, object given in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php on line 57
+[04-Dec-2021 15:20:21 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to Database::insert() must be of the type array, object given, called in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 11 and defined in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php:46
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\service.php(11): Database->insert('news', Object(stdClass))
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(63): Service->createNewPosts('news', Object(stdClass))
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#3 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#4 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(77): Router->run('POST', '/createPost')
+#5 E:\Documents\Documents\C-IT\website\cit\api\index.php(43): API->run()
+#6 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php on line 46
+[04-Dec-2021 15:20:39 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to Database::insert() must be of the type array, object given, called in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 11 and defined in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php:46
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\service.php(11): Database->insert('news', Object(stdClass))
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(63): Service->createNewPosts('news', Object(stdClass))
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#3 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#4 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(77): Router->run('POST', '/createPost')
+#5 E:\Documents\Documents\C-IT\website\cit\api\index.php(43): API->run()
+#6 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php on line 46
+[04-Dec-2021 15:21:01 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to Database::insert() must be of the type array, object given, called in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 11 and defined in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php:46
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\service.php(11): Database->insert('news', Object(stdClass))
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(63): Service->createNewPosts('news', Object(stdClass))
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#3 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#4 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(77): Router->run('POST', '/createPost')
+#5 E:\Documents\Documents\C-IT\website\cit\api\index.php(43): API->run()
+#6 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php on line 46
+[04-Dec-2021 15:22:02 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to Database::insert() must be of the type array, object given, called in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 11 and defined in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php:46
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\service.php(11): Database->insert('news', Object(stdClass))
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(63): Service->createNewPosts('news', Object(stdClass))
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#3 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#4 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(77): Router->run('POST', '/createPost')
+#5 E:\Documents\Documents\C-IT\website\cit\api\index.php(43): API->run()
+#6 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php on line 46
+[04-Dec-2021 15:22:28 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to Database::insert() must be of the type array, object given, called in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 11 and defined in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php:46
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\service.php(11): Database->insert('news', Object(stdClass))
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(63): Service->createNewPosts('news', Object(stdClass))
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#3 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#4 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(77): Router->run('POST', '/createPost')
+#5 E:\Documents\Documents\C-IT\website\cit\api\index.php(43): API->run()
+#6 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php on line 46
+[04-Dec-2021 15:22:46 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to Database::insert() must be of the type array, object given, called in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 11 and defined in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php:46
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\service.php(11): Database->insert('news', Object(stdClass))
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(63): Service->createNewPosts('news', Object(stdClass))
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#3 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#4 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(77): Router->run('POST', '/createPost')
+#5 E:\Documents\Documents\C-IT\website\cit\api\index.php(43): API->run()
+#6 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php on line 46
+[04-Dec-2021 15:35:19 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to Database::insert() must be of the type array, object given, called in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 11 and defined in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php:44
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\service.php(11): Database->insert('news', Object(stdClass))
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(65): Service->createNewPosts('news', Object(stdClass))
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#3 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#4 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(85): Router->run('POST', '/createPost')
+#5 E:\Documents\Documents\C-IT\website\cit\api\index.php(43): API->run()
+#6 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\admin\inc\database.php on line 44
+[04-Dec-2021 15:46:03 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in E:\Documents\Documents\C-IT\website\cit\api\func\service.php:13
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(62): Service->createNewPosts('news', Object(stdClass))
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#3 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(82): Router->run('POST', '/createPost')
+#4 E:\Documents\Documents\C-IT\website\cit\api\index.php(43): API->run()
+#5 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 13
+[04-Dec-2021 15:46:31 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in E:\Documents\Documents\C-IT\website\cit\api\func\service.php:13
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(62): Service->createNewPosts('news', Object(stdClass))
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#3 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(82): Router->run('POST', '/createPost')
+#4 E:\Documents\Documents\C-IT\website\cit\api\index.php(43): API->run()
+#5 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 13
+[04-Dec-2021 15:49:20 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in E:\Documents\Documents\C-IT\website\cit\api\func\service.php:13
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(62): Service->createNewPosts('news', Object(stdClass))
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#3 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(82): Router->run('POST', '/createPost')
+#4 E:\Documents\Documents\C-IT\website\cit\api\index.php(43): API->run()
+#5 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 13
+[04-Dec-2021 15:49:27 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in E:\Documents\Documents\C-IT\website\cit\api\func\service.php:13
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(62): Service->createNewPosts('news', Object(stdClass))
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#3 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(82): Router->run('POST', '/createPost')
+#4 E:\Documents\Documents\C-IT\website\cit\api\index.php(43): API->run()
+#5 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 13
+[04-Dec-2021 15:49:45 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in E:\Documents\Documents\C-IT\website\cit\api\func\service.php:13
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(62): Service->createNewPosts('news', Object(stdClass))
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#3 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(82): Router->run('POST', '/createPost')
+#4 E:\Documents\Documents\C-IT\website\cit\api\index.php(43): API->run()
+#5 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 13
+[04-Dec-2021 15:49:58 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in E:\Documents\Documents\C-IT\website\cit\api\func\service.php:13
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(62): Service->createNewPosts('news', Object(stdClass))
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#3 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(82): Router->run('POST', '/createPost')
+#4 E:\Documents\Documents\C-IT\website\cit\api\index.php(43): API->run()
+#5 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 13
+[04-Dec-2021 15:50:23 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in E:\Documents\Documents\C-IT\website\cit\api\func\service.php:13
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(62): Service->createNewPosts('news', Object(stdClass))
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#3 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(82): Router->run('POST', '/createPost')
+#4 E:\Documents\Documents\C-IT\website\cit\api\index.php(43): API->run()
+#5 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 13
+[04-Dec-2021 15:50:46 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in E:\Documents\Documents\C-IT\website\cit\api\func\service.php:13
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(62): Service->createNewPosts('news', Object(stdClass))
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#3 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(82): Router->run('POST', '/createPost')
+#4 E:\Documents\Documents\C-IT\website\cit\api\index.php(43): API->run()
+#5 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 13
+[04-Dec-2021 15:51:24 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in E:\Documents\Documents\C-IT\website\cit\api\func\service.php:13
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(62): Service->createNewPosts('news', Object(stdClass))
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#3 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(82): Router->run('POST', '/createPost')
+#4 E:\Documents\Documents\C-IT\website\cit\api\index.php(43): API->run()
+#5 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 13
+[04-Dec-2021 15:51:30 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in E:\Documents\Documents\C-IT\website\cit\api\func\service.php:13
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(62): Service->createNewPosts('news', Object(stdClass))
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#3 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(82): Router->run('POST', '/createPost')
+#4 E:\Documents\Documents\C-IT\website\cit\api\index.php(43): API->run()
+#5 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 13
+[04-Dec-2021 15:51:47 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in E:\Documents\Documents\C-IT\website\cit\api\func\service.php:13
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(62): Service->createNewPosts('news', Object(stdClass))
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#3 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(82): Router->run('POST', '/createPost')
+#4 E:\Documents\Documents\C-IT\website\cit\api\index.php(43): API->run()
+#5 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 13
+[04-Dec-2021 15:51:57 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in E:\Documents\Documents\C-IT\website\cit\api\func\service.php:13
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(62): Service->createNewPosts('news', Object(stdClass))
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#3 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(82): Router->run('POST', '/createPost')
+#4 E:\Documents\Documents\C-IT\website\cit\api\index.php(43): API->run()
+#5 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 13
+[04-Dec-2021 15:52:26 Europe/Berlin] PHP Notice:  Undefined index: descriptionHtml in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 14
+[04-Dec-2021 15:53:04 Europe/Berlin] PHP Notice:  Undefined index: descriptionHtml in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 14
+[04-Dec-2021 15:54:03 Europe/Berlin] PHP Notice:  Undefined index: descriptionHtml in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 14
+[04-Dec-2021 15:54:38 Europe/Berlin] PHP Notice:  Undefined index: descriptionHtml in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 14
+[04-Dec-2021 18:47:40 Europe/Berlin] PHP Notice:  Undefined index: location in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 14
+[04-Dec-2021 18:47:40 Europe/Berlin] PHP Notice:  Undefined index: company in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 38
+[04-Dec-2021 18:48:35 Europe/Berlin] PHP Notice:  Undefined index: location in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 14
+[04-Dec-2021 18:48:35 Europe/Berlin] PHP Notice:  Undefined index: company in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 38
+[04-Dec-2021 18:48:40 Europe/Berlin] PHP Notice:  Undefined index: location in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 14
+[04-Dec-2021 18:48:40 Europe/Berlin] PHP Notice:  Undefined index: company in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 38
+[04-Dec-2021 18:50:04 Europe/Berlin] PHP Notice:  Undefined index: location in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 14
+[04-Dec-2021 18:50:04 Europe/Berlin] PHP Notice:  Undefined index: title in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 40
+[04-Dec-2021 18:50:04 Europe/Berlin] PHP Notice:  Undefined index: description_html in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 44
+[04-Dec-2021 18:50:04 Europe/Berlin] PHP Notice:  Undefined index: contact in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 45
+[04-Dec-2021 18:50:28 Europe/Berlin] PHP Notice:  Undefined index: location in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 14
+[04-Dec-2021 18:50:28 Europe/Berlin] PHP Notice:  Undefined index: title in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 40
+[04-Dec-2021 18:50:28 Europe/Berlin] PHP Notice:  Undefined index: description_html in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 44
+[04-Dec-2021 18:50:28 Europe/Berlin] PHP Notice:  Undefined index: contact in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 45
+[04-Dec-2021 18:51:16 Europe/Berlin] PHP Notice:  Undefined index: location in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 14
+[04-Dec-2021 18:51:16 Europe/Berlin] PHP Notice:  Undefined index: title in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 40
+[04-Dec-2021 18:51:16 Europe/Berlin] PHP Notice:  Undefined index: description_html in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 44
+[04-Dec-2021 18:51:16 Europe/Berlin] PHP Notice:  Undefined index: contact in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 45
+[04-Dec-2021 18:52:16 Europe/Berlin] PHP Notice:  Undefined index: location in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 14
+[04-Dec-2021 18:52:16 Europe/Berlin] PHP Notice:  Undefined index: title in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 40
+[04-Dec-2021 18:52:16 Europe/Berlin] PHP Notice:  Undefined index: description_html in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 44
+[04-Dec-2021 18:52:16 Europe/Berlin] PHP Notice:  Undefined index: contact in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 45
+[04-Dec-2021 18:52:27 Europe/Berlin] PHP Notice:  Undefined index: location in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 14
+[04-Dec-2021 18:52:27 Europe/Berlin] PHP Notice:  Undefined index: company in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 38
+[04-Dec-2021 18:53:33 Europe/Berlin] PHP Notice:  Undefined index: location in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 14
+[04-Dec-2021 18:53:33 Europe/Berlin] PHP Notice:  Undefined index: company in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 38
+[04-Dec-2021 18:53:33 Europe/Berlin] PHP Notice:  Undefined index: title in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 40
+[04-Dec-2021 18:53:33 Europe/Berlin] PHP Notice:  Undefined index: description_html in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 44
+[04-Dec-2021 18:53:33 Europe/Berlin] PHP Notice:  Undefined index: contact in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 45
+[04-Dec-2021 18:53:33 Europe/Berlin] PHP Notice:  Undefined index: title in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 53
+[04-Dec-2021 19:04:53 Europe/Berlin] PHP Notice:  A non well formed numeric value encountered in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 57
+[06-Dec-2021 16:35:40 Europe/Berlin] PHP Notice:  Undefined index: location in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 14
+[06-Dec-2021 16:35:40 Europe/Berlin] PHP Notice:  Undefined index: company in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 38
+[06-Dec-2021 16:35:46 Europe/Berlin] PHP Notice:  Undefined index: location in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 14
+[06-Dec-2021 16:35:46 Europe/Berlin] PHP Notice:  Undefined index: company in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 38
+[06-Dec-2021 16:38:09 Europe/Berlin] PHP Notice:  Undefined index: location in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 14
+[06-Dec-2021 16:38:09 Europe/Berlin] PHP Notice:  Undefined index: company in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 38
+[06-Dec-2021 16:54:47 Europe/Berlin] PHP Notice:  Undefined index: location in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 14
+[06-Dec-2021 16:54:47 Europe/Berlin] PHP Notice:  Undefined index: company in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 38
+[06-Dec-2021 17:00:25 Europe/Berlin] PHP Notice:  Undefined index: location in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 14
+[06-Dec-2021 17:00:25 Europe/Berlin] PHP Notice:  Undefined index: company in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 38
+[06-Dec-2021 17:00:47 Europe/Berlin] PHP Notice:  Undefined index: location in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 14
+[06-Dec-2021 17:00:47 Europe/Berlin] PHP Notice:  Undefined index: company in E:\Documents\Documents\C-IT\website\cit\api\func\service.php on line 38
+[06-Dec-2021 17:04:21 Europe/Berlin] PHP Notice:  Array to string conversion in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 68
+[06-Dec-2021 17:08:55 Europe/Berlin] PHP Notice:  Undefined variable: result in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 69
+[06-Dec-2021 17:09:02 Europe/Berlin] PHP Notice:  Undefined variable: result in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 69
+[06-Dec-2021 17:19:03 Europe/Berlin] PHP Warning:  file_get_contents(application/x-www-form-urlencoded): failed to open stream: No such file or directory in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 54
+[06-Dec-2021 17:19:19 Europe/Berlin] PHP Warning:  file_get_contents(multipart/form-data): failed to open stream: No such file or directory in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 54
+[06-Dec-2021 17:19:53 Europe/Berlin] PHP Warning:  file_get_contents(): Invalid php:// URL specified in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 54
+[06-Dec-2021 17:19:53 Europe/Berlin] PHP Warning:  file_get_contents(php://multipart/form-data): failed to open stream: operation failed in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 54
+[06-Dec-2021 17:25:32 Europe/Berlin] PHP Warning:  Illegal string offset 'career' in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 72
+[06-Dec-2021 17:25:34 Europe/Berlin] PHP Warning:  Illegal string offset 'career' in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 72
+[06-Dec-2021 17:25:47 Europe/Berlin] PHP Warning:  Illegal string offset 'career' in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 72
+[06-Dec-2021 17:26:33 Europe/Berlin] PHP Notice:  Array to string conversion in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 69
+[06-Dec-2021 17:26:45 Europe/Berlin] PHP Notice:  Array to string conversion in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 69
+[06-Dec-2021 17:44:28 Europe/Berlin] PHP Warning:  Use of undefined constant STDIN - assumed 'STDIN' (this will throw an Error in a future version of PHP) in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 54
+[06-Dec-2021 17:44:28 Europe/Berlin] PHP Warning:  stream_get_contents() expects parameter 1 to be resource, string given in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 54
+[06-Dec-2021 17:44:45 Europe/Berlin] PHP Warning:  Use of undefined constant STDIN - assumed 'STDIN' (this will throw an Error in a future version of PHP) in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 54
+[06-Dec-2021 17:44:45 Europe/Berlin] PHP Warning:  stream_get_contents() expects parameter 1 to be resource, string given in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 54
+[06-Dec-2021 17:44:53 Europe/Berlin] PHP Warning:  Use of undefined constant STDIN - assumed 'STDIN' (this will throw an Error in a future version of PHP) in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 54
+[06-Dec-2021 17:44:53 Europe/Berlin] PHP Warning:  stream_get_contents() expects parameter 1 to be resource, string given in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 54
+[06-Dec-2021 17:46:25 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function API::{closure}(), 0 passed in E:\Documents\Documents\C-IT\website\cit\api\func\route.php on line 70 and exactly 1 expected in E:\Documents\Documents\C-IT\website\cit\api\func\api.php:53
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(86): Router->run('POST', '/create-post')
+#3 E:\Documents\Documents\C-IT\website\cit\api\index.php(43): API->run()
+#4 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 53
+[06-Dec-2021 17:48:42 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function API::{closure}(), 0 passed in E:\Documents\Documents\C-IT\website\cit\api\func\route.php on line 70 and exactly 1 expected in E:\Documents\Documents\C-IT\website\cit\api\func\api.php:53
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(87): Router->run('POST', '/create-post')
+#3 E:\Documents\Documents\C-IT\website\cit\api\index.php(43): API->run()
+#4 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 53
+[06-Dec-2021 17:49:03 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function API::{closure}(), 0 passed in E:\Documents\Documents\C-IT\website\cit\api\func\route.php on line 70 and exactly 1 expected in E:\Documents\Documents\C-IT\website\cit\api\func\api.php:53
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(88): Router->run('POST', '/create-post')
+#3 E:\Documents\Documents\C-IT\website\cit\api\index.php(43): API->run()
+#4 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 53
+[06-Dec-2021 17:51:13 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function API::{closure}(), 0 passed in E:\Documents\Documents\C-IT\website\cit\api\func\route.php on line 70 and exactly 1 expected in E:\Documents\Documents\C-IT\website\cit\api\func\api.php:53
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(85): Router->run('POST', '/create-post')
+#3 E:\Documents\Documents\C-IT\website\cit\api\index.php(43): API->run()
+#4 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 53
+[06-Dec-2021 17:54:44 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function API::{closure}(), 0 passed in E:\Documents\Documents\C-IT\website\cit\api\func\route.php on line 70 and exactly 1 expected in E:\Documents\Documents\C-IT\website\cit\api\func\api.php:53
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(86): Router->run('POST', '/create-post')
+#3 E:\Documents\Documents\C-IT\website\cit\api\index.php(43): API->run()
+#4 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 53
+[06-Dec-2021 17:55:06 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function API::{closure}(), 0 passed in E:\Documents\Documents\C-IT\website\cit\api\func\route.php on line 70 and exactly 1 expected in E:\Documents\Documents\C-IT\website\cit\api\func\api.php:53
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(87): Router->run('POST', '/create-post')
+#3 E:\Documents\Documents\C-IT\website\cit\api\index.php(43): API->run()
+#4 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 53
+[06-Dec-2021 17:55:19 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function API::{closure}(), 0 passed in E:\Documents\Documents\C-IT\website\cit\api\func\route.php on line 70 and exactly 1 expected in E:\Documents\Documents\C-IT\website\cit\api\func\api.php:53
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(87): Router->run('POST', '/create-post')
+#3 E:\Documents\Documents\C-IT\website\cit\api\index.php(43): API->run()
+#4 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 53
+[06-Dec-2021 17:55:31 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function API::{closure}(), 0 passed in E:\Documents\Documents\C-IT\website\cit\api\func\route.php on line 70 and exactly 1 expected in E:\Documents\Documents\C-IT\website\cit\api\func\api.php:53
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(87): Router->run('POST', '/create-post')
+#3 E:\Documents\Documents\C-IT\website\cit\api\index.php(43): API->run()
+#4 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 53
+[06-Dec-2021 17:55:56 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function API::{closure}(), 0 passed in E:\Documents\Documents\C-IT\website\cit\api\func\route.php on line 70 and exactly 1 expected in E:\Documents\Documents\C-IT\website\cit\api\func\api.php:53
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(87): Router->run('POST', '/create-post')
+#3 E:\Documents\Documents\C-IT\website\cit\api\index.php(43): API->run()
+#4 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 53
+[06-Dec-2021 17:56:07 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function API::{closure}(), 0 passed in E:\Documents\Documents\C-IT\website\cit\api\func\route.php on line 70 and exactly 1 expected in E:\Documents\Documents\C-IT\website\cit\api\func\api.php:53
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(87): Router->run('POST', '/create-post')
+#3 E:\Documents\Documents\C-IT\website\cit\api\index.php(43): API->run()
+#4 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 53
+[06-Dec-2021 17:56:34 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function API::{closure}(), 0 passed in E:\Documents\Documents\C-IT\website\cit\api\func\route.php on line 70 and exactly 1 expected in E:\Documents\Documents\C-IT\website\cit\api\func\api.php:53
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(87): Router->run('POST', '/create-post')
+#3 E:\Documents\Documents\C-IT\website\cit\api\index.php(43): API->run()
+#4 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 53
+[06-Dec-2021 17:57:14 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function API::{closure}(), 0 passed in E:\Documents\Documents\C-IT\website\cit\api\func\route.php on line 70 and exactly 1 expected in E:\Documents\Documents\C-IT\website\cit\api\func\api.php:53
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(87): Router->run('POST', '/create-post')
+#3 E:\Documents\Documents\C-IT\website\cit\api\index.php(43): API->run()
+#4 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 53
+[06-Dec-2021 17:57:20 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function API::{closure}(), 0 passed in E:\Documents\Documents\C-IT\website\cit\api\func\route.php on line 70 and exactly 1 expected in E:\Documents\Documents\C-IT\website\cit\api\func\api.php:53
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(87): Router->run('POST', '/create-post')
+#3 E:\Documents\Documents\C-IT\website\cit\api\index.php(43): API->run()
+#4 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 53
+[06-Dec-2021 17:57:35 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function API::{closure}(), 0 passed in E:\Documents\Documents\C-IT\website\cit\api\func\route.php on line 70 and exactly 1 expected in E:\Documents\Documents\C-IT\website\cit\api\func\api.php:53
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(87): Router->run('POST', '/create-post')
+#3 E:\Documents\Documents\C-IT\website\cit\api\index.php(43): API->run()
+#4 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 53
+[06-Dec-2021 17:58:25 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function API::{closure}(), 0 passed in E:\Documents\Documents\C-IT\website\cit\api\func\route.php on line 70 and exactly 1 expected in E:\Documents\Documents\C-IT\website\cit\api\func\api.php:53
+Stack trace:
+#0 E:\Documents\Documents\C-IT\website\cit\api\func\route.php(70): API->{closure}()
+#1 E:\Documents\Documents\C-IT\website\cit\api\func\router.php(51): Route->run()
+#2 E:\Documents\Documents\C-IT\website\cit\api\func\api.php(87): Router->run('POST', '/create-post')
+#3 E:\Documents\Documents\C-IT\website\cit\api\index.php(43): API->run()
+#4 {main}
+  thrown in E:\Documents\Documents\C-IT\website\cit\api\func\api.php on line 53
